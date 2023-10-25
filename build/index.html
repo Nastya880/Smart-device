@@ -8,6 +8,24 @@
     <title>Smart Device</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="sass/style.scss">
+    <link rel="icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preload" href="fonts/PTMono-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
@@ -54,13 +72,17 @@
       <main>
         <h1 class="visually-hidden">Smart Device</h1>
         <section class="intro">
+          <!-- <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/bg-main.webp 1x, img/bg-main@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/bg-main.webp 1x, img/bg-main@2x.webp 2x">
+            <img class="intro__image" src="img/bg-main.jpg" srcset="img/bg-main@2x.jpg 2x" alt="">
+          </picture> -->
           <div class="container">
             <h2>Печатные платы</h2>
             <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <!-- <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>-->
             <a class="intro__button" href="#feedback">
-              <div class="intro__button-description">Получить бесплатную консультацию</div>
+              <span class="intro__button-description">Получить бесплатную консультацию</span>
+              <span class="intro__button-description intro__button-description--mobile">Бесплатная консультация</span>
             </a>
           </div>
         </section>
