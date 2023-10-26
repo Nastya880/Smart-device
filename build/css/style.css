@@ -1536,6 +1536,111 @@ button,
   }
 }
 
+.advantages .container {
+  padding: 120px 18% 125px 18%;
+}
+@media (max-width: 1023px) {
+  .advantages .container {
+    padding: 80px 6.5% 80px 7.7%;
+  }
+}
+@media (max-width: 767px) {
+  .advantages .container {
+    padding: 50px 25px;
+  }
+}
+
+.advantages__list {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 31px;
+     -moz-column-gap: 31px;
+          column-gap: 31px;
+  row-gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .advantages__list {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.advantages__item {
+  min-height: 300px;
+  padding: 40px 45px 35px 40px;
+  border: 1px solid #EBEBEB;
+  border-left: 5px solid #00B2FF;
+}
+@media (max-width: 1023px) {
+  .advantages__item {
+    min-height: 360px;
+    padding: 40px 30px 35px 45px;
+  }
+}
+@media (max-width: 767px) {
+  .advantages__item {
+    max-height: 340px;
+    padding: 30px 30px 35px;
+  }
+}
+
+.advantages__item:hover {
+  background-color: #00B2FF;
+  border-color: #00B2FF;
+}
+.advantages__item:hover h3, .advantages__item:hover p {
+  color: #F2F5F6;
+}
+.advantages__item:hover .advantages__item-icon {
+  fill: #F2F5F6;
+}
+
+.advantages__item-icon {
+  fill: #00B2FF;
+  margin: 0;
+}
+
+.advantages h3 {
+  color: #00B2FF;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 33.6px; /* 140% */
+  margin: 0 0 15px 0;
+}
+@media (max-width: 1023px) {
+  .advantages h3 {
+    line-height: 140.625%; /* 33.75px */
+  }
+}
+@media (max-width: 767px) {
+  .advantages h3 {
+    font-size: 20px;
+    line-height: 140%; /* 28px */
+  }
+}
+
+.advantages p {
+  color: #041827;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.6px; /* 21.6px */
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .advantages p {
+    font-size: 14px;
+    line-height: 18.9px; /* 18.9px */
+  }
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
