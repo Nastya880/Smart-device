@@ -1536,6 +1536,10 @@ button,
   }
 }
 
+.advantages {
+  background-color: #F8FDFF;
+}
+
 .advantages .container {
   padding: 120px 18% 125px 18%;
 }
@@ -1638,6 +1642,105 @@ button,
   .advantages p {
     font-size: 14px;
     line-height: 18.9px; /* 18.9px */
+  }
+}
+
+.about-company {
+  background-color: #F8FDFF;
+}
+
+.about-company .container {
+  position: relative;
+  padding: 400px 350px 100px 600px;
+  padding: 40px 18% 120px 33%;
+  margin-bottom: 19px;
+}
+.about-company .container::before {
+  position: absolute;
+  left: 10%;
+  top: 18%;
+  content: "2022";
+  width: 320px;
+  height: 170px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 156.248px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 219.724px; /* 219.724px */
+  background-image: url("../../img/mask-for-2022.jpg");
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+@media (max-width: 1023px) {
+  .about-company .container {
+    padding: 35px 50px 80px 225px;
+    margin-bottom: -6px;
+  }
+  .about-company .container::before {
+    left: -44px;
+    top: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .about-company .container {
+    padding: 50px 25px 80px 25px;
+  }
+  .about-company .container::before {
+    display: none;
+  }
+}
+
+.about-company h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  color: #041827;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50.625px; /* 50.625px */
+}
+@media (max-width: 767px) {
+  .about-company h2 {
+    font-size: 28px;
+    line-height: 39.375px; /* 39.375px */
+  }
+}
+
+.about-company p {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #041827;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.504px; /* 21.504px */
+}
+@media (max-width: 767px) {
+  .about-company p {
+    font-size: 14px;
+    line-height: 18.816px; /* 18.816px */
+  }
+}
+
+.about-company__button {
+  min-width: 180px;
+  padding: 14px 13px 8px 12px;
+}
+@media (max-width: 1023px) {
+  .about-company__button {
+    min-width: 155px;
+  }
+}
+@media (max-width: 767px) {
+  .about-company__button {
+    min-width: 160px;
+    padding: 8px 15px 12px 15px;
   }
 }
 

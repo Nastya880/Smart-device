@@ -1,0 +1,96 @@
+.about-company {
+  background-color: $color-alice-blue-bg;
+}
+
+.about-company .container {
+  position: relative;
+  padding: 400px 350px 100px 600px;
+  padding: 40px 18% 120px 33%;
+  margin-bottom: 19px;
+  // height: 320px;
+  // overflow: hidden;
+
+  &::before {
+    position: absolute;
+    left: 10%;
+    top: 18%;
+    content: "2022";
+    width: 320px;
+    height: 170px; //подобрала, чтобы толщина была нужной ??
+    transform: rotate(-90deg);
+
+    font-family: $ff-roboto;
+    font-size: 156.248px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 219.724px; /* 219.724px */
+
+    background-image: url("../../img/mask-for-2022.jpg");
+    color: transparent;
+    background-clip: text;
+  }
+
+  @media (max-width: $vp-1023) {
+    padding: 35px 50px 80px 225px;
+    margin-bottom: -6px;
+
+    &::before {
+      left: -44px;
+      top: 120px;
+    }
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 50px 25px 80px 25px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.about-company h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  color: $color-black-perl;
+  font-family: $ff-roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50.625px; /* 50.625px */
+
+  @media (max-width: $vp-767) {
+    font-size: 28px;
+    line-height: 39.375px; /* 39.375px */
+  }
+}
+
+.about-company p {
+  margin: 0;
+  margin-bottom: 20px;
+  color: $color-black-perl;
+  font-family: $ff-ptmono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21.504px; /* 21.504px */
+
+  @media (max-width: $vp-767) {
+    font-size: 14px;
+    line-height: 18.816px; /* 18.816px */
+  }
+}
+
+.about-company__button {
+  min-width: 180px;
+  padding: 14px 13px 8px 12px;
+
+  @media (max-width: $vp-1023) {
+    min-width: 155px;
+  }
+
+  @media (max-width: $vp-767) {
+    min-width: 160px;
+    padding: 8px 15px 12px 15px;
+  }
+}
