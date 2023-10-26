@@ -1410,8 +1410,8 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1420,12 +1420,12 @@ button,
       -ms-flex-align: start;
           align-items: flex-start;
   min-height: 880px;
-  padding: 305px 150px 280px 475px;
+  padding: 305px 8.3% 280px 20.2%;
 }
 @media (max-width: 1023px) {
   .intro .container {
     min-height: 640px;
-    padding: 180px 50px 205px 50px;
+    padding: 180px 10.3% 205px 10.2%;
   }
 }
 @media (max-width: 767px) {

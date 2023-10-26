@@ -6,19 +6,29 @@
 
 .intro .container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-items: flex-start;
   min-height: 880px;
-  padding: 305px 150px 280px 475px;
+  // min-width: 720px;
+  // padding: 305px 150px 280px 475px;
+  padding: 305px 8.3% 280px 20.2%;
+  // margin-left: auto;
+  // margin-right: auto;
+
 
   @media (max-width: $vp-1023) {
     min-height: 640px;
-    padding: 180px 50px 205px 50px;
+    // margin-left: 0;
+    // margin-right: 0;
+    padding: 180px 10.3% 205px 10.2%;
+    // padding: 180px 50px 205px 50px;
   }
 
   @media (max-width: $vp-767) {
     min-height: 570px;
+    // margin-left: 0;
+    // margin-right: 0;
     padding: 150px 30px 190px 55px;
   }
 }
