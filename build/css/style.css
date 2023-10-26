@@ -1400,10 +1400,16 @@ button,
 }
 
 .intro {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/bg-main.jpg"), url("../img/bg-main.webp") no-repeat center;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/bg-main.jpg"), url("../img/bg-main.webp") no-repeat center;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), url("../img/bg-main.jpg"), url("../img/bg-main.webp") no-repeat;
+  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), url("../img/bg-main.jpg"), url("../img/bg-main.webp") no-repeat;
+  background-position: center;
   background-size: cover;
   margin-top: -15px;
+}
+@media (max-width: 767px) {
+  .intro {
+    background-position: center, -220px;
+  }
 }
 
 .intro .container {

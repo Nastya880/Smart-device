@@ -1,7 +1,12 @@
 .intro {
-  background: $grey-intro-color, url("../img/bg-main.jpg"), url("../img/bg-main.webp") no-repeat center;
+  background: $grey-intro-color, url("../img/bg-main.jpg"), url("../img/bg-main.webp") no-repeat;
+  background-position: center;
   background-size: cover;
   margin-top: -15px;
+
+  @media (max-width: $vp-767) {
+    background-position: center, -220px;
+  }
 }
 
 .intro .container {
