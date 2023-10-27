@@ -1744,6 +1744,196 @@ button,
   }
 }
 
+.catalog {
+  background-color: #041827;
+}
+@media (max-width: 767px) {
+  .catalog {
+    min-width: 320px;
+  }
+}
+
+.catalog .container {
+  padding: 70px 18% 140px;
+}
+@media (max-width: 1023px) {
+  .catalog .container {
+    padding: 50px 50px 75px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog .container {
+    padding: 40px 25px 86px;
+  }
+}
+
+.catalog h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 50.625px; /* 50.625px */
+}
+@media (max-width: 767px) {
+  .catalog h2 {
+    max-width: 270px;
+    margin-bottom: 40px;
+    font-size: 28px;
+    line-height: 39.375px; /* 39.375px */
+  }
+}
+
+.catalog__title {
+  display: inline;
+}
+@media (max-width: 767px) {
+  .catalog__title {
+    display: none;
+  }
+}
+.catalog__title--mobile {
+  display: none;
+}
+@media (max-width: 767px) {
+  .catalog__title--mobile {
+    display: inline;
+  }
+}
+
+.catalog__list {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 85px;
+     -moz-column-gap: 85px;
+          column-gap: 85px;
+  padding-left: 0;
+  list-style: none;
+}
+@media (max-width: 1023px) {
+  .catalog__list {
+    -ms-grid-columns: minmax(670px, 923px);
+    grid-template-columns: minmax(670px, 923px);
+    row-gap: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog__list {
+    -ms-grid-columns: minmax(270px, 717px);
+    grid-template-columns: minmax(270px, 717px);
+  }
+}
+
+.catalog__item-link {
+  min-height: 650px;
+  position: relative;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.catalog__item-link::after {
+  content: "";
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  width: 60px;
+  height: 60px;
+  background-image: url("../../img/svg/arrow.svg");
+}
+@media (max-width: 1023px) {
+  .catalog__item-link {
+    min-height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item-link {
+    min-height: 270px;
+  }
+  .catalog__item-link::after {
+    width: 40px;
+    height: 40px;
+    background-position: center;
+  }
+}
+.catalog__item-link:hover, .catalog__item-link:focus, .catalog__item-link:active {
+  outline: 1px solid #00B2FF;
+  opacity: 0.7;
+}
+
+.catalog__item-link--production {
+  background-image: url("../../img/catalog-card-1.jpg"), url("../../img/catalog-card-1.webp");
+}
+@media (max-width: 1023px) {
+  .catalog__item-link--production {
+    background-image: url("../../img/catalog-card-1-tablet.jpg"), url("../../img/catalog-card-1-tablet.webp");
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item-link--production {
+    background-image: url("../../img/catalog-card-1-mobile.jpg"), url("../../img/catalog-card-1-mobile.webp");
+  }
+}
+
+.catalog__item-link--mounting {
+  background-image: url("../../img/catalog-card-2.jpg"), url("../../img/catalog-card-2.webp");
+}
+@media (max-width: 1023px) {
+  .catalog__item-link--mounting {
+    background-image: url("../../img/catalog-card-2-tablet.jpg"), url("../../img/catalog-card-2-tablet.webp");
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item-link--mounting {
+    background-image: url("../../img/catalog-card-3-mobile.jpg"), url("../../img/catalog-card-3-mobile.webp");
+  }
+}
+
+.catalog__item-link--tools {
+  background-image: url("../../img/catalog-card-3.jpg"), url(".../../img/catalog-card-3.webp");
+}
+@media (max-width: 1023px) {
+  .catalog__item-link--tools {
+    background-image: url("../../img/catalog-card-3-tablet.jpg"), url("../../img/catalog-card-3-tablet.webp");
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item-link--tools {
+    background-image: url("../../img/catalog-card-3-mobile.jpg"), url("../../img/catalog-card-3-mobile.webp");
+  }
+}
+
+.catalog__item-link h3 {
+  max-width: 250px;
+  margin: 0;
+  padding: 46px 40px 0;
+  color: #ffffff;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 150% */
+}
+@media (max-width: 1023px) {
+  .catalog__item-link h3 {
+    max-width: 230px;
+    padding: 36px 46px 0;
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item-link h3 {
+    max-width: 180px;
+    padding: 26px 30px 0;
+    font-size: 18px;
+  }
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
