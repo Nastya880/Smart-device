@@ -158,6 +158,39 @@
             </ul>
           </div>
         </section>
+
+        <section class="feedback" id="feedback">
+          <div class="container">
+            <picture>
+              <source type="image/webp" srcset="img/paper_airplane.webp 1x, img/paper_airplane@2x.webp 2x">
+              <img src="img/paper_airplane.png" srcset="img/paper_airplane@2x.png" width="510" height="285" alt="Декоративное изображение мессенджера - самолёт">
+            </picture>
+            <div class="feedback__form">
+              <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
+              <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
+              <form class="form" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset class="form__required-data">
+                  <label class="visually-hidden" for="name">Введите Ваше имя</label>
+                  <input type="text" name="name" id="name" placeholder="Имя" required>
+                  <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required data-phone-number>
+                </fieldset>
+
+                <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
+                <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
+
+                <fieldset class="form__submit-wrapper">
+                  <button type="submit">Задать вопрос</button>
+                  <label for="agreement">
+                    <input type="checkbox" name="agreement" id="agreement" checked required>
+                    <span class="form__check-mark"></span>
+                    <span>Я согласен на&nbsp;обработку персональных данных</span>
+                  </label>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </section>
       </main>
       <!-- <footer>
         <div class="container"></div>
