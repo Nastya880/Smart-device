@@ -1,7 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {readMoreInfoCompany} from './modules/about-company';
+import {readMoreInfoCompany, aboutCompanyButton, dopContent} from './modules/about-company';
+import {smoothScroll, introButton, sectionFeedback} from './modules/smooth-scroll';
 
 // ---------------------------------
 
@@ -11,7 +12,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  readMoreInfoCompany();
+  readMoreInfoCompany(dopContent, aboutCompanyButton);
+  smoothScroll(introButton, sectionFeedback);
 
   // Modules
   // ---------------------------------
