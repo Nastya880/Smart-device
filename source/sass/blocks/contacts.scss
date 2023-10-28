@@ -1,0 +1,9 @@
+.footer__menu-contacts {
+  @media (max-width: $vp-1023) {
+    max-width: 345px;
+  }
+}
+
+.menu__contacts-list {
+  max-width: 345px;
+}
