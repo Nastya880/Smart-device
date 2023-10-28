@@ -100,28 +100,15 @@
   }
 }
 
-.form button {
+.form__button {
   min-width: 265px;
   min-height: 45px;
   padding: 15px 25px;
-
   color: $color-default-white;
-  text-align: center;
-  font-family: $ff-roboto;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.8px;
-  text-transform: uppercase;
-  background-color: $color-black-perl;
   border: none;
-  border-radius: 3px;
   cursor: pointer;
-
-  &:hover {
-    background-color: rgba($color-black-perl, 0.50);
-  }
 
   @media (max-width: $vp-767) {
     width: 100%;

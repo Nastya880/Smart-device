@@ -83,7 +83,6 @@
 
 .about-company__button {
   min-width: 180px;
-  padding: 14px 13px 8px 12px;
 
   @media (max-width: $vp-1023) {
     min-width: 155px;
@@ -91,6 +90,6 @@
 
   @media (max-width: $vp-767) {
     min-width: 160px;
-    padding: 8px 15px 12px 15px;
+    // padding: 8px 15px 12px 15px;
   }
 }

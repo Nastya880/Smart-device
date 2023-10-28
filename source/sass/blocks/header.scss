@@ -90,12 +90,6 @@
 .header__contacts a {
   width: 225px;
   display: flex;
-
-  &:hover,
-  &:active,
-  &:focus {
-    background: $color-neon-blue;
-  }
 }
 
 .header__contacts-link-icon {
@@ -112,41 +106,30 @@
   @media (max-width: $vp-1023) {
     display: none;
   }
+}
 
+.header__contacts a,
+.header__contacts span {
   &:hover,
-  &:active,
-  &:focus {
-    color: $color-default-white;
+  &:focus,
+  &:active {
+    background-color: $color-alice-blue;
+    color: $color-black-perl;
+  }
+
+  @include hover-focus {
+    background-color: $color-alice-blue;
+    color: $color-black-perl;
   }
 }
 
 .header__button {
-  color: $color-alice-blue;
-  text-align: center;
-  font-family: $ff-roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.7px;
-  text-transform: uppercase;
-
-  display: block;
-  border-radius: 3px;
-  border: 1px solid $color-alice-blue;
+  border-color: $color-alice-blue;
   box-sizing: border-box;
-  padding: 10px 15px;
   width: 160px;
   height: 40px;
 
   @media (max-width: $vp-1023) {
     display: none;
-  }
-
-  &:hover,
-  &:active,
-  &:focus {
-    cursor: pointer;
-    background: $color-neon-blue;
   }
 }

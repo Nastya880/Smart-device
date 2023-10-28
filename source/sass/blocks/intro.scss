@@ -85,18 +85,13 @@
 }
 
 .intro__button {
-  background-color: $color-deep-sky-blue;
-  display: block;
   min-width: 360px;
   padding: 15px 25px;
-  color: $color-alice-blue;
   text-align: center;
-  font-family: $ff-roboto;
   font-size: 18px;
-  font-weight: 700;
-  line-height: normal;
   letter-spacing: 0.9px;
-  text-transform: uppercase;
+  background-color: $color-deep-sky-blue;
+  border: none;
 
   @media (max-width: $vp-767) {
     min-width: 270px;
@@ -105,12 +100,6 @@
     padding: 10px 30px;
     font-size: 14px;
     letter-spacing: 0.7px;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $color-alice-blue;
-    color: $color-neon-blue;
   }
 }
 

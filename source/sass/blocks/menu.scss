@@ -75,4 +75,19 @@
   font-size: 16px;
   line-height: 1.35;
   color: rgba($color-default-white, 0.7);
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-deep-sky-blue;
+  }
+}
+
+address {
+  font-family: $ff-ptmono;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.35;
+  color: rgba($color-default-white, 0.7);
 }
