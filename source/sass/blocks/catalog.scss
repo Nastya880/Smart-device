@@ -76,7 +76,7 @@
   min-height: 650px;
   position: relative; // for after (absolute)
   display: block;
-
+  
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -167,7 +167,9 @@
   }
 
   @include vp-1023 {
+
     background-image: url("../../img/catalog-card-2-tablet.webp"), url("../../img/catalog-card-2-tablet.jpg");
+    background: #C4C4C4;
 
     @include retina {
       background-image: url("../../img/catalog-card-2-tablet@2x.webp"), url("../../img/catalog-card-2-tablet@2x.jpg");
