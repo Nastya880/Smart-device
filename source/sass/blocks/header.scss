@@ -1,11 +1,17 @@
 .header {
+  min-height: 120px;
   position: fixed;
   width: 100%;
   z-index: 10;
   background: $black-header-background;
 
   @include vp-1023 {
+    min-height: 100px;
     position: static;
+  }
+
+    @include vp-767 {
+    min-height: 70px;
   }
 }
 
@@ -34,22 +40,28 @@
 }
 
 .header__logo {
-  border: 2px solid white;
   margin-right: 8%;
   margin-left: -6.5%;
   // padding-right: 160px;
 
-  @include vp-1023 {
+
+  @include vp-1279 {
     margin: 0;
   }
 
+  @include vp-1023 {
+    margin: 0;
+    margin-left: 6.5%;
+  }
+
   @include vp-767 {
-    box-sizing: content-box;
+    margin-left: 8.1%;
+    // box-sizing: content-box;
     min-width: 35px;
     min-height: 35px;
-    padding-top: 10px;
+    padding-top: 7px;
     padding-bottom: 10px;
-    padding-left: 26px;
+    // padding-left: 16px;
   }
 }
 
