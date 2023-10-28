@@ -1801,6 +1801,16 @@ button,
     min-width: 160px;
   }
 }
+.about-company__button.is-without-js {
+  display: none;
+}
+
+.about-company__dop-content.is-without-js {
+  display: block;
+}
+.about-company__dop-content.is-hidden {
+  display: none;
+}
 
 .catalog {
   background-color: #041827;
