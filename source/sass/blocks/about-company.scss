@@ -28,6 +28,10 @@
     background-image: url("../../img/mask-for-2022.jpg");
     color: transparent;
     background-clip: text;
+
+    @include retina {
+      background-image: url("../../img/mask-for-2022@2x.jpg");
+    }
   }
 
   @media (max-width: $vp-1023) {

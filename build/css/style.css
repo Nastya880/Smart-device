@@ -1735,6 +1735,11 @@ button,
   -webkit-background-clip: text;
           background-clip: text;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .about-company .container::before {
+    background-image: url("../../img/mask-for-2022@2x.jpg");
+  }
+}
 @media (max-width: 1023px) {
   .about-company .container {
     padding: 35px 50px 80px 225px;
@@ -1935,48 +1940,6 @@ button,
   opacity: 0.7;
 }
 
-.catalog__item-link--production {
-  background-image: url("../../img/catalog-card-1.jpg"), url("../../img/catalog-card-1.webp");
-}
-@media (max-width: 1023px) {
-  .catalog__item-link--production {
-    background-image: url("../../img/catalog-card-1-tablet.jpg"), url("../../img/catalog-card-1-tablet.webp");
-  }
-}
-@media (max-width: 767px) {
-  .catalog__item-link--production {
-    background-image: url("../../img/catalog-card-1-mobile.jpg"), url("../../img/catalog-card-1-mobile.webp");
-  }
-}
-
-.catalog__item-link--mounting {
-  background-image: url("../../img/catalog-card-2.jpg"), url("../../img/catalog-card-2.webp");
-}
-@media (max-width: 1023px) {
-  .catalog__item-link--mounting {
-    background-image: url("../../img/catalog-card-2-tablet.jpg"), url("../../img/catalog-card-2-tablet.webp");
-  }
-}
-@media (max-width: 767px) {
-  .catalog__item-link--mounting {
-    background-image: url("../../img/catalog-card-3-mobile.jpg"), url("../../img/catalog-card-3-mobile.webp");
-  }
-}
-
-.catalog__item-link--tools {
-  background-image: url("../../img/catalog-card-3.jpg"), url(".../../img/catalog-card-3.webp");
-}
-@media (max-width: 1023px) {
-  .catalog__item-link--tools {
-    background-image: url("../../img/catalog-card-3-tablet.jpg"), url("../../img/catalog-card-3-tablet.webp");
-  }
-}
-@media (max-width: 767px) {
-  .catalog__item-link--tools {
-    background-image: url("../../img/catalog-card-3-mobile.jpg"), url("../../img/catalog-card-3-mobile.webp");
-  }
-}
-
 .catalog__item-link h3 {
   max-width: 250px;
   margin: 0;
@@ -1999,6 +1962,93 @@ button,
     max-width: 180px;
     padding: 26px 30px 0;
     font-size: 18px;
+  }
+}
+
+.catalog__item-link--production {
+  background-image: url("../../img/catalog-card-1.webp"), url("../../img/catalog-card-1.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .catalog__item-link--production {
+    background-image: url("../../img/catalog-card-1@2x.webp"), url("../../img/catalog-card-1@2x.jpg");
+  }
+}
+@media (max-width: 1023px) {
+  .catalog__item-link--production {
+    background-image: url("../../img/catalog-card-1-tablet.webp"), url("../../img/catalog-card-1-tablet.jpg");
+  }
+}
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .catalog__item-link--production {
+    background-image: url("../../img/catalog-card-1-tablet@2x.webp"), url("../../img/catalog-card-1-tablet@2x.jpg");
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item-link--production {
+    background-image: url("../../img/catalog-card-1-mobile.webp"), url("../../img/catalog-card-1-mobile.jpg");
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .catalog__item-link--production {
+    background-image: url("../../img/catalog-card-1-mobile@2x.webp"), url("../../img/catalog-card-1-mobile@2x.jpg");
+  }
+}
+
+.catalog__item-link--mounting {
+  background-image: url("../../img/catalog-card-2.webp"), url("../../img/catalog-card-2.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .catalog__item-link--mounting {
+    background-image: url("../../img/catalog-card-2@2x.webp"), url("../../img/catalog-card-2@2x.jpg");
+  }
+}
+@media (max-width: 1023px) {
+  .catalog__item-link--mounting {
+    background-image: url("../../img/catalog-card-2-tablet.webp"), url("../../img/catalog-card-2-tablet.jpg");
+  }
+}
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .catalog__item-link--mounting {
+    background-image: url("../../img/catalog-card-2-tablet@2x.webp"), url("../../img/catalog-card-2-tablet@2x.jpg");
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item-link--mounting {
+    background-image: url("../../img/catalog-card-2-mobile.webp"), url("../../img/catalog-card-2-mobile.jpg");
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .catalog__item-link--mounting {
+    background-image: url("../../img/catalog-card-2-mobile@2x.webp"), url("../../img/catalog-card-2-mobile@2x.jpg");
+  }
+}
+
+.catalog__item-link--tools {
+  background-image: url("../../img/catalog-card-3.webp"), url("../../img/catalog-card-3.jpg");
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .catalog__item-link--tools {
+    background-image: url("../../img/catalog-card-3@2x.webp"), url("../../img/catalog-card-3@2x.jpg");
+  }
+}
+@media (max-width: 1023px) {
+  .catalog__item-link--tools {
+    background-image: url("../../img/catalog-card-3-tablet.webp"), url("../../img/catalog-card-3-tablet.jpg");
+  }
+}
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+  .catalog__item-link--tools {
+    background-image: url("../../img/catalog-card-3-tablet@2x.webp"), url("../../img/catalog-card-3-tablet@2x.jpg");
+  }
+}
+@media (max-width: 767px) {
+  .catalog__item-link--tools {
+    background-image: url("../../img/catalog-card-3-mobile.webp"), url("../../img/catalog-card-3-mobile.jpg");
+  }
+}
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+  .catalog__item-link--tools {
+    background-image: url("../../img/catalog-card-3-mobile@2x.webp"), url("../../img/catalog-card-3-mobile@2x.jpg");
   }
 }
 
