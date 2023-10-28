@@ -13,7 +13,7 @@
     clip-path: polygon(50% 0, 0 100%, 0 0);
   }
 
-  @media (max-width: $vp-1023) {
+  @include vp-1023 {
     &::before {
       display: none;
     }
@@ -26,12 +26,12 @@
   padding-top: 170px;
   padding-bottom: 250px;
 
-  @media (max-width: $vp-1023) {
+  @include vp-1023 {
     padding-top: 50px;
     padding-bottom: 125px;
   }
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     padding-top: 50px;
     padding-bottom: 90px;
   }
@@ -45,7 +45,7 @@
   margin-top: 80px;
   margin-left: 34%;
 
-  @media (max-width: $vp-1023) {
+  @include vp-1023 {
     display: none;
   }
 }
@@ -54,12 +54,12 @@
   //  background-color: red;
   margin-left: 320px;
 
-  @media (max-width: $vp-1023) {
+  @include vp-1023 {
     margin-left: auto;
     margin-right: auto;
   }
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     margin-left: 7.8%;
     margin-right: 7.8%;
   }
@@ -75,11 +75,11 @@
   font-weight: 400;
   line-height: 50.625px; /* 50.625px */
 
-  @media (max-width: $vp-1023) {
+  @include vp-1023 {
     margin-bottom: 10px;
   }
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     margin-bottom: 20px;
     font-size: 30px;
     line-height: 42.188px;
@@ -96,11 +96,11 @@
   font-weight: 400;
   line-height: 21.504px; /* 21.504px */
 
-  @media (max-width: $vp-1023) {
+  @include vp-1023 {
     margin-bottom: 25px;
   }
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     margin-bottom: 20px;
     font-size: 14px;
     line-height: 18.816px;

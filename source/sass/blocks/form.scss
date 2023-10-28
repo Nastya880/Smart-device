@@ -2,13 +2,13 @@
 .form {
   min-width: 580px;
 
-  @media (max-width: $vp-1023) {
+  @include vp-1023 {
     max-width: 670px;
     width: 100%;
     margin-left: 0;
   }
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     min-width: 270px;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
   // margin-left: -10px;
   margin-bottom: 20px;
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     flex-direction: column;
   }
 }
@@ -67,11 +67,11 @@
     color: $color-default-white;
   }
 
-  @media (max-width: $vp-1023) {
+  @include vp-1023 {
     padding: 32px 15px;
   }
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     min-height: 180px;
     margin-bottom: 30px;
     padding: 25px 15px;
@@ -88,12 +88,12 @@
   gap: 50px;
   width: 100%;
 
-  @media (max-width: $vp-1023) {
+  @include vp-1023 {
     align-items: center;
     gap: 85px;
   }
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     flex-direction: column;
     align-items: flex-start;
     gap: 25px;
@@ -110,7 +110,7 @@
   border: none;
   cursor: pointer;
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     width: 100%;
   }
 }

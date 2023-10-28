@@ -25,16 +25,17 @@
     font-weight: 700;
     line-height: 219.724px; /* 219.724px */
 
-    background-image: url("../../img/mask-for-2022.jpg");
+    background-image: image-set(
+      url("../../img/mask-for-2022.webp") 1x,
+      url("../../img/mask-for-2022@2x.webp") 2x,
+      url("../../img/mask-for-2022.jpg") 1x,
+      url("../../img/mask-for-2022@2x.jpg") 2x
+    );
     color: transparent;
     background-clip: text;
-
-    @include retina {
-      background-image: url("../../img/mask-for-2022@2x.jpg");
-    }
   }
 
-  @media (max-width: $vp-1023) {
+  @include vp-1023 {
     padding: 35px 50px 80px 225px;
     margin-bottom: -6px;
 
@@ -44,7 +45,7 @@
     }
   }
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     padding: 50px 25px 80px 25px;
 
     &::before {
@@ -63,7 +64,7 @@
   font-weight: 400;
   line-height: 50.625px; /* 50.625px */
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     font-size: 28px;
     line-height: 39.375px; /* 39.375px */
   }
@@ -79,7 +80,7 @@
   font-weight: 400;
   line-height: 21.504px; /* 21.504px */
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     font-size: 14px;
     line-height: 18.816px; /* 18.816px */
   }
@@ -88,11 +89,11 @@
 .about-company__button {
   min-width: 180px;
 
-  @media (max-width: $vp-1023) {
+  @include vp-1023 {
     min-width: 155px;
   }
 
-  @media (max-width: $vp-767) {
+  @include vp-767 {
     min-width: 160px;
     // padding: 8px 15px 12px 15px;
   }
