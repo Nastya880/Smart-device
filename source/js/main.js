@@ -3,7 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {readMoreInfoCompany, aboutCompanyButton, dopContent} from './modules/about-company';
 import {smoothScroll, introButton, sectionFeedback} from './modules/smooth-scroll';
-
+import {showModalFeedback} from './modules/modals/modalFeedback';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    showModalFeedback();
   });
 });
 

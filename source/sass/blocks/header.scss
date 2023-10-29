@@ -23,7 +23,10 @@
   padding-top: 25px;
   padding-bottom: 40px;
   box-sizing: border-box;
+  // max-width: 66.3vw;
   max-width: calc(1920px - 350px - 410px);
+  // margin: 0 410px 0 350px;
+  // padding:
 
   @include vp-1023 {
     padding: 20px 93px 9.5% 1%;
@@ -37,8 +40,8 @@
 }
 
 .header__logo {
-  margin-right: 8%;
-  margin-left: -6.5%;
+  margin-right: 6%;
+  margin-left: -9.5%;
 
   @include vp-1279 {
     margin: 0;
@@ -67,10 +70,11 @@
 
 .header__contacts {
   width: 479px;
-  margin-left: -7%;
+  margin-left: -4%;
 
   @include vp-1023 {
     min-width: 100px;
+    margin-left: -7%;
     justify-content: flex-end;
   }
 }
@@ -155,6 +159,7 @@
   box-sizing: border-box;
   width: 160px;
   height: 40px;
+  margin-right: 3.3vw;
 
   @include vp-1023 {
     display: none;
