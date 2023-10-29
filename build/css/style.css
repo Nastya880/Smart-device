@@ -562,6 +562,11 @@ button,
   }
 }
 
+html, body {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .button {
   display: block;
   padding: 10px 15px 10px;
@@ -1302,6 +1307,7 @@ button,
 @media (max-width: 1023px) {
   .header {
     min-height: 100px;
+    max-height: 110px;
     position: static;
   }
 }
@@ -1321,7 +1327,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 35px;
+  padding-top: 25px;
   padding-bottom: 40px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1329,10 +1335,7 @@ button,
 }
 @media (max-width: 1023px) {
   .header .container {
-    padding-top: 20px;
-    padding-bottom: 40px;
-    padding-right: 9.5%;
-    padding-left: 1%;
+    padding: 20px 93px 9.5% 1%;
     min-width: 650px;
   }
 }
@@ -1350,6 +1353,7 @@ button,
 @media (max-width: 1279px) {
   .header__logo {
     margin: 0;
+    margin-right: 7%;
   }
 }
 @media (max-width: 1023px) {
@@ -1377,8 +1381,6 @@ button,
 .header__contacts {
   width: 479px;
   margin-left: -7%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 @media (max-width: 1023px) {
   .header__contacts {
@@ -1396,8 +1398,6 @@ button,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   margin: 0;
   padding: 0;
 }
@@ -1455,6 +1455,16 @@ button,
   }
 }
 
+@media (max-width: 1023px) {
+  .header__contacts-link-icon {
+    margin-top: -1.7vw;
+    margin-left: -1.4vw;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    padding: 10px;
+  }
+}
+
 .header__contacts-item:hover,
 .header__contacts-item:focus,
 .header__contacts-item:active {
@@ -1494,12 +1504,13 @@ button,
 }
 
 .intro {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), image-set(url("../../img/bg-main.webp") type("image/webp") 1x, url("../../img/bg-main@2x.webp") type("image/webp") 2x, url("../../img/bg-main.jpg") type("image/jpg") 1x, url("../../img/bg-main@2x.jpg") type("image/jpg") 2x) no-repeat;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../../img/bg-main.webp") type("image/webp") 1x, url("../../img/bg-main@2x.webp") type("image/webp") 2x, url("../../img/bg-main.jpg") type("image/jpg") 1x, url("../../img/bg-main@2x.jpg") type("image/jpg") 2x) no-repeat;
-  background: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../../img/bg-main.webp") type("image/webp") 1x, url("../../img/bg-main@2x.webp") type("image/webp") 2x, url("../../img/bg-main.jpg") type("image/jpg") 1x, url("../../img/bg-main@2x.jpg") type("image/jpg") 2x) no-repeat;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(71.72%, rgba(25, 32, 36, 0.7)), to(rgba(25, 32, 36, 0))), image-set(url("../../img/bg-main.webp") 1x, url("../../img/bg-main@2x.webp") 2x, url("./../img/bg-main.jpg") 1x, url("../../img/bg-main@2x.jpg") 2x);
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), -webkit-image-set(url("../../img/bg-main.webp") 1x, url("../../img/bg-main@2x.webp") 2x, url("./../img/bg-main.jpg") 1x, url("../../img/bg-main@2x.jpg") 2x);
+  background-image: linear-gradient(180deg, rgba(25, 32, 36, 0.7) 71.72%, rgba(25, 32, 36, 0) 100%), image-set(url("../../img/bg-main.webp") 1x, url("../../img/bg-main@2x.webp") 2x, url("./../img/bg-main.jpg") 1x, url("../../img/bg-main@2x.jpg") 2x);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: -15px;
+  margin-top: -35px;
 }
 @media (max-width: 767px) {
   .intro {
@@ -1520,25 +1531,32 @@ button,
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  min-height: 880px;
-  padding: 305px 8.3% 280px 20.2%;
+  overflow: hidden;
+  height: 880px;
+  padding: 330px 8.3vw 250px 20.2vw;
 }
 @media (max-width: 1023px) {
   .intro .container {
     min-height: 640px;
-    padding: 180px 10.3% 205px 10.2%;
+    max-height: 640px;
+    padding-top: 16.1vw;
+    padding-left: 8vw;
+    padding-right: 6.5vw;
+    padding-bottom: 26.6vw;
   }
 }
 @media (max-width: 767px) {
   .intro .container {
     min-height: 570px;
-    padding: 150px 30px 190px 55px;
+    padding: 30.8vw 9.3vw 59vw 9.3vw;
+    margin: 0;
+    margin-bottom: -30px;
   }
 }
 
 .intro h2 {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 80px;
   font-style: normal;
@@ -1550,39 +1568,50 @@ button,
 }
 @media (max-width: 1023px) {
   .intro h2 {
-    margin-bottom: 20px;
-    font-size: 64px;
+    margin-top: -0.2vw;
+    margin-left: -1.3vw;
+    margin-bottom: 0.01vw;
+    letter-spacing: 4.48px;
   }
 }
 @media (max-width: 767px) {
   .intro h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    width: 50vw;
+    margin: 0;
+    font-size: 10vw;
+    letter-spacing: 2.52px;
   }
 }
 
 .intro p {
   margin: 0;
+  padding: 0;
   margin-bottom: 40px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 34.1px; /* 34.1px */
   color: #F2F5F6;
-  max-width: 685px;
+  max-width: 780px;
 }
 @media (max-width: 1023px) {
   .intro p {
-    margin-bottom: 50px;
-    max-width: 670px;
+    margin-left: -1vw;
+    margin-bottom: 7.5vw;
+    font-size: 24px;
+    letter-spacing: 1.3px;
+    line-height: 37.7px;
   }
 }
 @media (max-width: 767px) {
   .intro p {
+    display: block;
+    margin: 0;
+    margin-top: 2vw;
+    width: 80vw;
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 21.7px;
-    max-width: 271px;
   }
 }
 
@@ -1592,16 +1621,23 @@ button,
   text-align: center;
   font-size: 18px;
   letter-spacing: 0.9px;
+  font-weight: 700;
+  text-transform: uppercase;
   background-color: #00B2FF;
   border: none;
 }
+@media (max-width: 1023px) {
+  .intro__button {
+    font-size: 22px;
+    min-width: 51.59vw;
+    padding: 2.3vw 0vw;
+    margin-left: 4.5vw;
+  }
+}
 @media (max-width: 767px) {
   .intro__button {
-    min-width: 270px;
-    margin-left: 0;
-    padding: 10px 30px;
-    font-size: 14px;
-    letter-spacing: 0.7px;
+    min-width: 80vw;
+    margin-left: 0px;
   }
 }
 
