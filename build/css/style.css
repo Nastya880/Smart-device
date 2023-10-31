@@ -1314,13 +1314,12 @@ button,
 }
 
 .header {
-  min-height: 120px;
   position: fixed;
-  min-width: 99vw;
-  max-width: 99vw;
-  z-index: 10;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
+  min-width: 99vw;
+  max-width: 99vw;
+  z-index: 3;
 }
 @media (max-width: 1023px) {
   .header {
@@ -1345,26 +1344,30 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 25px;
-  padding-bottom: 40px;
-  max-width: 1160px;
+  min-height: 120px;
+  width: 90vw;
+  max-width: 100vw;
+  padding: 25px 16.5vw 40px 19vw;
 }
 @media (max-width: 1023px) {
   .header .container {
-    padding: 20px 93px 9.5% 1%;
-    min-width: 650px;
+    min-width: 96vw;
+    padding: 20px 0 20px 0;
   }
 }
 @media (max-width: 767px) {
   .header .container {
-    padding: 15px 35px 20px 26px;
+    padding: 10px 20px 20px 10px;
     min-width: 259px;
+    min-height: 21.8vw;
   }
 }
 
 .header__logo {
-  margin-right: 6%;
-  margin-left: -9.5%;
+  margin-right: 4.2vw;
+  margin-left: -5.8vw;
+  min-height: 2.8vw;
+  min-width: 10.2vw;
 }
 @media (max-width: 1279px) {
   .header__logo {
@@ -1375,33 +1378,27 @@ button,
 @media (max-width: 1023px) {
   .header__logo {
     display: block;
-    margin: 0;
-    margin-left: 6.5%;
-    margin-top: 10px;
+    margin: 0 10px 0 5.7vw;
   }
 }
 @media (max-width: 767px) {
   .header__logo {
+    max-width: 35px;
+    max-height: 35px;
     margin-left: 8.1%;
-    min-width: 35px;
-    min-height: 35px;
     padding-top: 7px;
     padding-bottom: 10px;
   }
 }
 
-.header__logo-image {
-  width: 100%;
-}
-
 .header__contacts {
-  width: 479px;
-  margin-left: -4%;
+  min-width: 27vw;
+  margin-left: -1.6vw;
 }
 @media (max-width: 1023px) {
   .header__contacts {
-    min-width: 100px;
-    margin-left: -7%;
+    max-width: 10vw;
+    margin-right: 1vw;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -1418,32 +1415,26 @@ button,
   margin: 0;
   padding: 0;
 }
-@media (max-width: 1023px) {
-  .header__contacts-list {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
 
-.header__contacts-list li {
+.header__contacts-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 225px;
+  min-width: 11.7vw;
+  margin-right: 2vw;
+  margin-left: 0.1vw;
+}
+.header__contacts-item:last-child {
+  margin-left: -2vw;
 }
 @media (max-width: 1023px) {
-  .header__contacts-list li {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    width: 40px;
-    height: 40px;
+  .header__contacts-item {
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 7vw;
   }
 }
 @media (max-width: 767px) {
-  .header__contacts-list li {
+  .header__contacts-item {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     width: 40px;
@@ -1452,19 +1443,19 @@ button,
 }
 
 .header__contacts a {
-  width: 225px;
+  min-width: 11.7vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .header__contacts span {
+  min-width: 9.8vw;
   color: #F2F5F6;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: normal;
-  margin-left: 15px;
 }
 @media (max-width: 1023px) {
   .header__contacts span {
@@ -1472,48 +1463,41 @@ button,
   }
 }
 
+.header__contacts-link-icon {
+  fill: #00B2FF;
+  min-width: 40px;
+  margin-left: -0.8vw;
+}
 @media (max-width: 1023px) {
   .header__contacts-link-icon {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    max-width: 40px;
+    max-height: 40px;
     margin-top: -1.7vw;
     margin-left: -1.4vw;
     -webkit-box-sizing: content-box;
             box-sizing: content-box;
     padding: 10px;
   }
-}
-
-.header__contacts-item:hover,
-.header__contacts-item:focus,
-.header__contacts-item:active {
-  background-color: #F2F5F6;
-}
-.header__contacts-item:hover span,
-.header__contacts-item:focus span,
-.header__contacts-item:active span {
-  color: #041827;
-}
-@media (hover: hover) {
-  .header__contacts-item:hover:hover:not(.focus-visible),
-.header__contacts-item:focus:hover:not(.focus-visible),
-.header__contacts-item:active:hover:not(.focus-visible) {
-    background-color: #F2F5F6;
-    color: #041827;
+  .header__contacts-link-icon--phone {
+    margin-left: -5.5vw;
   }
 }
-.header__contacts-item:hover.focus-visible:focus,
-.header__contacts-item:focus.focus-visible:focus,
-.header__contacts-item:active.focus-visible:focus {
-  background-color: #F2F5F6;
-  color: #041827;
+
+.header__contacts-item:hover svg,
+.header__contacts-item:focus svg,
+.header__contacts-item:active svg {
+  fill: #F2F5F6;
 }
 
 .header__button {
   border-color: #F2F5F6;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 160px;
-  height: 40px;
-  margin-right: 3.3vw;
+  min-width: 8.8vw;
+  min-height: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-width: content;
 }
 @media (max-width: 1023px) {
   .header__button {
