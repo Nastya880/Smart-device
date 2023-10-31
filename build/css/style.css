@@ -1666,13 +1666,13 @@ button,
 .advantages .container {
   min-width: 90vw;
   max-width: 90vw;
-  padding: 111px 16.5vw 5.7vw 18vw;
+  padding: 111px 16.5vw 6.2vw 13.5vw;
   overflow: hidden;
 }
 @media (max-width: 1023px) {
   .advantages .container {
     overflow: hidden;
-    padding: 92px 2vw 20px 2.1vw;
+    padding: 92px 2vw 9vw 2.1vw;
   }
 }
 @media (max-width: 767px) {
@@ -1711,8 +1711,7 @@ button,
 
 .advantages__item {
   min-height: 15.5vw;
-  min-width: 29vw;
-  max-width: 31vw;
+  min-width: 31vw;
   padding: 40px 5px 35px 40px;
   border: 1px solid #EBEBEB;
   border-left: 5px solid #00B2FF;
@@ -1720,7 +1719,6 @@ button,
 @media (max-width: 1023px) {
   .advantages__item {
     min-height: 46vw;
-    max-height: 47.7vw;
     max-width: 40vw;
     padding: 4vw 3vw 0 5.5vw;
   }
@@ -1811,65 +1809,49 @@ button,
 
 .about-company {
   background-color: #F8FDFF;
-  min-width: 100%;
-  max-width: 100%;
-  overflow: hidden;
 }
 
 .about-company .container {
-  position: relative;
-  padding: 0 18vw 5.6vw 27vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+  grid-template-columns: auto 1fr;
+  -webkit-column-gap: 100px;
+     -moz-column-gap: 100px;
+          column-gap: 100px;
+  padding: 0 18vw 5.6vw 17vw;
   margin-bottom: 19px;
-}
-.about-company .container::before {
-  position: absolute;
-  left: 12vw;
-  top: 5vw;
-  content: "2022";
-  width: 320px;
-  height: 170px;
-  -webkit-transform: rotate(-90deg);
-      -ms-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 156.248px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 219.724px;
-  background-image: -webkit-image-set(url("../../img/mask-for-2022.webp") 1x, url("../../img/mask-for-2022@2x.webp") 2x, url("../../img/mask-for-2022.jpg") 1x, url("../../img/mask-for-2022@2x.jpg") 2x);
-  background-image: image-set(url("../../img/mask-for-2022.webp") 1x, url("../../img/mask-for-2022@2x.webp") 2x, url("../../img/mask-for-2022.jpg") 1x, url("../../img/mask-for-2022@2x.jpg") 2x);
-  color: transparent;
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-@media (max-width: 1919px) {
-  .about-company .container::before {
-    left: 1vw;
-    top: 7vw;
-  }
 }
 @media (max-width: 1023px) {
   .about-company .container {
-    padding: 2.8vw 18vw 5vw 29.4vw;
+    -webkit-column-gap: 6vw;
+       -moz-column-gap: 6vw;
+            column-gap: 6vw;
+    padding: 2.8vw 9vw 5.3vw 7vw;
     margin-bottom: 4.4vw;
-  }
-  .about-company .container::before {
-    left: -44px;
-    top: 120px;
   }
 }
 @media (max-width: 767px) {
   .about-company .container {
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
     padding: 50px 25px 80px 25px;
   }
-  .about-company .container::before {
+}
+@media (max-width: 767px) {
+  .about-company .container picture {
     display: none;
   }
 }
 
-.about-company h2 {
+.about-company__content {
+  position: relative;
+}
+
+.about-company__content h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0.5vw;
   color: #041827;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
@@ -1878,41 +1860,41 @@ button,
   line-height: 50.625px; /* 50.625px */
 }
 @media (max-width: 1023px) {
-  .about-company h2 {
+  .about-company__content h2 {
     font-size: 43px;
     margin-bottom: 20px;
   }
 }
 @media (max-width: 767px) {
-  .about-company h2 {
+  .about-company__content h2 {
     font-size: 28px;
     line-height: 39.375px; /* 39.375px */
   }
 }
 
-.about-company p {
+.about-company__content p {
   margin: 0;
-  margin-bottom: 0.9vw;
+  margin-bottom: 0.8vw;
   color: #041827;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 21.504px; /* 21.504px */
-  width: 55vw;
 }
 @media (max-width: 1023px) {
-  .about-company p {
-    width: 65vw;
+  .about-company__content p {
     font-size: 19px;
     line-height: 27.816px;
     margin-bottom: 2vw;
   }
 }
 @media (max-width: 767px) {
-  .about-company p {
+  .about-company__content p {
     font-size: 14px;
     line-height: 18.816px; /* 18.816px */
+    margin-top: 16px;
+    margin-bottom: 12px;
   }
 }
 

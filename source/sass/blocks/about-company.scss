@@ -1,70 +1,41 @@
 .about-company {
   background-color: $color-alice-blue-bg;
-  min-width: 100%;
-  max-width: 100%;
-  overflow: hidden;
+  // min-width: 100%;
+  // max-width: 100%;
+  // overflow: hidden;
 }
 
 .about-company .container {
-  position: relative;
-  padding: 0 18vw 5.6vw 27vw;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 100px;
+  padding: 0 18vw 5.6vw 17vw;
   margin-bottom: 19px;
 
-  &::before {
-    position: absolute;
-    left: 12vw;
-    top: 5vw;
-    content: "2022";
-    width: 320px;
-    height: 170px;
-    transform: rotate(-90deg);
-
-    font-family: $ff-roboto;
-    font-size: 156.248px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 219.724px;
-
-    background-image: image-set(
-      url("../../img/mask-for-2022.webp") 1x,
-      url("../../img/mask-for-2022@2x.webp") 2x,
-      url("../../img/mask-for-2022.jpg") 1x,
-      url("../../img/mask-for-2022@2x.jpg") 2x
-    );
-    color: transparent;
-    background-clip: text;
-  }
-
-  @include vp-1919 {
-
-    &::before {
-      left: 1vw;
-      top: 7vw;
-    }
-  }
-
-  @include vp-1023 {
-    padding: 2.8vw 18vw 5vw 29.4vw;
+  @include  vp-1023 {
+    column-gap: 6vw;
+    padding: 2.8vw 9vw 5.3vw 7vw;
     margin-bottom: 4.4vw;
-
-    &::before {
-      left: -44px;
-      top: 120px;
-    }
   }
 
   @include vp-767 {
+    column-gap: 0;
     padding: 50px 25px 80px 25px;
+  }
 
-    &::before {
+  & picture {
+    @include vp-767 {
       display: none;
     }
   }
 }
 
-.about-company h2 {
+.about-company__content {
+  position: relative;
+}
+.about-company__content h2 {
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0.5vw;
   color: $color-black-perl;
   font-family: $ff-roboto;
   font-size: 36px;
@@ -83,29 +54,30 @@
   }
 }
 
-.about-company p {
-  margin: 0;
-  margin-bottom: 0.9vw;
-  color: $color-black-perl;
-  font-family: $ff-ptmono;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 21.504px; /* 21.504px */
-  width: 55vw;
+.about-company__content p {
+    margin: 0;
+    margin-bottom: 0.8vw;
+    color: $color-black-perl;
+    font-family: $ff-ptmono;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21.504px; /* 21.504px */
 
-  @include vp-1023 {
-    width: 65vw;
-    font-size: 19px;
-    line-height: 27.816px;
-    margin-bottom: 2vw;
+    @include vp-1023 {
+      font-size: 19px;
+      line-height: 27.816px;
+      margin-bottom: 2vw;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 18.816px; /* 18.816px */
+      margin-top: 16px;
+      margin-bottom: 12px;
+    }
   }
 
-  @include vp-767 {
-    font-size: 14px;
-    line-height: 18.816px; /* 18.816px */
-  }
-}
 
 .about-company span {
   @include vp-767 {
