@@ -1,5 +1,8 @@
 .about-company {
   background-color: $color-alice-blue-bg;
+  min-width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .about-company .container {

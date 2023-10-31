@@ -1,11 +1,12 @@
 .header {
   min-height: 120px;
-  min-width: 99vw;
-  max-width: 99vw;
   position: fixed;
   width: 100%;
   z-index: 10;
   background: $black-header-background;
+
+  max-width: 100%;
+  overflow: hidden;
 
   @include vp-1023 {
     min-height: 100px;
@@ -24,11 +25,10 @@
   align-items: center;
   padding-top: 25px;
   padding-bottom: 40px;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   // max-width: 66.3vw;
   max-width: calc(1920px - 350px - 410px);
   // margin: 0 410px 0 350px;
-  // padding:
 
   @include vp-1023 {
     padding: 20px 93px 9.5% 1%;

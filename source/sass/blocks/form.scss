@@ -1,9 +1,11 @@
 .form {
-  min-width: 27vw;
+  // min-width: 570px;
+  max-width: 100%;
+  overflow: hidden;
 
   @include vp-1023 {
     // max-width: 670px;
-    width: 100%;
+    // width: 100%;
     margin-left: 0;
   }
 

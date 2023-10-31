@@ -1,14 +1,3 @@
-// Здесь реализован пример открытия модалки через колбэк закрытия
-// const openModalInCloseCallback = (name, context = this) => {
-//   context._enableScrolling = false;
-//   context._setSettings('default');
-//   modals.open(name);
-// };
-
-// closeCallback() {
-//   openModalInCloseCallback('modal-5');
-// },
-
 const modal = document.querySelector('[data-modal="feedback-form"]');
 const overlay = document.querySelector('[data-modal="overlay"]');
 const openModalBtn = document.querySelector('[data-modal="open-modal"]');

@@ -1,5 +1,5 @@
-const aboutCompanyButton = document.querySelector('.about-company__button');
-const dopContent = document.querySelectorAll('.about-company__dop-content');
+const aboutCompanyButton = document.querySelector('[data-about-company-button]');
+const dopContent = document.querySelectorAll('[data-about-company__dop-content]');
 
 aboutCompanyButton.classList.remove('is-without-js');
 dopContent.forEach((content) => content.classList.remove('is-without-js'));

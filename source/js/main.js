@@ -4,6 +4,8 @@ import {Form} from './modules/form-validate/form';
 import {readMoreInfoCompany, aboutCompanyButton, dopContent} from './modules/about-company';
 import {smoothScroll, introButton, sectionFeedback} from './modules/smooth-scroll';
 import {showModalFeedback} from './modules/modals/modalFeedback';
+import {showAccordion, accordionButton, accordionElement} from './modules/accordion';
+
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,14 +20,17 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  showAccordion(accordionButton, accordionElement);
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    initModals();
+
     const form = new Form();
     window.form = form;
     form.init();
     showModalFeedback();
+
+    initModals();
   });
 });
 

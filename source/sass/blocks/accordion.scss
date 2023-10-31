@@ -1,0 +1,70 @@
+.accordion-button {
+  display: none;
+}
+
+.accordion-container {
+  @include vp-767 {
+    margin: 0 auto;
+    min-width: 270px;
+    width: 84vw;
+    position: relative;
+
+    &.is-opened .accordion-button::before {
+      content: "";
+      position: absolute;
+      top: 27px;
+      right: 0;
+      width: 15px;
+      height: 1px;
+      background-color: $color-silver;
+    }
+
+    &.is-closed .accordion-button {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 27px;
+        right: 0;
+        width: 15px;
+        height: 1px;
+        background-color: $color-silver;
+      }
+
+      &::after {
+        transform: rotate(90deg);
+      }
+    }
+    
+    &.is-closed .footer__menu-nav-wrapper,
+    &.is-closed .menu__contacts-list {
+      display: none;
+    }
+
+    &.is-opened .footer__menu-nav-wrapper {
+      display: flex;
+    }
+
+    &.is-opened .menu__contacts-list{
+      display: block;
+    }
+
+    &.is-closed .footer__menu-title {
+    margin-bottom: 0;
+  }
+  }
+}
+
+.accordion-button {
+  @include vp-767 {
+    display: block;
+    position: absolute;
+    top: -21px;
+    right: 2px;
+    width: 100%;
+    height: 55px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
