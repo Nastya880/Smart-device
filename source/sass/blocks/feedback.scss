@@ -23,16 +23,20 @@
 }
 
 .feedback .container {
+  // background-color:red;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  padding: 9.3vw 20vw 12.8vw 14.7vw;
-  gap: 8vw;
+  padding: 140px 4vw 12.3vw 5vw;
+  max-width: 70vw;
+  // padding: 9.3vw 20vw 12.8vw 5.7vw;
+  gap: 5.6vw;
 
   @include vp-1023 {
     grid-template-columns: 1fr;
     gap: 0;
-    padding: 7vw 1vw 24.3vw 6.5vw;
-    // min-width: 100vw;
+    // padding: 7vw 1vw 16vw 6.5vw;
+    padding: 60px 0vw 16vw 3.2vw;
+    min-width: 92vw;
   }
 
   @include vp-767 {
