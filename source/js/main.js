@@ -6,7 +6,7 @@ import {smoothScroll, introButton, sectionFeedback} from './modules/smooth-scrol
 import {showModalFeedback} from './modules/modals/modalFeedback';
 import {showAccordion, accordionButton, accordionElement} from './modules/accordion';
 import {addPhoneMask} from './modules/phone-mask.js';
-
+import {addFocus, btnOpenModal, inputForFocus} from './modules/focusDataName.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -22,6 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   showAccordion(accordionButton, accordionElement);
+  addFocus(btnOpenModal, inputForFocus);
   addPhoneMask();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
