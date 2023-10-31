@@ -174,8 +174,10 @@
                 <div class="form__required-data">
                   <label class="visually-hidden" for="name">Введите Ваше имя</label>
                   <input type="text" name="name" id="name" placeholder="Имя" required>
-                  <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
-                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                  <div class="form__number-phone"  data-number-phone>
+                    <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                  </div>
                 </div>
                 <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
                 <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
@@ -304,9 +306,11 @@
           <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
           <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="name-modal">Введите Ваше имя</label>
-            <input type="text" name="name" id="name-modal" placeholder="Имя" required data-name>
-            <label class="visually-hidden" for="phone-modal">Введите Ваш номер телефона</label>
-            <input type="tel" name="phone" id="phone-modal" placeholder="Телефон" required>
+            <input type="text" name="name" id="name-modal" placeholder="Имя" required>
+            <div class="form__number-phone form__number-phone--modal" data-number-phone>
+              <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
+              <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+            </div>
             <label class="visually-hidden" for="question-modal">Введите Ваш вопрос</label>
             <textarea name="question" id="question-modal" rows="6" placeholder="Ваш вопрос"></textarea>
             <fieldset class="form__submit-wrapper form__submit-wrapper--modal">

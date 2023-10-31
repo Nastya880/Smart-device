@@ -5,6 +5,7 @@ import {readMoreInfoCompany, aboutCompanyButton, dopContent} from './modules/abo
 import {smoothScroll, introButton, sectionFeedback} from './modules/smooth-scroll';
 import {showModalFeedback} from './modules/modals/modalFeedback';
 import {showAccordion, accordionButton, accordionElement} from './modules/accordion';
+import {addPhoneMask} from './modules/phone-mask.js';
 
 // ---------------------------------
 
@@ -21,16 +22,16 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   showAccordion(accordionButton, accordionElement);
+  addPhoneMask();
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-
+    initModals();
     const form = new Form();
     window.form = form;
     form.init();
     showModalFeedback();
-
-    initModals();
   });
 });
 

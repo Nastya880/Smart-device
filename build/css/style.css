@@ -1316,12 +1316,11 @@ button,
 .header {
   min-height: 120px;
   position: fixed;
-  width: 100%;
+  min-width: 99vw;
+  max-width: 99vw;
   z-index: 10;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(84.9%, #041827), to(rgba(4, 24, 39, 0)));
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-  max-width: 100%;
-  overflow: hidden;
 }
 @media (max-width: 1023px) {
   .header {
@@ -2426,6 +2425,10 @@ button,
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+.form__number-phone--modal input {
+  width: 100%;
 }
 
 .form__button {
