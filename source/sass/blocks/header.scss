@@ -1,9 +1,10 @@
 .header {
   position: fixed;
   background: $black-header-background;
-  min-width: 99vw;
-  max-width: 99vw;
+  min-width: 100%;
+  max-width: 100%;
   z-index: 3;
+  overflow: hidden;
 
   @include vp-1023 {
     min-height: 100px;
