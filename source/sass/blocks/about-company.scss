@@ -107,6 +107,12 @@
   }
 }
 
+.about-company span {
+  @include vp-767 {
+    display: none;
+  }
+}
+
 .about-company__button {
   margin-top: 2vw;
   min-width: 175px;

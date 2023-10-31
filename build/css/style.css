@@ -1912,6 +1912,12 @@ button,
   }
 }
 
+@media (max-width: 767px) {
+  .about-company span {
+    display: none;
+  }
+}
+
 .about-company__button {
   margin-top: 2vw;
   min-width: 175px;
