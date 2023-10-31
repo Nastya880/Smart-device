@@ -1667,7 +1667,6 @@ button,
   min-width: 90vw;
   max-width: 90vw;
   padding: 111px 16.5vw 6.2vw 13.5vw;
-  overflow: hidden;
 }
 @media (max-width: 1023px) {
   .advantages .container {
@@ -2551,9 +2550,7 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 90vw;
-  max-width: 1220px;
-  margin-top: 50px;
-  margin-bottom: 55px;
+  padding: 2.6vw 12.5vw 2vw 13.5vw;
 }
 @media (max-width: 1023px) {
   .footer .container {
@@ -2563,7 +2560,7 @@ button,
             flex-direction: column;
     min-width: 675px;
     width: 87vw;
-    margin-bottom: 65px;
+    padding: 8vw 2vw 14vw 1.3vw;
   }
 }
 @media (max-width: 767px) {
@@ -2588,7 +2585,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 45px;
+  margin-right: 8vw;
 }
 @media (max-width: 1023px) {
   .footer__logo-wrapper {
@@ -2614,7 +2611,7 @@ button,
 }
 
 .footer__logo {
-  margin-bottom: 35px;
+  margin-bottom: 1vw;
 }
 @media (max-width: 1023px) {
   .footer__logo {
@@ -2638,7 +2635,7 @@ button,
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 @media (max-width: 767px) {
   .footer h3 {
@@ -2649,6 +2646,7 @@ button,
 @media (max-width: 1023px) {
   .footer__menu {
     margin-top: 0;
+    margin-right: 6vw;
   }
 }
 @media (max-width: 767px) {
@@ -2707,8 +2705,8 @@ button,
     max-width: none;
     padding-top: 22px;
     padding-bottom: 14px;
-    border-top: 1px solid rgba(248, 253, 255, 0.7);
-    border-bottom: 1px solid rgba(248, 253, 255, 0.7);
+    border-top: 1px solid rgba(242, 245, 246, 0.7);
+    border-bottom: 1px solid rgba(242, 245, 246, 0.7);
   }
 }
 
@@ -2801,19 +2799,23 @@ address {
   }
 }
 
-.menu__contacts-item-link {
+.menu__contacts-item-link,
+address {
   color: rgba(255, 255, 255, 0.7);
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px; /* 156.25% */
+  margin-bottom: 14px;
 }
 @media (max-width: 767px) {
-  .menu__contacts-item-link {
-    font-size: 14px;
+  .menu__contacts-item-link,
+address {
+    font-size: 15px;
   }
 }
+
 .menu__contacts-item-link:hover, .menu__contacts-item-link:focus, .menu__contacts-item-link:active {
   color: #00B2FF;
 }
