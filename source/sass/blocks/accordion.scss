@@ -1,5 +1,17 @@
 .accordion-button {
   display: none;
+
+  @include vp-767 {
+    display: block;
+    position: absolute;
+    top: -21px;
+    right: 2px;
+    width: 100%;
+    height: 55px;
+    background-color: $color-silver;
+    border: none;
+    cursor: pointer;
+  }
 }
 
 .accordion-container {
@@ -45,26 +57,12 @@
       display: flex;
     }
 
-    &.is-opened .menu__contacts-list{
+    &.is-opened .menu__contacts-list {
       display: block;
     }
 
     &.is-closed .footer__menu-title {
       margin-bottom: 0;
     }
-  }
-}
-
-.accordion-button {
-  @include vp-767 {
-    display: block;
-    position: absolute;
-    top: -21px;
-    right: 2px;
-    width: 100%;
-    height: 55px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
   }
 }

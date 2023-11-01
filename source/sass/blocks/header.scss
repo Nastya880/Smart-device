@@ -11,7 +11,7 @@
     position: static;
   }
 
-    @include vp-767 {
+  @include vp-767 {
     min-height: 70px;
   }
 }
@@ -94,7 +94,7 @@
   margin-left: 0.1vw;
 
   &:last-child {
-   margin-left: -2vw;
+    margin-left: -2vw;
   }
 
   @include vp-1023 {
@@ -133,7 +133,6 @@
   margin-left: -0.8vw;
 
   @include vp-1023 {
-    box-sizing: border-box;
     max-width: 40px;
     max-height: 40px;
     margin-top: -1.7vw;
@@ -157,11 +156,10 @@
 
 .header__button {
   border-color: $color-alice-blue;
-  min-width: 8.8vw;
+  min-width: content;
   min-height: 40px;
   padding-top: 10px;
   padding-bottom: 10px;
-  min-width: content;
 
   @include vp-1023 {
     display: none;
