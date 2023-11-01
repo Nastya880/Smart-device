@@ -9,7 +9,6 @@
   column-gap: 100px;
   padding: 0 18vw 3vw 17vw;
   margin-bottom: 19px;
-  // background-color: red;
 
   @include  vp-1023 {
     column-gap: 6vw;
@@ -41,7 +40,7 @@
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  line-height: 50.625px; /* 50.625px */
+  line-height: 50.625px;
 
   @include vp-1023 {
     font-size: 43px;
@@ -50,14 +49,11 @@
 
   @include vp-767 {
     font-size: 28px;
-    line-height: 39.375px; /* 39.375px */
+    line-height: 39.375px;
   }
 }
 
 .about-company__content p {
-  background-color: #fff;
-  // display: block;
-  // width: 10vw;
   margin: 0;
   margin-bottom: 0.8vw;
   color: $color-black-perl;
@@ -65,7 +61,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 21.504px; /* 21.504px */
+  line-height: 21.504px;
 
   @include vp-1023 {
     font-size: 19px;
@@ -75,7 +71,7 @@
 
   @include vp-767 {
     font-size: 14px;
-    line-height: 18.816px; /* 18.816px */
+    line-height: 18.816px;
     margin-top: 16px;
     margin-bottom: 12px;
   }

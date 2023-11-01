@@ -35,7 +35,7 @@
         transform: rotate(90deg);
       }
     }
-    
+
     &.is-closed .footer__menu-nav-wrapper,
     &.is-closed .menu__contacts-list {
       display: none;
@@ -50,8 +50,8 @@
     }
 
     &.is-closed .footer__menu-title {
-    margin-bottom: 0;
-  }
+      margin-bottom: 0;
+    }
   }
 }
 

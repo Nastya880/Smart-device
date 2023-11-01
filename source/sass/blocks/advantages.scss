@@ -6,10 +6,8 @@
   min-width: 90vw;
   max-width: 90vw;
   padding: 111px 16.5vw 6.2vw 13.5vw;
-  // overflow: hidden;
 
   @include vp-1023 {
-    // overflow: hidden;
     padding: 92px 2vw 9vw 2.1vw;
   }
 
@@ -22,14 +20,12 @@
   list-style: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 1vw;
-  row-gap: 1.3vw;
+  gap: 1.3vw 1vw;
   margin: 0;
   padding: 0;
 
   @include vp-1023 {
-    column-gap: 3vw;
-    row-gap: 2.5vw;
+    gap: 2.5vw 3vw;
   }
 
   @include vp-767 {
@@ -46,7 +42,6 @@
 
   @include vp-1023 {
     min-height: 46vw;
-    // max-height: 47.7vw;
     max-width: 40vw;
     padding: 4vw 3vw 0 5.5vw;
   }
@@ -74,9 +69,7 @@
 
 .advantages__item-icon {
   fill: $color-deep-sky-blue;
-  margin: 0;
-  margin-bottom: -0.6vw;
-  margin-left: 0.1vw;
+  margin: 0 0 -0.6vw 0.1vw;
 
   @include vp-1023 {
     margin-top: 2vw;
@@ -94,7 +87,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 33.6px;
-
   margin: 0.78vw 0 0.5vw 0;
 
   @include vp-1023 {

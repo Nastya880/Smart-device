@@ -1,7 +1,6 @@
 .social__list {
   padding: 0;
   margin: 0;
-  // padding-left: 10px;
   padding-right: 45px;
   list-style: none;
   display: grid;
@@ -10,7 +9,6 @@
   gap: 15px;
 
   @include vp-1023 {
-    // justify-content: end;
     margin-right: -2px;
     margin-top: -7px;
   }
