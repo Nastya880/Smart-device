@@ -19,6 +19,8 @@
 .catalog h2 {
   margin: 0;
   margin-bottom: 50px;
+  margin-left: -6vw;
+  overflow: hidden;
   color: $color-default-white;
   font-family: $ff-roboto;
   font-size: 36px;
@@ -26,8 +28,11 @@
   font-weight: 400;
   line-height: 50.63px;
 
-  @include vp-1023 {
+  @include vp-1919 {
+    margin-left: 0;
+  }
 
+  @include vp-1023 {
     font-size: 43px;
     line-height: 58.38px;
   }
@@ -141,6 +146,7 @@
 }
 
 .catalog__item-link--production {
+  background-color: $color-black-perl;
   background-image: image-set(
     url("../../img/catalog-card-1.webp") 1x,
     url("../../img/catalog-card-1@2x.webp") 2x,
@@ -168,6 +174,7 @@
 }
 
 .catalog__item-link--mounting {
+  background-color: $color-black-perl;
   background-image: image-set(
     url("../../img/catalog-card-2.webp") 1x,
     url("../../img/catalog-card-2@2x.webp") 2x,
@@ -195,6 +202,7 @@
 }
 
 .catalog__item-link--tools {
+  background-color: $color-black-perl;
   background-image: image-set(
     url("../../img/catalog-card-3.webp") 1x,
     url("../../img/catalog-card-3@2x.webp") 2x,
