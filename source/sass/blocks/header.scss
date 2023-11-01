@@ -1,10 +1,8 @@
 .header {
   position: fixed;
   background: $black-header-background;
-  min-width: 100%;
-  max-width: 100%;
+  width: 100%;
   z-index: 3;
-  overflow: hidden;
 
   @include vp-1023 {
     min-height: 100px;
@@ -26,8 +24,13 @@
   max-width: 100vw;
   padding: 25px 16.5vw 40px 19vw;
 
+  @include vp-1279 {
+    width: 100vw;
+    padding-right: 16.5vw;
+    padding-left: 10.5vw;
+  }
+
   @include vp-1023 {
-    min-width: 96vw;
     padding: 20px 0 20px 0;
   }
 
@@ -39,15 +42,17 @@
 }
 
 .header__logo {
+  // background-color: $;
+  padding-top: 5px;
   background-color: $color-black-perl;
-  margin-right: 4.2vw;
-  margin-left: -5.8vw;
+  margin: 0 4.2vw 0 -5.8vw;
   min-height: 2.8vw;
   min-width: 10.2vw;
 
   @include vp-1279 {
     margin: 0;
     margin-right: 7%;
+    padding-top: 0;
   }
 
   @include vp-1023 {
@@ -71,14 +76,12 @@
   @include vp-1023 {
     max-width: 10vw;
     margin-right: 1vw;
-    justify-content: flex-end;
   }
 }
 
 .header__contacts-list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
   padding: 0;
 }
 
