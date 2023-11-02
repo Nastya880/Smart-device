@@ -1241,7 +1241,7 @@ button,
   bottom: 0;
   width: 60px;
   height: 60px;
-  background-image: url("../../img/svg/arrow.svg");
+  background-image: url("./img/svg/arrow.svg");
 }
 
 .catalog__item-link:hover,
