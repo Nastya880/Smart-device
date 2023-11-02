@@ -39,14 +39,14 @@
           <a class="header__logo">
             <picture>
               <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg" width="35" height="35">
-              <img class="header__logo-image" src="img/svg/logo.svg" width="215" height="55" alt="Smart Device">
+              <img src="img/svg/logo.svg" width="215" height="55" alt="Smart Device">
             </picture>
           </a>
           <nav class="header__contacts">
             <ul class="header__contacts-list">
               <li class="header__contacts-item">
                 <a href="mailto:info@sd.ru">
-                  <svg class="header__contacts-link-icon" width="20" height="20">
+                  <svg width="20" height="20">
                     <use xlink:href="img/sprite.svg#email"></use>
                   </svg>
                   <span>info@sd.ru</span>
@@ -54,7 +54,7 @@
               </li>
               <li class="header__contacts-item">
                 <a href="tel:74950005252">
-                  <svg class="header__contacts-link-icon header__contacts-link-icon--phone" width="20" height="20">
+                  <svg width="20" height="20">
                     <use xlink:href="img/sprite.svg#phone"></use>
                   </svg>
                   <span>+7 (495) 000 52&nbsp;52</span>
@@ -83,28 +83,28 @@
             <h2 class="visually-hidden">Преимущества компании Smart Device</h2>
             <ul class="advantages__list">
               <li class="advantages__item">
-                <svg class="advantages__item-icon" width="35" height="35">
+                <svg width="35" height="35">
                   <use xlink:href="img/sprite.svg#stopwatch"></use>
                 </svg>
                 <h3>Оперативные сроки</h3>
                 <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки.</p>
               </li>
               <li class="advantages__item">
-                <svg class="advantages__item-icon" width="35" height="35">
+                <svg width="35" height="35">
                   <use xlink:href="img/sprite.svg#hired"></use>
                 </svg>
                 <h3>Крупные поставщики</h3>
                 <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
               </li>
               <li class="advantages__item advantages">
-                <svg class="advantages__item-icon" width="35" height="35">
+                <svg width="35" height="35">
                   <use xlink:href="img/sprite.svg#detective"></use>
                 </svg>
                 <h3>Полная конфиденциальность</h3>
                 <p>По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.</p>
               </li>
               <li class="advantages__item advantages">
-                <svg class="advantages__item-icon" width="35" height="35">
+                <svg width="35" height="35">
                   <use xlink:href="img/sprite.svg#tag"></use>
                 </svg>
                 <h3>Персонализация стоимости</h3>
@@ -125,8 +125,8 @@
               <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
                 <span>Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
               </p>
-              <p class="about-company__dop-content is-without-js" data-about-company__dop-content>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
-              <p class="about-company__dop-content is-without-js" data-about-company__dop-content>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
+              <p class="about-company__more-info is-without-js" data-about-company__more-info>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
+              <p class="about-company__more-info is-without-js" data-about-company__more-info>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
               <button class="about-company__button button button--light" type="button" data-about-company-button>Подробнее</button>
             </div>
           </div>
@@ -171,10 +171,8 @@
                 <div class="form__required-data">
                   <label class="visually-hidden" for="name">Введите Ваше имя</label>
                   <input type="text" name="name" id="name" placeholder="Имя" required>
-                  <div class="form__number-phone"  data-number-phone>
-                    <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
-                  </div>
+                  <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
+                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
                 </div>
                 <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
                 <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
@@ -202,7 +200,7 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__item-link" href="#">
-                  <svg class="social__item-link-icon" width="30" height="30">
+                  <svg width="30" height="30">
                     <use href="img/sprite.svg#social-ok"></use>
                   </svg>
                 </a>
@@ -210,7 +208,7 @@
               </li>
               <li class="social__item">
                 <a class="social__item-link" href="#">
-                  <svg class="social__item-link-icon" width="30" height="30">
+                  <svg width="30" height="30">
                     <use href="img/sprite.svg#social-vk"></use>
                   </svg>
                 </a>
@@ -218,7 +216,7 @@
               </li>
               <li class="social__item">
                 <a class="social__item-link" href="#">
-                  <svg class="social__item-link-icon" width="30" height="30">
+                  <svg width="30" height="30">
                     <use href="img/sprite.svg#social-pinterest"></use>
                   </svg>
                 </a>
@@ -327,20 +325,6 @@
         </div>
       </div>
     </div>
-    <!--
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

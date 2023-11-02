@@ -127,7 +127,7 @@
   }
 }
 
-.header__contacts-link-icon {
+.header__contacts-item svg {
   fill: $color-deep-sky-blue;
   min-width: 40px;
   margin-left: -0.8vw;
@@ -139,10 +139,6 @@
     margin-left: -1.4vw;
     box-sizing: content-box;
     padding: 10px;
-
-    &--phone {
-      margin-left: -5.5vw;
-    }
   }
 }
 
