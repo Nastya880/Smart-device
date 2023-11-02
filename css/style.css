@@ -1362,6 +1362,7 @@ button,
   background-color: rgba(4, 24, 39, 0.15);
   border: none;
   color: #ffffff;
+  width: 100%;
 }
 
 .form input::-webkit-input-placeholder {
@@ -1452,10 +1453,6 @@ button,
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
-}
-
-.form__required-data input {
-  width: 100%;
 }
 
 .form__button {
