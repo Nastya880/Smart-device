@@ -45,6 +45,7 @@
   background-color: rgba($color-black-perl, 0.15);
   border: none;
   color: $color-default-white;
+  width: 100%;
 
   &::placeholder {
     color: $color-default-white;
@@ -128,10 +129,6 @@
     flex-direction: column;
     align-items: stretch;
   }
-}
-
-.form__required-data input {
-  width: 100%;
 }
 
 .form__button {
