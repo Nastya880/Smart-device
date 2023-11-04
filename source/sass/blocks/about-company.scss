@@ -20,16 +20,16 @@
     column-gap: 0;
     padding: 50px 25px 80px 25px;
   }
-
-  & picture {
-    @include vp-767 {
-      display: none;
-    }
-  }
 }
 
 .about-company__content {
   position: relative;
+}
+
+.about-company picture {
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .about-company__content h2 {
