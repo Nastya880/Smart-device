@@ -25,11 +25,11 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="preload" href="fonts/PTMono-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link href="fonts/PTMono-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link href="fonts/RobotoCondensed-Bold.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
+    <link href="fonts/RobotoCondensed-Regular.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
@@ -62,7 +62,7 @@
               </li>
             </ul>
           </nav>
-          <a class="header__button button button--dark btn--open" href="#" data-open-modal="feedback-form" data-modal="open-modal">Заказать звонок</a>
+          <a class="header__button button button--dark" href="#" data-open-modal="feedback-form" data-modal="open-modal">Заказать звонок</a>
         </div>
       </header>
       <main>
@@ -96,14 +96,14 @@
                 <h3>Крупные поставщики</h3>
                 <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
               </li>
-              <li class="advantages__item advantages">
+              <li class="advantages__item">
                 <svg width="35" height="35">
                   <use xlink:href="img/sprite.svg#detective"></use>
                 </svg>
                 <h3>Полная конфиденциальность</h3>
                 <p>По&nbsp;желанию клиента мы&nbsp;обеспечиваем полную конфиденциальность.</p>
               </li>
-              <li class="advantages__item advantages">
+              <li class="advantages__item">
                 <svg width="35" height="35">
                   <use xlink:href="img/sprite.svg#tag"></use>
                 </svg>
@@ -167,20 +167,22 @@
             <div class="feedback__form">
               <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
               <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
-              <form class="form" action="https://echo.htmlacademy.ru" method="post">
-                <div class="form__required-data">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <div class="feedback__form-required-data">
                   <label class="visually-hidden" for="name">Введите Ваше имя</label>
                   <input type="text" name="name" id="name" placeholder="Имя" required>
-                  <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
-                  <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                  <div data-number-phone>
+                    <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
+                  </div>
                 </div>
                 <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
                 <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
-                <div class="form__submit-wrapper">
-                  <button class="form__button button button--dark" type="submit">Задать вопрос</button>
+                <div class="feedback__form-submit-wrapper">
+                  <button class="feedback__form-button button button--dark" type="submit">Задать вопрос</button>
                   <label for="agreement">
                     <input type="checkbox" name="agreement" id="agreement" checked required>
-                    <span class="form__check-mark"></span>
+                    <span class="feedback__form-check-mark"></span>
                     <span>Я согласен на&nbsp;обработку персональных данных</span>
                   </label>
                 </div>
@@ -197,25 +199,25 @@
             <a class="footer__logo">
               <img src="img/svg/logo.svg" width="215" height="55" alt="Smart Device">
             </a>
-            <ul class="social__list">
-              <li class="social__item">
-                <a class="social__item-link" href="#">
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-item-link" href="#">
                   <svg width="30" height="30">
                     <use href="img/sprite.svg#social-ok"></use>
                   </svg>
                 </a>
                 <span class="visually-hidden">Одноклассники</span>
               </li>
-              <li class="social__item">
-                <a class="social__item-link" href="#">
+              <li class="footer__social-tem">
+                <a class="footer__social-item-link" href="#">
                   <svg width="30" height="30">
                     <use href="img/sprite.svg#social-vk"></use>
                   </svg>
                 </a>
                 <span class="visually-hidden">Вконтакте</span>
               </li>
-              <li class="social__item">
-                <a class="social__item-link" href="#">
+              <li class="footer__social-item">
+                <a class="footer__social-item-link" href="#">
                   <svg width="30" height="30">
                     <use href="img/sprite.svg#social-pinterest"></use>
                   </svg>
@@ -233,31 +235,31 @@
                   <span class="visually-hidden">Скрыть раздел</span>
                 </button>
                 <div class="footer__menu-nav-wrapper">
-                  <ul class="menu__list">
-                    <li class="menu__item">
-                      <a class="menu__item-link" href="#">О Компании</a>
+                  <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                      <a class="footer__menu-item-link" href="#">О Компании</a>
                     </li>
-                    <li class="menu__item">
-                      <a class="menu__item-link" href="#">
+                    <li class="footer__menu-item">
+                      <a class="footer__menu-item-link" href="#">
                         Продукты
                       </a>
                     </li>
-                    <li class="menu__item">
-                      <a class="menu__item-link" href="#">Производство печатных плат</a>
+                    <li class="footer__menu-item">
+                      <a class="footer__menu-item-link" href="#">Производство печатных плат</a>
                     </li>
-                    <li class="menu__item">
-                      <a class="menu__item-link" href="#">Монтаж печатных плат</a>
+                    <li class="footer__menu-item">
+                      <a class="footer__menu-item-link" href="#">Монтаж печатных плат</a>
                     </li>
                   </ul>
-                  <ul class="menu__list">
-                    <li class="menu__item">
-                      <a class="menu__item-link" href="#">Комплектующие</a>
+                  <ul class="footer__menu-list">
+                    <li class="footer__menu-item">
+                      <a class="footer__menu-item-link" href="#">Комплектующие</a>
                     </li>
-                    <li class="menu__item">
-                      <a class="menu__item-link" href="#">Доставка</a>
+                    <li class="footer__menu-item">
+                      <a class="footer__menu-item-link" href="#">Доставка</a>
                     </li>
-                    <li class="menu__item">
-                      <a class="menu__item-link" href="#">Контакты</a>
+                    <li class="footer__menu-item">
+                      <a class="footer__menu-item-link" href="#">Контакты</a>
                     </li>
                   </ul>
                 </div>
@@ -270,19 +272,19 @@
                 <button class="accordion-button" type="button" data-accordion-button>
                   <span class="visually-hidden">Скрыть раздел</span>
                 </button>
-                <ul class="menu__contacts-list">
-                  <li class="menu__contacts-item">
+                <ul class="footer__contacts-list">
+                  <li class="footer__contacts-item">
                     <address>г. Мытищи, Олимпийский проспект, д.10</address>
                   </li>
-                  <li class="menu__contacts-item">
-                    <a class="menu__contacts-item-link" href="tel:+74955894050" >+7 (495) 589-40-50</a>
+                  <li class="footer__contacts-item">
+                    <a class="footer__contacts-item-link" href="tel:+74955894050" >+7 (495) 589-40-50</a>
                   </li>
-                  <li class="menu__contacts-item">
-                    <a class="menu__contacts-item-link" href="tel:+79253895829" >+7 (925) 389-58-29</a>
+                  <li class="footer__contacts-item">
+                    <a class="footer__contacts-item-link" href="tel:+79253895829" >+7 (925) 389-58-29</a>
                   </li>
 
                   <li class="footer-contacts__item">
-                    <a class="menu__contacts-item-link" href="tel:+79253647813" >+7 (925) 364-78-13</a>
+                    <a class="footer__contacts-item-link" href="tel:+79253647813" >+7 (925) 364-78-13</a>
                   </li>
                 </ul>
               </div>
@@ -296,26 +298,26 @@
     <div class="modal modal--preload" data-modal="feedback-form">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content form--modal">
+        <div class="modal__content">
           <h2>Закажите звонок</h2>
           <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
-          <form class="form form--modal" action="https://echo.htmlacademy.ru" method="post">
+          <form action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="name-modal">Введите Ваше имя</label>
             <input type="text" name="name" id="name-modal" placeholder="Имя" required data-name>
-            <div class="form__number-phone form__number-phone--modal" data-number-phone>
-              <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
+            <div data-number-phone>
+              <label class="visually-hidden" for="phone-modal">Введите Ваш номер телефона</label>
               <input type="tel" name="phone" id="phone-modal" placeholder="Телефон" required>
             </div>
             <label class="visually-hidden" for="question-modal">Введите Ваш вопрос</label>
             <textarea name="question" id="question-modal" rows="6" placeholder="Ваш вопрос"></textarea>
-            <fieldset class="form__submit-wrapper form__submit-wrapper--modal">
-              <button class="form__button form__button--modal button button--dark" type="submit">Отправить</button>
+            <div class="modal__form-submit-wrapper">
+              <button class="modal__form-button button button--dark" type="submit">Отправить</button>
               <label for="agreement-modal">
                 <input type="checkbox" name="agreement" id="agreement-modal" checked required>
-                <span class="form__check-mark"></span>
+                <span class="modal__form-check-mark"></span>
                 <span>Я согласен на&nbsp;обработку персональных данных</span>
               </label>
-            </fieldset>
+            </div>
           </form>
           <button class="modal__close-btn btn-reset" type="button" data-close-modal>
             <svg width="20" height="20" viewBox="0 0 20 20">
