@@ -4,7 +4,7 @@ const dopContent = document.querySelectorAll('[data-about-company__more-info]');
 aboutCompanyButton.classList.remove('is-without-js');
 dopContent.forEach((content) => content.classList.remove('is-without-js'));
 
-function readMoreInfoCompany(dopContents, buttonForMoreContent) {
+const readMoreInfoCompany = (dopContents, buttonForMoreContent) => {
   dopContents.forEach((content) => content.classList.add('is-hidden'));
 
   buttonForMoreContent.addEventListener('click', function () {
@@ -15,6 +15,6 @@ function readMoreInfoCompany(dopContents, buttonForMoreContent) {
       buttonForMoreContent.textContent = 'Свернуть';
     }
   });
-}
+};
 
 export {readMoreInfoCompany, aboutCompanyButton, dopContent};

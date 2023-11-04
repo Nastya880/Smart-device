@@ -1,7 +1,7 @@
 const accordionButton = document.querySelectorAll('[data-accordion-button]');
 const accordionElement = document.querySelectorAll('[data-accordion-container]');
 
-function showAccordion(buttons, elements) {
+const showAccordion = (buttons, elements) => {
   if (elements) {
     elements.forEach((element) => {
       element.classList.remove('is-opened');
@@ -29,6 +29,6 @@ function showAccordion(buttons, elements) {
       });
     });
   }
-}
+};
 
 export {showAccordion, accordionButton, accordionElement};

@@ -3,7 +3,7 @@ const overlay = document.querySelector('[data-modal="overlay"]');
 const openModalBtn = document.querySelector('[data-modal="open-modal"]');
 const closeModalBtn = document.querySelector('[data-modal="close-modal"]');
 
-function showModalFeedback() {
+const showModalFeedback = () => {
   const closeModal = function () {
     modal.classList.add('is-closed');
     overlay.classList.add('is-closed');
@@ -24,6 +24,6 @@ function showModalFeedback() {
   };
 
   openModalBtn.addEventListener('click', openModal);
-}
+};
 
 export {showModalFeedback};

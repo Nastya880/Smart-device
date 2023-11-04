@@ -3,10 +3,10 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {readMoreInfoCompany, aboutCompanyButton, dopContent} from './modules/about-company';
 import {smoothScroll, introButton, sectionFeedback} from './modules/smooth-scroll';
-import {showModalFeedback} from './modules/modals/modalFeedback';
+import {showModalFeedback} from './modules/modals/modal-feedback';
 import {showAccordion, accordionButton, accordionElement} from './modules/accordion';
 import {addPhoneMask} from './modules/phone-mask.js';
-import {addFocus, btnOpenModal, inputForFocus} from './modules/focusDataName.js';
+import {addFocus, btnOpenModal, inputForFocus} from './modules/focus-data-name.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
