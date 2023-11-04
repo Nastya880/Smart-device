@@ -6,13 +6,13 @@
   }
 }
 
-.menu__contacts-list {
+.footer__contacts-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.menu__contacts-item {
+.footer__contacts-item {
   margin-bottom: 5px;
 
   &:last-child {
@@ -28,7 +28,7 @@
   }
 }
 
-.menu__contacts-item-link,
+.footer__contacts-item-link,
 address {
   color: rgba($color-default-white, 0.7);
   font-family: $ff-ptmono;
@@ -43,7 +43,7 @@ address {
   }
 }
 
-.menu__contacts-item-link {
+.footer__contacts-item-link {
   &:hover,
   &:focus,
   &:active {

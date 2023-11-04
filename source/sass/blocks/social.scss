@@ -1,4 +1,4 @@
-.social__list {
+.footer__social-list {
   padding: 0;
   margin: 0;
   padding-right: 45px;
@@ -26,7 +26,7 @@
   }
 }
 
-.social__item-link {
+.footer__social-item-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +34,7 @@
   height: 40px;
 }
 
-.social__list svg {
+.footer__social-list svg {
   fill: $color-alice-blue;
 
   &:hover,

@@ -1,4 +1,4 @@
-.form {
+form {
   max-width: 100%;
   overflow: hidden;
 
@@ -12,7 +12,7 @@
   }
 }
 
-.form__required-data {
+.feedback__form-required-data {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -36,7 +36,7 @@
   }
 }
 
-.form input {
+form input {
   padding: 10px;
   font-family: $ff-ptmono;
   font-weight: 400;
@@ -64,7 +64,7 @@
   }
 }
 
-.form textarea {
+form textarea {
   min-height: 155px;
   display: block;
   width: 100%;
@@ -103,7 +103,8 @@
   }
 }
 
-.form__submit-wrapper {
+.feedback__form-submit-wrapper,
+.modal__form-submit-wrapper {
   border: none;
   margin: 0;
   padding: 0;
@@ -124,14 +125,15 @@
     align-items: center;
     gap: 25px;
   }
-
-  &--modal {
-    flex-direction: column;
-    align-items: stretch;
-  }
 }
 
-.form__button {
+.modal__form-submit-wrapper {
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+
+.feedback__form-button,
+.modal__form-button {
   width: 14vw;
   min-height: 0.1vw;
   padding: 15px 25px;
@@ -149,13 +151,10 @@
   @include vp-767 {
     width: 95%;
   }
-
-  &--modal {
-    width: 100%;
-  }
 }
 
-.form__submit-wrapper label {
+.feedback__form-submit-wrapper label,
+.modal__form-submit-wrapper label {
   display: flex;
   align-items: center;
   color: $color-default-white;
@@ -177,7 +176,13 @@
   }
 }
 
-.form__check-mark {
+.modal__form-button,
+.modal__form-submit-wrapper label {
+  width: 100%;
+}
+
+.feedback__form-check-mark,
+.modal__form-check-mark {
   position: relative;
   width: 15px;
   height: 15px;
@@ -203,7 +208,8 @@
   }
 }
 
-.form__submit-wrapper input {
+.feedback__form-submit-wrapper input,
+.modal__form-submit-wrapper input {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -214,14 +220,20 @@
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 
-  &:checked + .form__check-mark {
+  &:checked + .feedback__form-check-mark {
+    &::before {
+      display: block;
+    }
+  }
+
+  &:checked + .modal__form-check-mark {
     &::before {
       display: block;
     }
   }
 }
 
-.form--modal {
+.modal form {
   min-width: 500px;
   display: flex;
   flex-direction: column;

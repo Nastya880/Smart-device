@@ -10,13 +10,13 @@
   }
 }
 
-.menu__list {
+.footer__menu-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.menu__item {
+.footer__menu-item {
   margin-bottom: 5px;
 
   &:last-child {
@@ -24,7 +24,7 @@
   }
 }
 
-.menu__item-link {
+.footer__menu-item-link {
   font-family: $ff-ptmono;
   font-weight: 400;
   font-style: normal;
