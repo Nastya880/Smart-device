@@ -1009,13 +1009,19 @@ button,
 }
 
 .intro {
+  min-width: 100%;
+  max-width: 100%;
   background-color: #041827;
   background-image: -webkit-image-set(url("../img/bg-intro.webp") 1x, url("../img/bg-intro@2x.webp") 2x, url("../img/bg-intro.jpg") 1x, url("../img/bg-intro@2x.jpg") 2x);
   background-image: image-set(url("../img/bg-intro.webp") 1x, url("../img/bg-intro@2x.webp") 2x, url("../img/bg-intro.jpg") 1x, url("../img/bg-intro@2x.jpg") 2x);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: -35px;
+}
+@media (max-width: 1023px) {
+  .intro {
+    margin-top: -3%;
+  }
 }
 @media (max-width: 767px) {
   .intro {
@@ -1034,33 +1040,33 @@ button,
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  min-height: 35vw;
-  max-height: 47.4vw;
-  width: 90vw;
-  max-width: 100vw;
-  overflow: hidden;
-  padding: 17.7vw 6.3vw 15vw 20vw;
+  max-width: 90%;
+  margin: 0 auto;
+  padding-left: 19.7%;
+  padding-bottom: 14.6%;
+  padding-top: 16%;
 }
 @media (max-width: 1023px) {
   .intro .container {
-    min-height: 715px;
-    max-height: 640px;
-    padding: 16.1vw 8vw 13vw 3.7vw;
+    padding-top: 12%;
+    padding-bottom: 26.7%;
+    padding-left: 1.6%;
   }
 }
 @media (max-width: 767px) {
   .intro .container {
-    min-height: 570px;
-    padding: 30.8vw 9.3vw 14vw 9.3vw;
-    margin: 0;
-    margin-bottom: -30px;
+    padding-top: 25.8%;
+    padding-bottom: 58.8%;
+    padding-left: 3.3%;
   }
 }
 
 .intro h2 {
   display: block;
+  max-width: 100%;
+  word-wrap: break-word;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 4.1vw;
   font-style: normal;
@@ -1072,53 +1078,52 @@ button,
 }
 @media (max-width: 1023px) {
   .intro h2 {
-    margin: -0.2vw 0 16px -1.3vw;
-    font-size: 64px;
-    letter-spacing: 4.48px;
+    font-size: 8vw;
+    margin-bottom: 4.8px;
+    letter-spacing: 6.2px;
   }
 }
 @media (max-width: 767px) {
   .intro h2 {
-    width: 50vw;
-    margin: 0;
-    font-size: 10vw;
-    letter-spacing: 2.52px;
+    margin-bottom: 14px;
+    font-size: 11.1vw;
+    letter-spacing: 2.92px;
   }
 }
 
 .intro p {
+  display: block;
+  max-width: 100%;
+  word-wrap: break-word;
   margin: 0;
   padding: 0;
-  margin-bottom: 2.3vw;
+  margin-bottom: 3.2%;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 1.14vw;
   font-weight: 400;
-  line-height: 34.1px; /* 34.1px */
+  line-height: 32.1px; /* 34.1px */
   color: #f2f5f6;
-  max-width: 35vw;
 }
 @media (max-width: 1023px) {
   .intro p {
-    max-width: 90vw;
-    margin-left: -1vw;
-    margin-bottom: 7.5vw;
     font-size: 24px;
-    letter-spacing: 1.3px;
-    line-height: 37.7px;
+    letter-spacing: 2px;
+    line-height: 40.7px;
+    margin-bottom: 8.8%;
   }
 }
 @media (max-width: 767px) {
   .intro p {
-    min-width: 80vw;
-    margin: 2vw 0 50px 0;
-    font-size: 14px;
-    line-height: 21.7px;
+    font-size: 21px;
+    line-height: 39.7px;
+    letter-spacing: 2.4px;
+    margin-bottom: 17%;
   }
 }
 
 .intro__button {
-  min-width: 360px;
-  padding: 15px 25px;
+  max-width: 100%;
+  padding: 14px 25px;
   text-align: center;
   font-size: 0.9vw;
   letter-spacing: 0.9px;
@@ -1130,20 +1135,22 @@ button,
 @media (max-width: 1023px) {
   .intro__button {
     font-size: 22px;
-    min-width: 51.59vw;
-    padding: 2.3vw 0;
-    margin-left: 4.5vw;
+    margin-left: 6.8%;
+    padding: 20px 32px;
+    letter-spacing: 1.2px;
   }
 }
 @media (max-width: 767px) {
   .intro__button {
-    min-width: 80vw;
+    min-width: 100%;
     margin-left: 0;
+    padding: 30px auto;
   }
 }
 
 .intro__button-description {
-  display: inline;
+  display: block;
+  word-wrap: break-word;
 }
 @media (max-width: 767px) {
   .intro__button-description {
@@ -1156,7 +1163,8 @@ button,
 @media (max-width: 767px) {
   .intro__button-description--mobile {
     display: inline;
-    font-size: 16px;
+    font-size: 25px;
+    letter-spacing: 1.2px;
   }
 }
 
