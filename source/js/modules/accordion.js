@@ -32,3 +32,4 @@ const showAccordion = (buttons, elements) => {
 };
 
 export {showAccordion, accordionButton, accordionElement};
+
