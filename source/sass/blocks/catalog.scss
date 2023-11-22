@@ -1,6 +1,6 @@
 .catalog {
   background-color: $color-black-perl;
-  min-height: fit-content;
+  // min-height: fit-content;
 }
 
 .catalog .container {
@@ -76,6 +76,7 @@
   gap: 6.5%;
   padding-left: 0;
   list-style: none;
+  grid-auto-rows: 1fr;
 
   @include vp-1023 {
     grid-template-columns: minmax(670px, 920px);
@@ -89,7 +90,7 @@
   }
 }
 
-.catalog__item-link {
+.catalog__item {
   min-height: 33vw;
   position: relative;
   display: block;
@@ -105,6 +106,7 @@
     width: 50px;
     height: 50px;
     background-image: url("../img/svg/arrow.svg");
+    background-position: center;
   }
 
   @include vp-1023 {
@@ -113,7 +115,6 @@
     &::after {
       width: 72px;
       height: 72px;
-      background-position: center;
     }
   }
 
@@ -125,7 +126,6 @@
     &::after {
       width: 69px;
       height: 73px;
-      background-position: center;
     }
   }
 
@@ -228,7 +228,7 @@
   }
 }
 
-.catalog__item-link--tools {
+.catalog__item {
   background-color: $color-deep-sky-blue;
   background-image: image-set(
     url("../img/catalog-card-3.webp") 1x,
@@ -236,7 +236,8 @@
     url("../img/catalog-card-3.jpg") 1x,
     url("../img/catalog-card-3@2x.jpg") 2x
   );
-
+background-repeat: no-repeat;
+background-size: cover;
   @include vp-1023 {
     background-image: image-set(
       url("../img/catalog-card-3-tablet.webp") 1x,
@@ -255,3 +256,5 @@
     );
   }
 }
+
+
