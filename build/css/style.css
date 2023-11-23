@@ -1786,12 +1786,14 @@ button,
 }
 
 .feedback .container {
+  max-width: 68vw;
+  margin: 0 auto;
+  padding-top: 6.2%;
+  padding-bottom: 5%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 3fr;
-  grid-template-columns: 2fr 3fr;
-  padding: 140px 4vw 12.3vw 5vw;
-  max-width: 70vw;
+  -ms-grid-columns: auto minmax(55%, 60%);
+  grid-template-columns: auto minmax(55%, 60%);
   gap: 5.6vw;
 }
 @media (max-width: 1023px) {
@@ -1868,7 +1870,6 @@ button,
 
 form {
   max-width: 100%;
-  overflow: hidden;
 }
 @media (max-width: 1023px) {
   form {
@@ -2052,7 +2053,6 @@ form textarea:focus-visible {
 
 .feedback__form-button,
 .modal__form-button {
-  width: 14vw;
   min-height: 0.1vw;
   padding: 15px 25px;
   color: #ffffff;
