@@ -1,12 +1,14 @@
 .footer__social-list {
   padding: 0;
   margin: 0;
-  padding-right: 45px;
+  // padding-right: 45px;
+  // align-self: center;
+  padding-left: 5px;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 40px);
   grid-template-rows: 40px;
-  gap: 15px;
+  gap: 1.9%;
 
   @include vp-1023 {
     margin-right: -2px;
@@ -30,8 +32,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
 }
 
 .footer__social-list svg {

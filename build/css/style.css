@@ -1171,9 +1171,6 @@ button,
 
 .advantages {
   background-color: #f8fdff;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
 }
 
 .advantages .container {
@@ -1536,7 +1533,7 @@ button,
   margin: 0 auto;
   padding: 0;
   padding-top: 3%;
-  padding-bottom: 7.2%;
+  padding-bottom: 6.9%;
 }
 @media (max-width: 1023px) {
   .catalog .container {
@@ -1788,13 +1785,13 @@ button,
 .feedback .container {
   max-width: 68vw;
   margin: 0 auto;
-  padding-top: 6.2%;
-  padding-bottom: 5%;
+  padding-top: 8.2%;
+  padding-bottom: 12.9%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto minmax(55%, 60%);
   grid-template-columns: auto minmax(55%, 60%);
-  gap: 5.6vw;
+  gap: 11.4%;
 }
 @media (max-width: 1023px) {
   .feedback .container {
@@ -1825,12 +1822,13 @@ button,
 
 .feedback h2 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 36px;
+  font-size: 1.8em;
   font-weight: 400;
   line-height: 50.63px;
+  letter-spacing: 0.2px;
 }
 @media (max-width: 1023px) {
   .feedback h2 {
@@ -1846,14 +1844,15 @@ button,
 }
 
 .feedback p {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 27px;
   color: #ffffff;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 21.5px;
+  letter-spacing: -1.7px;
 }
 @media (max-width: 1023px) {
   .feedback p {
@@ -1869,7 +1868,7 @@ button,
 }
 
 form {
-  max-width: 100%;
+  max-width: 86%;
 }
 @media (max-width: 1023px) {
   form {
@@ -1894,7 +1893,7 @@ form {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 1vw;
+  gap: 1.5vw;
   margin: 0;
   margin-bottom: 1vw;
   border: none;
@@ -1919,9 +1918,10 @@ form {
 
 form input {
   padding: 10px;
+  padding-left: 12px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13.5px;
   line-height: 21.65px;
   background-color: rgba(4, 24, 39, 0.15);
   border: none;
@@ -1958,20 +1958,21 @@ form input:focus-visible {
 }
 
 form textarea {
-  min-height: 155px;
+  min-height: 127px;
   display: block;
   width: 100%;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 21.65px;
   background-color: rgba(4, 24, 39, 0.15);
   border: none;
   color: #ffffff;
   padding: 10px;
-  padding-top: 25px;
+  padding-left: 12.5px;
+  padding-top: 17px;
 }
 form textarea::-webkit-input-placeholder {
   color: #ffffff;
@@ -2019,7 +2020,7 @@ form textarea:focus-visible {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  gap: 1.7vw;
+  gap: 7.9%;
   width: 100%;
 }
 @media (max-width: 1023px) {
@@ -2053,10 +2054,9 @@ form textarea:focus-visible {
 
 .feedback__form-button,
 .modal__form-button {
-  min-height: 0.1vw;
-  padding: 15px 25px;
+  padding: 10px 0px 11px;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 0.8em;
   letter-spacing: 0.8px;
   border: none;
   cursor: pointer;
@@ -2085,11 +2085,12 @@ form textarea:focus-visible {
           align-items: center;
   color: #ffffff;
   font-family: "PT Mono", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 0.7em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
+  margin-left: -2px;
 }
 @media (max-width: 1023px) {
   .feedback__form-submit-wrapper label,
@@ -2148,7 +2149,6 @@ form textarea:focus-visible {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
   padding: 0;
   overflow: hidden;
   border: 0;
@@ -2188,18 +2188,15 @@ form textarea:focus-visible {
 }
 
 .footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 90vw;
-  padding: 2.6vw 12.5vw 1vw 10.5vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(65%, 70%) auto;
+  grid-template-columns: minmax(65%, 70%) auto;
+  gap: 0;
+  max-width: 69%;
+  margin: 0 auto;
+  padding-top: 2.3%;
+  border: 2px solid red;
 }
 @media (max-width: 1023px) {
   .footer .container {
@@ -2227,10 +2224,8 @@ form textarea:focus-visible {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 8vw;
+  border: 2px solid red;
+  max-width: 15.5%;
 }
 @media (max-width: 1023px) {
   .footer__logo-wrapper {
@@ -2256,7 +2251,7 @@ form textarea:focus-visible {
 }
 
 .footer__logo {
-  margin-bottom: 1vw;
+  margin-bottom: 6.4%;
 }
 @media (max-width: 1023px) {
   .footer__logo {
@@ -2279,8 +2274,7 @@ form textarea:focus-visible {
   letter-spacing: 0.75px;
   text-transform: uppercase;
   margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 2.9%;
 }
 @media (max-width: 767px) {
   .footer h3 {
@@ -2292,9 +2286,9 @@ form textarea:focus-visible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  border: 2px solid pink;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 7px;
   padding-right: 20px;
 }
@@ -2350,6 +2344,7 @@ form textarea:focus-visible {
 }
 
 .footer__menu-nav-wrapper {
+  border: 2px solid green;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -2400,7 +2395,7 @@ form textarea:focus-visible {
 }
 
 .footer__menu-contacts-wrapper {
-  padding-left: 30px;
+  border: 2px solid green;
 }
 @media (max-width: 1023px) {
   .footer__menu-contacts-wrapper {
@@ -2453,7 +2448,7 @@ form textarea:focus-visible {
 .footer__social-list {
   padding: 0;
   margin: 0;
-  padding-right: 45px;
+  padding-left: 5px;
   list-style: none;
   display: -ms-grid;
   display: grid;
@@ -2461,7 +2456,7 @@ form textarea:focus-visible {
   grid-template-columns: repeat(3, 40px);
   -ms-grid-rows: 40px;
   grid-template-rows: 40px;
-  gap: 15px;
+  gap: 1.9%;
 }
 @media (max-width: 1023px) {
   .footer__social-list {
@@ -2496,8 +2491,8 @@ form textarea:focus-visible {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
 }
 
 .footer__social-list svg {

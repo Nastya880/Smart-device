@@ -23,9 +23,9 @@
 .feedback .container {
   max-width: 68vw;
   margin: 0 auto;
-  padding-top: 6.2%;
+  padding-top: 8.2%;
   // padding-left: 13.2%;
-  padding-bottom: 5%;
+  padding-bottom: 12.9%;
   // padding-right: 10%;
   // border: 2px solid red;
   display: grid;
@@ -33,7 +33,7 @@
   grid-template-columns: auto minmax(55%, 60%);
   // padding: 140px 4vw 12.3vw 5vw;
   // max-width: 70vw;
-  gap: 5.6vw;
+  gap: 11.4%;
 
   @include vp-1023 {
     grid-template-columns: 1fr;
@@ -59,12 +59,13 @@
 
 .feedback h2 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
   color: $color-default-white;
   font-family: $ff-roboto;
-  font-size: 36px;
+  font-size: 1.8em;
   font-weight: 400;
   line-height: 50.63px;
+  letter-spacing: 0.2px;
 
   @include vp-1023 {
     margin-bottom: 20px;
@@ -78,14 +79,15 @@
 }
 
 .feedback p {
-  margin-top: 0;
-  margin-bottom: 30px;
+  margin: 0;
+  margin-bottom: 27px;
   color: $color-default-white;
   font-family: $ff-ptmono;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 21.5px;
+  letter-spacing: -1.7px;
 
   @include vp-1023 {
     margin-bottom: 29px;

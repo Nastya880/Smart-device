@@ -1,5 +1,6 @@
 .footer__menu-contacts-wrapper {
-  padding-left: 30px;
+  border: 2px solid green;
+  // padding-left: 30px;
 
   @include vp-1023 {
     padding: 0;

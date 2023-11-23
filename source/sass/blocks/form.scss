@@ -1,5 +1,5 @@
 form {
-  max-width: 100%;
+  max-width: 86%;
   // overflow: hidden;
 
   @include vp-1023 {
@@ -16,7 +16,7 @@ form {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1vw;
+  gap: 1.5vw;
   margin: 0;
   margin-bottom: 1vw;
   border: none;
@@ -38,9 +38,10 @@ form {
 
 form input {
   padding: 10px;
+  padding-left: 12px;
   font-family: $ff-ptmono;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13.5px;
   line-height: 21.65px;
   background-color: rgba($color-black-perl, 0.15);
   border: none;
@@ -65,21 +66,22 @@ form input {
 }
 
 form textarea {
-  min-height: 155px;
+  min-height: 127px;
   display: block;
   width: 100%;
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 28px;
 
   font-family: $ff-ptmono;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 21.65px;
   background-color: rgba($color-black-perl, 0.15);
   border: none;
   color: $color-default-white;
   padding: 10px;
-  padding-top: 25px;
+  padding-left: 12.5px;
+  padding-top: 17px;
 
   &::placeholder {
     color: $color-default-white;
@@ -112,7 +114,7 @@ form textarea {
   grid-template-columns: 1fr 1fr;
 
   align-items: flex-end;
-  gap: 1.7vw;
+  gap: 7.9%;
   width: 100%;
 
   @include vp-1023 {
@@ -136,10 +138,10 @@ form textarea {
 .modal__form-button {
   // width: 14vw;
   // min-width: fit-content;
-  min-height: 0.1vw;
-  padding: 15px 25px;
+  // min-height: 0.1vw;
+  padding: 10px 0px 11px;
   color: $color-default-white;
-  font-size: 16px;
+  font-size: 0.8em;
   letter-spacing: 0.8px;
   border: none;
   cursor: pointer;
@@ -160,11 +162,12 @@ form textarea {
   align-items: center;
   color: $color-default-white;
   font-family: $ff-ptmono;
-  font-size: 14px;
+  font-size: 0.7em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
+  margin-left: -2px;
 
   @include vp-1023 {
     max-width: 235px;
@@ -214,7 +217,7 @@ form textarea {
   position: absolute;
   width: 1px;
   height: 1px;
-  margin: -1px;
+  // margin: -1px;
   padding: 0;
   overflow: hidden;
   border: 0;
