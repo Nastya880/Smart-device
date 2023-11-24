@@ -1,13 +1,18 @@
-.footer__menu-nav-wrapper {
-  border: 2px solid green;
+.footer-contacts__list {
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer__menu-nav-wrapper:not(.footer-contacts__list) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 6%;
 
   @include vp-1023 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
   }
 }
 
@@ -19,9 +24,16 @@
 
 .footer__menu-item {
   margin-bottom: 5px;
-
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 10px;
+  }
+
+  @include vp-767 {
+    padding-left: 10px;
   }
 }
 
@@ -29,12 +41,17 @@
   font-family: $ff-ptmono;
   font-weight: 400;
   font-style: normal;
-  font-size: 16px;
+  font-size: 0.9em;
   line-height: 1.35;
   color: rgba($color-default-white, 0.7);
 
+  @include vp-1023 {
+    font-size: 1.2em;
+  }
+
   @include vp-767 {
     font-size: 14px;
+    padding-left: 4.5%;
   }
 
   &:hover,

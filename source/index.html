@@ -191,7 +191,7 @@
       <footer class="footer">
         <h2 class="visually-hidden">Меню, адрес и контакты</h2>
         <div class="container">
-          <div class="footer__logo-wrapper">
+          <div class="footer__social-wrapper">
             <a class="footer__logo">
               <img src="img/svg/logo.svg" width="215" height="55" alt="Smart Device">
             </a>
@@ -204,7 +204,7 @@
                 </a>
                 <span class="visually-hidden">Одноклассники</span>
               </li>
-              <li class="footer__social-tem">
+              <li class="footer__social-item">
                 <a class="footer__social-item-link" href="#">
                   <svg width="30" height="30">
                     <use href="img/sprite.svg#social-vk"></use>
@@ -223,10 +223,12 @@
             </ul>
           </div>
 
+
+
           <div class="footer__menu">
             <nav class="footer__menu-nav footer-nav">
               <div class="footer__menu-nav-container accordion-container is-opened" data-accordion-container>
-                <h3 class="footer-nav__title footer__menu-title">Разделы сайта</h3>
+                <h3 class="footer-nav__title">Разделы сайта</h3>
                 <button class="accordion-button" type="button" data-accordion-button>
                   <span class="visually-hidden">Скрыть раздел</span>
                 </button>
@@ -236,9 +238,7 @@
                       <a class="footer__menu-item-link" href="#">О Компании</a>
                     </li>
                     <li class="footer__menu-item">
-                      <a class="footer__menu-item-link" href="#">
-                        Продукты
-                      </a>
+                      <a class="footer__menu-item-link" href="#">Продукты</a>
                     </li>
                     <li class="footer__menu-item">
                       <a class="footer__menu-item-link" href="#">Производство печатных плат</a>
@@ -249,48 +249,52 @@
                   </ul>
                   <ul class="footer__menu-list">
                     <li class="footer__menu-item">
-                      <a class="footer__menu-item-link" href="#">Комплектующие</a>
+                      <a href="#" class="footer__menu-item-link" href="#">Комплектующие</a>
                     </li>
                     <li class="footer__menu-item">
-                      <a class="footer__menu-item-link" href="#">Доставка</a>
+                      <a href="#" class="footer__menu-item-link" href="#">Доставка</a>
                     </li>
                     <li class="footer__menu-item">
-                      <a class="footer__menu-item-link" href="#">Контакты</a>
+                      <a href="#" class="footer__menu-item-link" href="#">Контакты</a>
                     </li>
                   </ul>
                 </div>
               </div>
             </nav>
 
+
+
             <div class="footer__menu-contacts footer-contacts">
-              <div class="footer__menu-contacts-wrapper accordion-container is-opened" data-accordion-container>
-                <h3 class="footer-contacts__title footer__menu-title">Наш офис</h3>
+              <div class="footer-contacts__wrapper accordion-container is-opened" data-accordion-container>
+                <h3 class="footer-contacts__title">Наш офис</h3>
                 <button class="accordion-button" type="button" data-accordion-button>
                   <span class="visually-hidden">Скрыть раздел</span>
                 </button>
-                <div class="footer__menu-nav-wrapper">
-                  <ul class="footer__contacts-list">
-                    <li class="footer__contacts-item">
-                      <address>г. Мытищи, Олимпийский проспект, д.10</address>
-                    </li>
-                    <li class="footer__contacts-item">
-                      <a class="footer__contacts-item-link" href="tel:+74955894050" >+7 (495) 589-40-50</a>
-                    </li>
-                    <li class="footer__contacts-item">
-                      <a class="footer__contacts-item-link" href="tel:+79253895829" >+7 (925) 389-58-29</a>
-                    </li>
-
+                <!-- <div class="footer__menu-nav-wrapper"> -->
+                  <ul class="footer-contacts__list footer__menu-nav-wrapper">
                     <li class="footer-contacts__item">
-                      <a class="footer__contacts-item-link" href="tel:+79253647813" >+7 (925) 364-78-13</a>
+                      <address class="footer__contacts-item-link" href="#">г. Мытищи, Олимпийский проспект, д.10</address>
+                    </li>
+                    <li class="footer-contacts__item">
+                      <a class="footer__contacts-item-link footer__contacts-item-link--tel" href="tel:+74955894050">+7 (495) 589-40-50</a>
+                    </li>
+                    <li class="footer-contacts__item">
+                      <a class="footer__contacts-item-link footer__contacts-item-link--tel" href="tel:+79253895829">+7 (925) 389-58-29</a>
+                    </li>
+                    <li class="footer-contacts__item">
+                      <a class="footer__contacts-item-link footer__contacts-item-link--tel" href="tel:+79253647813">+7 (925) 364-78-13</a>
                     </li>
                   </ul>
-                </div>
+                <!-- </div> -->
               </div>
             </div>
           </div>
         </div>
       </footer>
+    </div>
   </div>
+</footer>
+</div>
 
     <!-- Модалки -->
     <div class="modal modal--preload" data-modal="feedback-form">

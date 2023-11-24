@@ -1,19 +1,19 @@
 .footer__menu-contacts-wrapper {
-  border: 2px solid green;
-  // padding-left: 30px;
+  // border: 2px solid green;
+  padding-left: 30px;
 
   @include vp-1023 {
     padding: 0;
   }
 }
 
-.footer__contacts-list {
+.footer-contacts__list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.footer__contacts-item {
+.footer-contacts__item {
   margin-bottom: 5px;
 
   &:last-child {
@@ -30,17 +30,27 @@
 }
 
 .footer__contacts-item-link,
-.footer__contacts-item address {
+.footer__contacts-item address  {
   color: rgba($color-default-white, 0.7);
   font-family: $ff-ptmono;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
+  font-style: normal;
   line-height: 25px;
   margin-bottom: 14px;
 
+  @include vp-1023 {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+
   @include vp-767 {
     font-size: 15px;
+    padding-left: 6%;
+  }
+
+  &--tel {
+    line-height: 25px;
   }
 }
 

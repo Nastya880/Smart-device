@@ -1,110 +1,88 @@
 .footer {
   background-color: $color-black-perl;
+  min-width: 100%;
 }
 
 .footer .container {
-  // display: flex;
-  display: grid;
-  grid-template-columns: minmax(65%, 70%) auto;
-  gap: 0;
-  // flex-direction: row;
-  // justify-content: space-around;
-  // width: 90vw;
-  // padding: 2.6vw 12.5vw 1vw 10.5vw;
+  display: flex;
+  justify-content: space-between;
   max-width: 69%;
   margin: 0 auto;
-  padding-top: 2.3%;
-  // padding-left: 7.8%;
-  // padding-bottom: 5%;
-  // padding-right: 0;
-  // margin-right: 0;
-  border: 2px solid red;
+  padding-top: 2.5%;
+  padding-bottom: 0.5%;
+  padding-left: 2.7%;
 
   @include vp-1023 {
     flex-direction: column;
-    min-width: 675px;
-    padding: 7vw 2vw 14vw 2.4vw;
+    max-width: 92%;
+    padding-top: 6%;
+    padding-bottom: 13%;
   }
 
   @include vp-767 {
-    min-width: 100%;
-    overflow: hidden;
-    padding: 8vw 2vw 14vw 1.3vw;
+    max-width: none;
+    margin: 0 auto;
+    padding-top: 10%;
   }
 }
 
-.footer__logo-wrapper {
+.footer__social-wrapper {
   display: flex;
   flex-direction: column;
-  // align-items: space-between;
-  border:  2px solid red;
-  // margin-right: 8vw;
-  // margin-bottom: 0px;
-  // margin-left: 8.3%;
-  // min-width: auto;
-  // margin-right: 0;
-  // padding-right: 0;
-  // justify-content: center;
-  max-width: 15.5%;
-
+  align-items: center;
+  margin-right: 13%;
+  // border: 2px solid red;
   @include vp-1023 {
-    margin: 0;
-    margin-bottom: 35px;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0;
+    margin-bottom: 6.6%;
   }
 
   @include vp-767 {
-    margin-bottom: 25px;
     flex-direction: column;
+    margin-bottom: 12.5%;
   }
 }
 
 .footer__logo {
-  margin-bottom: 6.4%;
+  // border: 2px solid red;
+  margin-bottom: 9%;
+  cursor: pointer;
 
   @include vp-1023 {
+    // min-width: 100%;
     margin-bottom: 0;
   }
 
   @include vp-767 {
-    margin-bottom: 20px;
+    min-height: 15vw;
+    min-width: 67vw;
+    margin-bottom: 0px;
   }
 }
 
-.footer h3 {
-  color: $color-default-white;
-  font-family: $ff-roboto;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0.75px;
-  text-transform: uppercase;
-  margin: 0;
-  // padding: 0;
-  margin-bottom: 2.9%;
-
+.footer__logo img {
   @include vp-767 {
-    margin-bottom: 14px;
+    min-height: 100%;
+    min-width: 100%;
   }
 }
 
 .footer__menu {
   display: flex;
-  border: 2px solid pink;
-  // justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 7px;
-  padding-right: 20px;
+  padding-right: 1px;
 
   @include vp-1023 {
-    margin-top: 0;
-    margin-right: 6vw;
-    padding-right: -2.3vw;
+    max-width: 91%;
+    padding-right: 0;
+      margin-top: 0;
   }
 
   @include vp-767 {
+    min-width: 100%;
     flex-direction: column;
   }
 }
@@ -112,30 +90,53 @@
 .footer__menu-nav {
   max-width: 470px;
 
-  @include vp-1023 {
-    max-width: 220px;
-  }
-
   @include vp-767 {
-    min-width: 100vw;
-    padding-top: 5vw;
-    padding-bottom: 5vw;
+    max-width: none;
+    margin: 0;
+    padding-top: 21px;
+    padding-bottom: 22px;
     border-top: 1px solid rgba($color-alice-blue, 0.7);
   }
 }
 
+
 .footer__menu-contacts {
-  max-width: 18vw;
+  max-width: 345px;
 
   @include vp-1023 {
-    max-width: 33vw;
+    max-width: 320px;
   }
 
   @include vp-767 {
-    min-width: 100vw;
-    padding-top: 4vw;
-    padding-bottom: 4vw;
+    max-width: none;
+    padding-top: 22px;
+    padding-bottom: 14px;
     border-top: 1px solid rgba($color-alice-blue, 0.7);
     border-bottom: 1px solid rgba($color-alice-blue, 0.7);
+  }
+}
+
+.footer h3 {
+  color: $color-default-white;
+  font-family: $ff-roboto;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -1.7px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 14px;
+
+  @include vp-1023 {
+    margin-bottom: 30px;
+  }
+
+  @include vp-767 {
+    margin-left: 6%;
+    margin-bottom: 5%;
+    letter-spacing: 1px;
+    margin-top: 5%;
+    font-size: 1.8em;
   }
 }

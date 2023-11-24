@@ -3,6 +3,10 @@ form {
   // overflow: hidden;
 
   @include vp-1023 {
+    min-width: 100%;
+    max-width: 100%;
+    padding-right: 2%;
+    // margin: 0;
     margin-left: 0;
   }
 
@@ -23,16 +27,18 @@ form {
   padding: 0;
 
   @include vp-1023 {
-    width: 95%;
+    min-width: 90%;
     height: 50px;
-    gap: 30px;
+    gap: 4.5%;
     margin-bottom: 35px;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    gap: 20px;
-    margin-bottom: 90px;
+    // border: 2px solid red;
+    height: auto;
+    gap: 38px;
+    margin-bottom: 8%;
   }
 }
 
@@ -53,11 +59,14 @@ form input {
   }
 
   @include vp-1023 {
+    font-size: 1.2em;
     padding: 20px;
   }
 
   @include vp-767 {
-    padding: 15px;
+    font-size: 1.5em;
+    letter-spacing: 1.5px;
+    padding: 30px;
   }
 
   &:focus-visible {
@@ -88,16 +97,21 @@ form textarea {
   }
 
   @include vp-1023 {
-    width: 95%;
+    font-size: 1.2em;
+    min-width: 95%;
     height: 190px;
-    padding: 45px;
+    padding: 40px;
     padding-left: 20px;
   }
 
   @include vp-767 {
-    height: 180px;
-    margin-bottom: 25px;
-    padding: 15px;
+    height: 325px;
+    margin-bottom: 32px;
+    // padding: 25px;
+    font-size: 1.5em;
+    padding: 30px;
+    padding-top: 50px;
+    letter-spacing: 1.5px;
   }
 
   &:focus-visible {
@@ -118,14 +132,16 @@ form textarea {
   width: 100%;
 
   @include vp-1023 {
+    min-width: 100%;
     align-items: center;
-    gap: 0.1vw;
+    // gap: 0.1vw;
+    gap: 4%;
   }
 
   @include vp-767 {
     grid-template-columns: 1fr;
     align-items: center;
-    gap: 25px;
+    gap: 28px;
   }
 }
 
@@ -136,9 +152,6 @@ form textarea {
 
 .feedback__form-button,
 .modal__form-button {
-  // width: 14vw;
-  // min-width: fit-content;
-  // min-height: 0.1vw;
   padding: 10px 0px 11px;
   color: $color-default-white;
   font-size: 0.8em;
@@ -147,12 +160,19 @@ form textarea {
   cursor: pointer;
 
   @include vp-1023 {
+  // {padding: 0px 10px 11px;
+    padding-bottom: 18px;
+    font-size: 1.2em;
     margin-top: 20px;
-    width: 34vw;
+    width: 33.8vw;
   }
 
   @include vp-767 {
-    width: 95%;
+    font-size: 1.8em;
+    padding: 30px;
+    padding-bottom: 19px;
+    letter-spacing: 1px;
+    width: 100%;
   }
 }
 
@@ -167,16 +187,17 @@ form textarea {
   font-weight: 400;
   line-height: normal;
   cursor: pointer;
-  margin-left: -2px;
 
   @include vp-1023 {
+    font-size: 0.9em;
     max-width: 235px;
     margin-top: 15px;
     margin-left: 0;
   }
 
   @include vp-767 {
-    min-width: 95%;
+    min-width: 100%;
+    font-size: 1.5em;
   }
 }
 
@@ -199,16 +220,18 @@ form textarea {
     content: "";
     display: none;
     position: absolute;
-    left: 10%;
+    left: 30%;
     top: 50%;
-    width: 13px;
+    width: 10px;
     height: 13px;
     transform: translateY(-50%);
     background: url("../img/svg/agree.svg") center no-repeat;
   }
 
   @include vp-767 {
-    height: 14px;
+    height: 25px;
+    width: 25px;
+    // margin-right: 0;
   }
 }
 
