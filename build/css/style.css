@@ -820,6 +820,7 @@ button,
   margin-left: 8.3%;
   min-width: auto;
   max-width: 13%;
+  cursor: pointer;
 }
 @media (max-width: 1023px) {
   .header__logo {
@@ -877,12 +878,7 @@ button,
   word-wrap: break-word;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-@media (max-width: 1279px) {
-  .header__contacts-list {
-    padding: 0;
-    margin: 0;
-  }
+  gap: 10px;
 }
 @media (max-width: 1023px) {
   .header__contacts-list {
@@ -1708,6 +1704,10 @@ button,
 }
 @media (max-width: 767px) {
   .catalog__item-link h3 {
+    max-width: 100%;
+    -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
     max-width: 72%;
     padding: 48px 50px 0;
     font-size: 1.9em;
@@ -2645,7 +2645,7 @@ form textarea:focus-visible {
     top: 24px;
     left: 97.7%;
     width: 29px;
-    height: 2px;
+    height: 6px;
     background-color: #c4c4c4;
   }
   .accordion-container.is-closed .accordion-button::before, .accordion-container.is-closed .accordion-button::after {
@@ -2654,7 +2654,7 @@ form textarea:focus-visible {
     top: 24px;
     left: 97.7%;
     width: 29px;
-    height: 2px;
+    height: 6px;
     background-color: #c4c4c4;
   }
   .accordion-container.is-closed .accordion-button::after {
