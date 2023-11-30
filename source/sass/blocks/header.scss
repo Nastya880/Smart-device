@@ -16,17 +16,14 @@
   min-height: 120px;
   max-width: 1220px;
   width: 90vw;
-  margin: 0 auto;
-  margin-top: -5px;
+  margin: -5px auto 0 auto;
   padding-right: 60px;
 
-  @media (max-width: $vp-1280) {
-    padding-right: 0;
-  }
-
   @include vp-1023 {
-    justify-content: space-between;
-    padding: 0;
+    padding-right: 0;
+    width: 84vw;
+    min-width: 670px;
+    min-height: 100px;
   }
 
   @include vp-767 {
@@ -36,19 +33,7 @@
 }
 
 .header__logo {
-  // background-color: #fff;
-  // margin-bottom: 17px;
-  // margin-left: 8.3%;
-  // min-width: auto;
-  // max-width: 13%;
   cursor: pointer;
-
-  @include vp-1023 {
-    padding: 0;
-    margin-left: 1.3%;
-    margin-top: 1%;
-    max-width: none;
-  }
 
   @include vp-767 {
     margin-top: 3%;
@@ -59,16 +44,6 @@
   }
 }
 
-// .header__logo img {
-//   @include vp-1023 {
-//     min-width: 265px;
-//   }
-
-//   @include vp-767 {
-//     min-width: 100%;
-//   }
-// }
-
 .header__contacts-list {
   list-style: none;
   max-width: 485px;
@@ -78,21 +53,18 @@
   grid-template-columns: 1fr 1fr;
   gap: 45px;
 
-  @media (max-width: $vp-1280) {
-    grid-template-columns: 150px 210px;
-    column-gap: 20px;
-  }
-
   @include vp-1023  {
     padding: 0;
-    margin: 0;
+    margin-top: 6px;
+    min-width: fit-content;
+    display: flex;
     justify-content: flex-end;
-    padding-right: 1%;
+    flex-wrap: wrap;
   }
 
   @include vp-767 {
     padding: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     justify-content: space-evenly;
   }
 }
@@ -104,8 +76,7 @@
   max-width: 225px;
 
   @include vp-1023 {
-    margin-right: 12%;
-    margin-left: -3.5%;
+    padding-right: 20px;
   }
 
   @include vp-767 {
@@ -120,7 +91,7 @@
   width: max-content;
 
   @include vp-1023 {
-    // margin: 23%;
+    padding: 10px;
   }
 }
 
@@ -142,18 +113,11 @@
   margin-right: 15px;
 
   @include vp-1023 {
-    // max-width: 40px;
-    min-width: 20px;
-    min-height: 20px;
-    max-height: none;
-    box-sizing: content-box;
-    padding: 10px;
-    // margin: 1%;
+    margin: 0;
   }
 
   @include vp-767 {
     min-width: 40px;
-    // max-width: 40px;
     min-height: 40px;
   }
 }
@@ -161,8 +125,11 @@
 .header__contacts-item a:hover,
 .header__contacts-item a:focus,
 .header a:active {
-  background-color: $color-alice-blue;
-  border-color: $color-alice-blue;
+  // background-color: $color-alice-blue;
+  // border-color: $color-alice-blue;
+  & svg {
+    fill: $color-alice-blue;
+  }
   & span {
     color: $color-deep-sky-blue;
   }
