@@ -1,6 +1,5 @@
 .intro {
-  min-width: 100%;
-  max-width: 100%;
+  width: 100%;
   background-color: $color-black-perl;
   background-image: image-set(
     url("../img/bg-intro.webp") 1x,
@@ -8,7 +7,6 @@
     url("../img/bg-intro.jpg") 1x,
     url("../img/bg-intro@2x.jpg") 2x
   );
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -23,15 +21,12 @@
   }
 }
 
-.intro .container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 90%;
+.intro__container {
+  min-height: 880px;
+  max-width: 1220px;
   margin: 0 auto;
-  padding-left: 19.7%;
-  padding-bottom: 14.4%;
-  padding-top: 16%;
+  padding-top: 305px;
+  padding-bottom: 282px;
 
   @include vp-1023 {
     padding-top: 12%;
@@ -46,17 +41,18 @@
   }
 }
 
+.intro__wrapper {
+  margin-left: 124px;
+}
+
 .intro h2 {
-  display: block;
-  max-width: 100%;
-  word-wrap: break-word;
-  margin: 0;
-  margin-bottom: 23px;
+  margin: 0 0 32px;
+  padding: 0;
   font-family: $ff-roboto;
-  font-size: 4.1vw;
+  font-size: 80px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 94px;
   letter-spacing: 5.6px;
   text-transform: uppercase;
   color: $color-alice-blue;
@@ -75,16 +71,13 @@
 }
 
 .intro p {
-  display: block;
-  max-width: 50%;
-  word-wrap: break-word;
-  margin: 0;
+  max-width: 685px;
+  margin: 0 0  47px;
   padding: 0;
-  margin-bottom: 3.2%;
   font-family: $ff-ptmono;
-  font-size: 1.14vw;
+  font-size: 22px;
   font-weight: 400;
-  line-height: 32.1px; /* 34.1px */
+  line-height: 34.1px;
   color: $color-alice-blue;
 
   @include vp-1023 {
@@ -104,10 +97,11 @@
 }
 
 .intro__button {
-  max-width: 100%;
-  padding: 14px 25px;
-  text-align: center;
-  font-size: 0.9vw;
+  display: inline-block;
+  padding: 16px 27px;
+
+  color: $color-alice-blue;
+  font-size: 18px;
   letter-spacing: 0.9px;
   font-weight: 700;
   text-transform: uppercase;

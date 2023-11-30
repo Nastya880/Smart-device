@@ -1,18 +1,31 @@
 .about-company {
-  min-width: 100%;
-  max-width: 100%;
+  width: 100%;
   background-color: $color-alice-blue-bg;
 }
 
-.about-company .container {
-  max-width: 78%;
-  display: grid;
-  grid-template-columns: 203px 1fr;
-  margin: 0 auto;
-  padding-top: 2.4%;
-  padding-left: 7.1%;
-  // border:  2px solid red;
-  padding-bottom: 5.1%;
+.about-company__container {
+  // max-width: 78%;
+  // display: grid;
+  // grid-template-columns: 203px 1fr;
+  // margin: 0 auto;
+  // padding-top: 2.4%;
+  // padding-left: 7.1%;
+  // // border:  2px solid red;
+  // padding-bottom: 5.1%;
+  max-width: 1220px;
+  min-height: 320px;
+  width: 90%;
+  margin: 0 auto 100px;
+  padding-left: 250px;
+  background-image: image-set(
+    url("../img/mask-2022.webp") 1x,
+    url("../img/mask-2022@2x.webp") 2x,
+    url("../img/mask-2022.jpg") 1x,
+    url("../img/mask-2022@2x.jpg") 2x
+  );
+  background-repeat: no-repeat;
+  background-size: 150px 320px;
+  background-position: left top;
 
   @include vp-1023 {
     max-width: 88%;
@@ -31,37 +44,31 @@
 }
 
 .about-company__content {
-  position: relative;
+  padding-bottom: 16px;
 }
 
-.about-company img {
-  @include vp-1023 {
-    height: 390px;
-    width: 180px;
-  }
-}
+// .about-company img {
+//   @include vp-1023 {
+//     height: 390px;
+//     width: 180px;
+//   }
+// }
 
-.about-company picture {
-  @include vp-767 {
-    display: none;
-  }
-}
+// .about-company picture {
+//   @include vp-767 {
+//     display: none;
+//   }
+// }
 
-.about-company__content h2 {
-  margin: 0;
-  margin-bottom: 0.3%;
-  display: block;
-  // word-wrap: break-word;
-  word-break: normal;
-  word-wrap: normal;
-  overflow-wrap: normal;
-  max-width: 50vw;
+.about-company h2 {
+  margin: 0 0 -5px;
+  padding: 0;
+  margin-bottom: -5px;
   color: $color-black-perl;
   font-family: $ff-roboto;
   font-size: 36px;
   font-style: normal;
   font-weight: 400;
-  letter-spacing: -3.1px;
   line-height: 49.63px;
 
   @include vp-1023 {
@@ -79,22 +86,14 @@
   }
 }
 
-.about-company__content p {
-  display: block;
-  // word-wrap: break-word;
-  word-break: normal;
-  word-wrap: normal;
-  overflow-wrap: normal;
-  max-width: 50vw;
-  margin: 0;
-  padding-bottom: 1.6%;
+.about-company p {
+  margin-bottom: 22px;
   color: $color-black-perl;
   font-family: $ff-ptmono;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 20px;
-  letter-spacing: -2.1px;
+  line-height: 22px;
 
   @include vp-1023 {
     max-width: 60vw;
@@ -124,20 +123,17 @@
 }
 
 .about-company__button {
-  margin-top: 2.6%;
-  max-width: 50vw;
-  // word-wrap: break-word;
-  word-break: normal;
-  word-wrap: normal;
-  overflow-wrap: normal;
-  padding: 13px 39px 12px;
-
+  min-width: 180px;
+  padding: 14px 0;
+  border: 1px solid $color-deep-sky-blue;
+  border-radius: 3px;
+  color: $color-deep-sky-blue;
   text-align: center;
   font-family: $ff-roboto;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  line-height: 16px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
 
