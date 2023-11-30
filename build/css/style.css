@@ -2176,24 +2176,21 @@ form textarea:focus-visible {
 
 .footer {
   background-color: #041827;
-  min-width: 100%;
 }
 
-.footer .container {
+.footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 69%;
-  margin: 0 auto;
-  padding-top: 2.5%;
-  padding-bottom: 0.5%;
-  padding-left: 2.7%;
+  max-width: 1220px;
+  width: 90vw;
+  margin: 50px auto 55px auto;
 }
 @media (max-width: 1023px) {
-  .footer .container {
+  .footer__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2204,7 +2201,7 @@ form textarea:focus-visible {
   }
 }
 @media (max-width: 767px) {
-  .footer .container {
+  .footer__container {
     max-width: none;
     margin: 0 auto;
     padding-top: 10%;
@@ -2222,7 +2219,7 @@ form textarea:focus-visible {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 13%;
+  margin-right: 45px;
 }
 @media (max-width: 1023px) {
   .footer__social-wrapper {
@@ -2248,7 +2245,7 @@ form textarea:focus-visible {
 }
 
 .footer__logo {
-  margin-bottom: 9%;
+  margin-bottom: 30px;
   cursor: pointer;
 }
 @media (max-width: 1023px) {
@@ -2279,7 +2276,12 @@ form textarea:focus-visible {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 7px;
-  padding-right: 1px;
+  padding-right: 30px;
+}
+@media (max-width: 1280px) {
+  .footer__menu {
+    padding-right: 0;
+  }
 }
 @media (max-width: 1023px) {
   .footer__menu {
@@ -2311,16 +2313,16 @@ form textarea:focus-visible {
   }
 }
 
-.footer__menu-contacts {
+.footer__contacts {
   max-width: 345px;
 }
 @media (max-width: 1023px) {
-  .footer__menu-contacts {
+  .footer__contacts {
     max-width: 320px;
   }
 }
 @media (max-width: 767px) {
-  .footer__menu-contacts {
+  .footer__contacts {
     max-width: none;
     padding-top: 22px;
     padding-bottom: 14px;
@@ -2332,14 +2334,13 @@ form textarea:focus-visible {
 .footer h3 {
   color: #ffffff;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 1em;
+  font-size: 15px;
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: -1.7px;
+  letter-spacing: 0.75px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 24px 0;
   padding: 0;
-  margin-bottom: 14px;
 }
 @media (max-width: 1023px) {
   .footer h3 {
@@ -2373,7 +2374,7 @@ form textarea:focus-visible {
   display: grid;
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
-  gap: 6%;
+  gap: 30px;
 }
 @media (max-width: 1023px) {
   .footer__menu-nav-wrapper:not(.footer-contacts__list) {
@@ -2414,8 +2415,8 @@ form textarea:focus-visible {
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.9em;
-  line-height: 1.35;
+  font-size: 16px;
+  line-height: 4px;
   color: rgba(255, 255, 255, 0.7);
 }
 @media (max-width: 1023px) {
@@ -2433,11 +2434,11 @@ form textarea:focus-visible {
   color: #00b2ff;
 }
 
-.footer__menu-contacts-wrapper {
+.footer__contacts-wrapper {
   padding-left: 30px;
 }
 @media (max-width: 1023px) {
-  .footer__menu-contacts-wrapper {
+  .footer__contacts-wrapper {
     padding: 0;
   }
 }
@@ -2465,13 +2466,12 @@ form textarea:focus-visible {
 
 .footer__contacts-item-link,
 .footer__contacts-item address {
-  color: rgba(255, 255, 255, 0.7);
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  line-height: 25px;
-  margin-bottom: 14px;
+  line-height: 22px;
+  color: rgba(255, 255, 255, 0.7);
 }
 @media (max-width: 1023px) {
   .footer__contacts-item-link,
@@ -2498,20 +2498,14 @@ form textarea:focus-visible {
 
 .footer__social-list {
   padding: 0;
-  margin: 0;
-  padding-right: 45px;
-  list-style: none;
+  margin: 0 0 0 -40px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (42px)[3];
-  grid-template-columns: repeat(3, 42px);
+  -ms-grid-columns: (40px)[3];
+  grid-template-columns: repeat(3, 40px);
   -ms-grid-rows: 40px;
   grid-template-rows: 40px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 4%;
-  gap: 2.3%;
+  gap: 15px;
 }
 @media (max-width: 1023px) {
   .footer__social-list {
@@ -2538,8 +2532,8 @@ form textarea:focus-visible {
 
 .footer__social-item-link {
   position: absolute;
-  width: 46px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -2549,7 +2543,7 @@ form textarea:focus-visible {
   line-height: 0;
   padding: 5px;
   fill: #f2f5f6;
-  color: inherit;
+  color: #f2f5f6;
 }
 
 .footer__social-item-link svg {

@@ -8,7 +8,7 @@
 .footer__menu-nav-wrapper:not(.footer-contacts__list) {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 6%;
+  gap: 30px;
 
   @include vp-1023 {
     display: flex;
@@ -24,6 +24,7 @@
 
 .footer__menu-item {
   margin-bottom: 5px;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -41,8 +42,8 @@
   font-family: $ff-ptmono;
   font-weight: 400;
   font-style: normal;
-  font-size: 0.9em;
-  line-height: 1.35;
+  font-size: 16px;
+  line-height: 4px; //
   color: rgba($color-default-white, 0.7);
 
   @include vp-1023 {

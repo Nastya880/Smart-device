@@ -1,16 +1,14 @@
 .footer {
   background-color: $color-black-perl;
-  min-width: 100%;
+  // min-width: 100%;
 }
 
-.footer .container {
+.footer__container {
   display: flex;
   justify-content: space-between;
-  max-width: 69%;
-  margin: 0 auto;
-  padding-top: 2.5%;
-  padding-bottom: 0.5%;
-  padding-left: 2.7%;
+  max-width: 1220px;
+  width: 90vw;
+  margin: 50px auto 55px auto;
 
   @include vp-1023 {
     flex-direction: column;
@@ -27,11 +25,12 @@
 }
 
 .footer__social-wrapper {
+  // border: 2px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 13%;
-  // border: 2px solid red;
+  margin-right: 45px;
+
   @include vp-1023 {
     flex-direction: row;
     justify-content: space-between;
@@ -47,7 +46,7 @@
 
 .footer__logo {
   // border: 2px solid red;
-  margin-bottom: 9%;
+  margin-bottom: 30px;
   cursor: pointer;
 
   @include vp-1023 {
@@ -73,7 +72,11 @@
   display: flex;
   justify-content: space-between;
   margin-top: 7px;
-  padding-right: 1px;
+  padding-right: 30px;
+
+  @media (max-width: $vp-1280) {
+    padding-right: 0;
+  }
 
   @include vp-1023 {
     max-width: 91%;
@@ -100,7 +103,7 @@
 }
 
 
-.footer__menu-contacts {
+.footer__contacts {
   max-width: 345px;
 
   @include vp-1023 {
@@ -116,17 +119,18 @@
   }
 }
 
+
+
 .footer h3 {
   color: $color-default-white;
   font-family: $ff-roboto;
-  font-size: 1em;
+  font-size: 15px;
   font-weight: 400;
   line-height: 16px;
-  letter-spacing: -1.7px;
+  letter-spacing: 0.75px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 24px 0;
   padding: 0;
-  margin-bottom: 14px;
 
   @include vp-1023 {
     margin-bottom: 30px;

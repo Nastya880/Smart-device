@@ -1,4 +1,4 @@
-.footer__menu-contacts-wrapper {
+.footer__contacts-wrapper {
   // border: 2px solid green;
   padding-left: 30px;
 
@@ -31,13 +31,12 @@
 
 .footer__contacts-item-link,
 .footer__contacts-item address  {
-  color: rgba($color-default-white, 0.7);
   font-family: $ff-ptmono;
   font-size: 16px;
   font-weight: 400;
   font-style: normal;
-  line-height: 25px;
-  margin-bottom: 14px;
+  line-height: 22px;
+  color: rgba($color-default-white, 0.7);
 
   @include vp-1023 {
     margin-bottom: 20px;

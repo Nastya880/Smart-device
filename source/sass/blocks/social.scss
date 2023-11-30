@@ -1,14 +1,10 @@
 .footer__social-list {
   padding: 0;
-  margin: 0;
-  padding-right: 45px;
-  list-style: none;
+  margin: 0 0 0 -40px;
   display: grid;
-  grid-template-columns: repeat(3, 42px);
+  grid-template-columns: repeat(3, 40px);
   grid-template-rows: 40px;
-  align-items: center;
-  padding-left: 4%;
-  gap: 2.3%;
+  gap: 15px;
 
   @include vp-1023 {
     padding: 0;
@@ -31,8 +27,8 @@
 
 .footer__social-item-link {
   position: absolute;
-  width: 46px;
-  height: 46px;
+  width: 42px;
+  height: 42px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -40,7 +36,7 @@
   line-height: 0;
   padding: 5px;
   fill: $color-alice-blue;
-  color: inherit;
+  color: $color-alice-blue;
 }
 
 .footer__social-item-link svg {
