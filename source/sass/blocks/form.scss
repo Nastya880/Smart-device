@@ -1,6 +1,7 @@
 form {
-  max-width: 86%;
-  // overflow: hidden;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
 
   @include vp-1023 {
     min-width: 100%;
@@ -17,14 +18,10 @@ form {
 }
 
 .feedback__form-required-data {
-  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5vw;
-  margin: 0;
-  margin-bottom: 1vw;
-  border: none;
-  padding: 0;
+  column-gap: 30px;
+  margin-bottom: 18px;
 
   @include vp-1023 {
     min-width: 90%;
@@ -43,18 +40,23 @@ form {
 }
 
 form input {
-  padding: 10px;
-  padding-left: 12px;
   font-family: $ff-ptmono;
   font-weight: 400;
-  font-size: 13.5px;
+  font-size: 16px;
   line-height: 21.65px;
   background-color: rgba($color-black-perl, 0.15);
-  border: none;
-  color: $color-default-white;
+
+  padding: 13px;
+  padding-left: 16px;
+  border-radius: 3px;
+  border: 2px solid rgba($color-black-perl, 0);
   width: 100%;
+  color: $color-default-white;
 
   &::placeholder {
+    font-family: $ff-ptmono;
+    font-size: 16px;
+    line-height: 22px;
     color: $color-default-white;
   }
 
@@ -75,24 +77,22 @@ form input {
 }
 
 form textarea {
-  min-height: 127px;
-  display: block;
-  width: 100%;
-  margin: 0;
-  margin-bottom: 28px;
-
-  font-family: $ff-ptmono;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21.65px;
+  max-height: 155px;
+  margin-bottom: 38px;
+  padding: 23px 16px 13px 13px;
   background-color: rgba($color-black-perl, 0.15);
-  border: none;
+  border-radius: 3px;
+  font-family: $ff-ptmono;
+  font-size: 16px;
+  line-height: 21.65px;
   color: $color-default-white;
-  padding: 10px;
-  padding-left: 12.5px;
-  padding-top: 17px;
+  border: 2px solid rgba($color-black-perl, 0);
+  width: 100%;
 
   &::placeholder {
+    font-family: $ff-ptmono;
+    font-size: 16px;
+    line-height: 22px;
     color: $color-default-white;
   }
 
@@ -121,15 +121,10 @@ form textarea {
 
 .feedback__form-submit-wrapper,
 .modal__form-submit-wrapper {
-  border: none;
-  margin: 0;
-  padding: 0;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-
-  align-items: flex-end;
-  gap: 7.9%;
-  width: 100%;
+  column-gap: 48px;
 
   @include vp-1023 {
     min-width: 100%;
@@ -152,15 +147,23 @@ form textarea {
 
 .feedback__form-button,
 .modal__form-button {
-  padding: 10px 0px 11px;
+  width: 100%;
+  margin: 0;
+  padding: 12px 25px;
+  font-family: $ff-roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing:  0.8px;
+  text-transform: uppercase;
+  background-color: $color-black-perl;
   color: $color-default-white;
-  font-size: 0.8em;
-  letter-spacing: 0.8px;
-  border: none;
+  border-radius: 3px;
+  border-color: $color-black-perl;
   cursor: pointer;
 
+
   @include vp-1023 {
-  // {padding: 0px 10px 11px;
     padding-bottom: 18px;
     font-size: 1.2em;
     margin-top: 20px;
@@ -179,10 +182,10 @@ form textarea {
 .feedback__form-submit-wrapper label,
 .modal__form-submit-wrapper label {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   color: $color-default-white;
   font-family: $ff-ptmono;
-  font-size: 0.7em;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -211,7 +214,8 @@ form textarea {
   position: relative;
   width: 15px;
   height: 15px;
-  margin-right: 12px;
+  top: -10px;
+  margin-right: 15px;
   flex-shrink: 0;
   border: 1px solid $color-default-white;
   border-radius: 2px;
@@ -220,7 +224,7 @@ form textarea {
     content: "";
     display: none;
     position: absolute;
-    left: 30%;
+    left: 19%;
     top: 50%;
     width: 10px;
     height: 13px;
@@ -240,12 +244,13 @@ form textarea {
   position: absolute;
   width: 1px;
   height: 1px;
-  // margin: -1px;
+  margin: -1px;
   padding: 0;
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+  white-space: nowrap;
 
   &:checked + .feedback__form-check-mark {
     &::before {

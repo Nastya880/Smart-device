@@ -1681,6 +1681,7 @@ button,
 }
 
 .feedback {
+  min-height: 837px;
   background: #00b3ff;
   position: relative;
   z-index: 0;
@@ -1692,8 +1693,8 @@ button,
   width: 100%;
   height: 100%;
   background-color: rgba(4, 24, 39, 0.5);
-  -webkit-clip-path: polygon(47% 0, 0 100%, 0 0);
-          clip-path: polygon(47% 0, 0 100%, 0 0);
+  -webkit-clip-path: polygon(50.5% 0, 0 100%, 0 0);
+          clip-path: polygon(50.5% 0, 0 100%, 0 0);
 }
 @media (max-width: 1023px) {
   .feedback::before {
@@ -1701,19 +1702,20 @@ button,
   }
 }
 
-.feedback .container {
-  max-width: 68vw;
+.feedback__container {
+  max-width: 1220px;
+  width: 90vw;
   margin: 0 auto;
-  padding-top: 8.2%;
-  padding-bottom: 12.9%;
+  padding-top: 163px;
+  padding-bottom: 248px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto minmax(55%, 60%);
-  grid-template-columns: auto minmax(55%, 60%);
-  gap: 11.4%;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
 }
 @media (max-width: 1023px) {
-  .feedback .container {
+  .feedback__container {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     gap: 0;
@@ -1724,7 +1726,7 @@ button,
   }
 }
 @media (max-width: 767px) {
-  .feedback .container {
+  .feedback__container {
     max-width: 90%;
     padding-top: 15%;
     -ms-grid-columns: 1fr;
@@ -1733,26 +1735,31 @@ button,
   }
 }
 
-.feedback img {
+.feedback picture {
   display: block;
-  min-width: 25vw;
-  margin-top: 80px;
+  padding-top: 80px;
+  margin: 0;
+  max-width: 510px;
 }
 @media (max-width: 1023px) {
-  .feedback img {
+  .feedback picture {
     display: none;
   }
 }
 
-.feedback h2 {
+.feedback__form {
   margin: 0;
-  margin-bottom: 4px;
-  color: #ffffff;
+  max-width: 100%;
+}
+
+.feedback h2 {
+  margin: 0 0 10px;
+  padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 1.8em;
+  font-size: 36px;
   font-weight: 400;
-  line-height: 50.63px;
-  letter-spacing: 0.2px;
+  line-height: 51px;
+  color: #ffffff;
 }
 @media (max-width: 1023px) {
   .feedback h2 {
@@ -1769,15 +1776,13 @@ button,
 }
 
 .feedback p {
-  margin: 0;
-  margin-bottom: 27px;
-  color: #ffffff;
+  margin: 0 0 35px;
+  padding: 0;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 21.5px;
-  letter-spacing: -1.7px;
+  line-height: 22px;
+  color: #ffffff;
 }
 @media (max-width: 1023px) {
   .feedback p {
@@ -1795,7 +1800,14 @@ button,
 }
 
 form {
-  max-width: 86%;
+  max-width: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media (max-width: 1023px) {
   form {
@@ -1818,16 +1830,14 @@ form {
 }
 
 .feedback__form-required-data {
-  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5vw;
-  margin: 0;
-  margin-bottom: 1vw;
-  border: none;
-  padding: 0;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  margin-bottom: 18px;
 }
 @media (max-width: 1023px) {
   .feedback__form-required-data {
@@ -1848,30 +1858,46 @@ form {
 }
 
 form input {
-  padding: 10px;
-  padding-left: 12px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 13.5px;
+  font-size: 16px;
   line-height: 21.65px;
   background-color: rgba(4, 24, 39, 0.15);
-  border: none;
-  color: #ffffff;
+  padding: 13px;
+  padding-left: 16px;
+  border-radius: 3px;
+  border: 2px solid rgba(4, 24, 39, 0);
   width: 100%;
+  color: #ffffff;
 }
 form input::-webkit-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 form input::-moz-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 form input:-ms-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 form input::-ms-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 form input::placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 @media (max-width: 1023px) {
@@ -1892,35 +1918,46 @@ form input:focus-visible {
 }
 
 form textarea {
-  min-height: 127px;
-  display: block;
-  width: 100%;
-  margin: 0;
-  margin-bottom: 28px;
-  font-family: "PT Mono", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21.65px;
+  max-height: 155px;
+  margin-bottom: 38px;
+  padding: 23px 16px 13px 13px;
   background-color: rgba(4, 24, 39, 0.15);
-  border: none;
+  border-radius: 3px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 21.65px;
   color: #ffffff;
-  padding: 10px;
-  padding-left: 12.5px;
-  padding-top: 17px;
+  border: 2px solid rgba(4, 24, 39, 0);
+  width: 100%;
 }
 form textarea::-webkit-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 form textarea::-moz-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 form textarea:-ms-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 form textarea::-ms-input-placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 form textarea::placeholder {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   color: #ffffff;
 }
 @media (max-width: 1023px) {
@@ -1948,18 +1985,14 @@ form textarea:focus-visible {
 
 .feedback__form-submit-wrapper,
 .modal__form-submit-wrapper {
-  border: none;
-  margin: 0;
-  padding: 0;
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  gap: 7.9%;
-  width: 100%;
+  -webkit-column-gap: 48px;
+     -moz-column-gap: 48px;
+          column-gap: 48px;
 }
 @media (max-width: 1023px) {
   .feedback__form-submit-wrapper,
@@ -1993,11 +2026,19 @@ form textarea:focus-visible {
 
 .feedback__form-button,
 .modal__form-button {
-  padding: 10px 0px 11px;
-  color: #ffffff;
-  font-size: 0.8em;
+  width: 100%;
+  margin: 0;
+  padding: 12px 25px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
   letter-spacing: 0.8px;
-  border: none;
+  text-transform: uppercase;
+  background-color: #041827;
+  color: #ffffff;
+  border-radius: 3px;
+  border-color: #041827;
   cursor: pointer;
 }
 @media (max-width: 1023px) {
@@ -2025,12 +2066,12 @@ form textarea:focus-visible {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   color: #ffffff;
   font-family: "PT Mono", "Arial", sans-serif;
-  font-size: 0.7em;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -2063,7 +2104,8 @@ form textarea:focus-visible {
   position: relative;
   width: 15px;
   height: 15px;
-  margin-right: 12px;
+  top: -10px;
+  margin-right: 15px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   border: 1px solid #ffffff;
@@ -2074,7 +2116,7 @@ form textarea:focus-visible {
   content: "";
   display: none;
   position: absolute;
-  left: 30%;
+  left: 19%;
   top: 50%;
   width: 10px;
   height: 13px;
@@ -2096,12 +2138,14 @@ form textarea:focus-visible {
   position: absolute;
   width: 1px;
   height: 1px;
+  margin: -1px;
   padding: 0;
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
   -webkit-clip-path: inset(100%);
           clip-path: inset(100%);
+  white-space: nowrap;
 }
 .feedback__form-submit-wrapper input:checked + .feedback__form-check-mark::before,
 .modal__form-submit-wrapper input:checked + .feedback__form-check-mark::before {
