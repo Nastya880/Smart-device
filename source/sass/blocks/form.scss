@@ -4,11 +4,7 @@ form {
   flex-direction: column;
 
   @include vp-1023 {
-    min-width: 100%;
-    max-width: 100%;
-    padding-right: 2%;
-    // margin: 0;
-    margin-left: 0;
+    max-width: 670px;
   }
 
   @include vp-767 {
@@ -22,13 +18,6 @@ form {
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
   margin-bottom: 18px;
-
-  @include vp-1023 {
-    min-width: 90%;
-    height: 50px;
-    gap: 4.5%;
-    margin-bottom: 35px;
-  }
 
   @include vp-767 {
     grid-template-columns: 1fr;
@@ -61,8 +50,7 @@ form input {
   }
 
   @include vp-1023 {
-    font-size: 1.2em;
-    padding: 20px;
+    padding-left: 13px;
   }
 
   @include vp-767 {
@@ -97,11 +85,8 @@ form textarea {
   }
 
   @include vp-1023 {
-    font-size: 1.2em;
-    min-width: 95%;
-    height: 190px;
-    padding: 40px;
-    padding-left: 20px;
+    padding-top: 30px;
+    margin-bottom: 36px;
   }
 
   @include vp-767 {
@@ -127,10 +112,7 @@ form textarea {
   column-gap: 48px;
 
   @include vp-1023 {
-    min-width: 100%;
-    align-items: center;
-    // gap: 0.1vw;
-    gap: 4%;
+    column-gap: 30px;
   }
 
   @include vp-767 {
@@ -164,10 +146,9 @@ form textarea {
 
 
   @include vp-1023 {
-    padding-bottom: 18px;
-    font-size: 1.2em;
-    margin-top: 20px;
-    width: 33.8vw;
+    max-width: 265px;
+    padding-top: 14px;
+    padding-bottom: 10px;
   }
 
   @include vp-767 {
@@ -192,10 +173,8 @@ form textarea {
   cursor: pointer;
 
   @include vp-1023 {
-    font-size: 0.9em;
-    max-width: 235px;
-    margin-top: 15px;
-    margin-left: 0;
+    align-items: center;
+    margin-top: 5px;
   }
 
   @include vp-767 {
@@ -230,6 +209,11 @@ form textarea {
     height: 13px;
     transform: translateY(-50%);
     background: url("../img/svg/agree.svg") center no-repeat;
+  }
+
+  @include vp-1023 {
+    top: 0;
+    margin-right: 10px;
   }
 
   @include vp-767 {

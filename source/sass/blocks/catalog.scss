@@ -9,9 +9,13 @@
   padding: 64px 0 145px;
 
   @include vp-1023 {
-    max-width: 90%;
-    padding-top: 7.3%;
-    padding-bottom: 10.6%;
+    // max-width: 90%;
+    // padding-top: 7.3%;
+    // padding-bottom: 10.6%;
+    width: 84vw;
+    min-width: 670px;
+    padding-top: 56px;
+    padding-bottom: 75px;
   }
 
   @include vp-767 {
@@ -31,9 +35,12 @@
   line-height: 50.63px;
 
   @include vp-1023 {
-    max-width: 100%;
-    font-size: 43px;
-    line-height: 58.38px;
+    // max-width: 100%;
+    // font-size: 43px;
+    // line-height: 58.38px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 40px;
   }
 
   @include vp-767 {
@@ -70,8 +77,16 @@
   padding: 0;
 
   @include vp-1023 {
-    grid-template-columns: minmax(670px, 920px);
-    row-gap: 38px;
+    // grid-template-columns: minmax(670px, 920px);
+    // row-gap: 38px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 0;
+    row-gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
   }
 
   @include vp-767 {
@@ -98,11 +113,14 @@
   }
 
   @include vp-1023 {
-    min-height: 305px;
+    // min-height: 305px;
+    height: 100%;
+    min-height: 250px;
+    max-width: 100%;
 
     &::after {
-      width: 72px;
-      height: 72px;
+      width: 60px;
+      height: 60px;
     }
   }
 
@@ -136,6 +154,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   // background-color: red;
+
+  @include vp-1023 {
+    padding-top: 36px;
+    padding-left: 44px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 .catalog__item-link h3 {
@@ -150,12 +175,14 @@
   line-height: 30px;
 
   @include vp-1023 {
-    max-width: 36%;
-    padding: 43px 57px 0;
-    // padding: 5vw 5.6vw 0;
-    letter-spacing: 0.4px;
-    font-size: 24px;
-    line-height: 38px;
+    // max-width: 36%;
+    // padding: 43px 57px 0;
+    // // padding: 5vw 5.6vw 0;
+    // letter-spacing: 0.4px;
+    // font-size: 24px;
+    // line-height: 38px;
+    max-width: 150px;
+
   }
 
   @include vp-767 {
