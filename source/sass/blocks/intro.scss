@@ -16,8 +16,7 @@
   }
 
   @include vp-767 {
-    // margin-top: -5%;
-    background-position: center, -220px;
+    margin-top: -65px;
   }
 }
 
@@ -37,10 +36,11 @@
   }
 
   @include vp-767 {
-    // min-height: 640px;
-    padding-top: 25.8%;
-    padding-bottom: 60%;
-    padding-left: 3.3%;
+    min-height: 560px;
+    width: 84.5%;
+    margin-bottom: 0;
+    padding-top: 150px;
+    padding-bottom: 190px;
   }
 }
 
@@ -72,9 +72,10 @@
   }
 
   @include vp-767 {
-    margin-bottom: 14px;
-    font-size: 11.1vw;
-    letter-spacing: 2.92px;
+    font-size: 36px;
+    line-height: normal;
+    letter-spacing: 2.52px;
+    margin-bottom: 8px;
   }
 }
 
@@ -93,10 +94,10 @@
   }
 
   @include vp-767 {
-    font-size: 21px;
-    line-height: 39.7px;
-    letter-spacing: 2.4px;
-    margin-bottom: 17%;
+    width: 270px;
+    margin-bottom: 46px;
+    font-size: 14px;
+    line-height: 21.7px; /* 21.7px */
   }
 }
 
@@ -117,9 +118,13 @@
   }
 
   @include vp-767 {
-    min-width: 100%;
-    margin-left: 0;
-    padding: 30px auto;
+    // min-width: 100%;
+    min-width: 270px;
+    margin: 0;
+    padding: 12px 30px;
+    font-size: 14px;
+    line-height: normal;
+    letter-spacing: 0.7px;
   }
 }
 
@@ -137,8 +142,6 @@
 
     @include vp-767 {
       display: inline;
-      font-size: 25px;
-      letter-spacing: 1.2px;
     }
   }
 }

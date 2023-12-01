@@ -21,11 +21,13 @@
   }
 
   @include vp-767 {
-    margin-bottom: 4px;
+    margin-bottom: 0px;
+    margin-top: 17px;
+    margin-left: 0;
 
-    &:first-child {
-      margin-bottom: 10px;
-    }
+    // &:first-child {
+    //   margin-bottom: 10px;
+    // }
   }
 }
 
@@ -39,12 +41,14 @@
   color: rgba($color-default-white, 0.7);
 
   @include vp-767 {
-    font-size: 15px;
-    padding-left: 6%;
+    font-size: 14px;
+    line-height: 19.9px; /* 18.9px */
   }
+}
 
-  &--tel {
-    line-height: 25px;
+.footer__contacts-item--tel {
+  @include vp-767 {
+    margin-bottom: -11px;
   }
 }
 

@@ -28,15 +28,21 @@
   }
 
   @include vp-767 {
-    padding-top: 34.4%;
-    padding-bottom: 24.5%;
-    grid-template-columns: 1fr;
-    padding-left: 2%;
+    min-width: 270px;
+    width: 84%;
+    padding: 0;
+    margin-bottom: 70px;
+    padding-top: 2px;
+    background: none;
   }
 }
 
 .about-company__content {
   padding-bottom: 16px;
+
+  @include vp-767 {
+    padding-bottom: 13px;
+  }
 }
 
 .about-company picture {
@@ -62,11 +68,9 @@
   }
 
   @include vp-767 {
-    max-width: 80vw;
-    font-size: 3em;
-    letter-spacing: 0.9px;
-    line-height: 39.38px;
-    margin-bottom: 7.5%;
+    font-size: 28px;
+    line-height: 39px;
+    margin-bottom: -3px;
   }
 }
 
@@ -84,12 +88,10 @@
   }
 
   @include vp-767 {
-    // max-width: 13%;
-    max-width: 70vw;
-    font-size: 1.5em;
-    line-height: 33.5px;
-    letter-spacing: 0.6px;
-    padding-bottom: 0;
+    font-size: 14px;
+    line-height: 19px;
+    color: $color-black-perl;
+    margin-bottom: 19px;
   }
 }
 
@@ -121,11 +123,15 @@
 
   @include vp-767 {
     // min-width: 160px;
-    font-size: 1.5em;
-    max-width: 70vw;
-    letter-spacing: 1.9px;
-    margin-top: 0.3%;
-    padding: 16px 70px 14px;
+    // font-size: 1.5em;
+    // max-width: 70vw;
+    // letter-spacing: 1.9px;
+    // margin-top: 0.3%;
+    // padding: 16px 70px 14px;
+    min-width: 160px;
+    margin-top: -19px;
+    padding-top: 7px;
+    padding-bottom: 10px;
   }
 
   &.is-without-js {

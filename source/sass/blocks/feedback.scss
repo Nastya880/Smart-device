@@ -44,10 +44,15 @@
   }
 
   @include vp-767 {
-    max-width: 90%;
-    padding-top: 15%;
-    grid-template-columns: 1fr;
-    padding-bottom: 24.5%;
+    // max-width: 90%;
+    // padding-top: 15%;
+    // grid-template-columns: 1fr;
+    // padding-bottom: 24.5%;
+    width: 84%;
+    min-height: 750px;
+    min-width: 270px;
+    padding-top: 47px;
+    padding-bottom: 85px;
   }
 }
 
@@ -89,9 +94,10 @@
   }
 
   @include vp-767 {
-    margin-bottom: 20px;
-    font-size: 3.3em;
-    line-height: 72.19px;
+    max-width: 270px;
+    margin-bottom: 7px;
+    font-size: 30px;
+    line-height: 42px;
   }
 }
 
@@ -109,10 +115,13 @@
   }
 
   @include vp-767 {
-    max-width: 80%;
-    margin-bottom: 13%;
-    font-size: 1.6em;
-    line-height: 32.82px;
-    letter-spacing: 0px;
+    // max-width: 80%;
+    // margin-bottom: 13%;
+    // font-size: 1.6em;
+    // line-height: 32.82px;
+    // letter-spacing: 0px;
+    margin-bottom: 34px;
+    font-size: 14px;
+    line-height: 19px;
   }
 }

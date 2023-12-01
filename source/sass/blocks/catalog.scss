@@ -9,9 +9,6 @@
   padding: 64px 0 145px;
 
   @include vp-1023 {
-    // max-width: 90%;
-    // padding-top: 7.3%;
-    // padding-bottom: 10.6%;
     width: 84vw;
     min-width: 670px;
     padding-top: 56px;
@@ -19,8 +16,9 @@
   }
 
   @include vp-767 {
-    padding-top: 15%;
-    padding-bottom: 21%;
+    min-width: 270px;
+    padding-top: 47px;
+    padding-bottom: 86px;
   }
 }
 
@@ -35,18 +33,15 @@
   line-height: 50.63px;
 
   @include vp-1023 {
-    // max-width: 100%;
-    // font-size: 43px;
-    // line-height: 58.38px;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 40px;
   }
 
   @include vp-767 {
-    margin-bottom: 55px;
-    font-size:3em;
-    line-height: 67.38px;
+    margin-bottom: 29px;
+    font-size: 28px;
+    line-height: 39px;
   }
 }
 
@@ -88,12 +83,6 @@
     margin: 0;
     padding: 0;
   }
-
-  @include vp-767 {
-    gap: 22px;
-    max-width: 94%;
-    grid-template-columns: minmax(270px, 1fr);
-  }
 }
 
 .catalog__item {
@@ -125,13 +114,10 @@
   }
 
   @include vp-767 {
-    margin: 0;
-    min-height: 75.5vw;
-    margin-bottom: 30px;
-
+    width: 270.5px;
     &::after {
-      width: 69px;
-      height: 73px;
+      width: 40px;
+      height: 40px;
     }
   }
 
@@ -161,6 +147,11 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  @include vp-767 {
+    padding-top: 27px;
+    padding-left: 30px;
+  }
 }
 
 .catalog__item-link h3 {
@@ -175,26 +166,13 @@
   line-height: 30px;
 
   @include vp-1023 {
-    // max-width: 36%;
-    // padding: 43px 57px 0;
-    // // padding: 5vw 5.6vw 0;
-    // letter-spacing: 0.4px;
-    // font-size: 24px;
-    // line-height: 38px;
     max-width: 150px;
 
   }
 
   @include vp-767 {
-    // display: block;
-    max-width: 100%;
-    // word-wrap: break-word;
-    hyphens: auto;
-    max-width: 72%;
-    padding: 48px 50px 0;
-    font-size: 1.9em;
-    line-height: 53px;
-    letter-spacing: 1.1px;
+    max-width: 130px;
+    font-size: 18px;
   }
 }
 

@@ -16,8 +16,10 @@
   }
 
   @include vp-767 {
-    padding-top: 15.8%;
-    padding-left: 2.5%;
+    width: 84%;
+    min-width: 270px;
+    margin-bottom: 45px;
+    padding-top: 50px;
   }
 }
 
@@ -34,9 +36,9 @@
   }
 
   @include vp-767 {
-    // margin-bottom: 6%;
-    gap: 2%;
-    grid-template-columns: repeat(1, 100%);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
 }
 
@@ -53,10 +55,23 @@
   }
 
   @include vp-767 {
-    padding-top: 10.5%;
-    padding-left: 10.7%;
-    padding-bottom: 27%;
-    min-height: none;
+    padding: 29px 30px 30px 25px;
+    min-width: 210px;
+    min-height: 325px;
+    margin-bottom: 30px;
+  }
+}
+
+.advantages__item:last-child {
+  @include vp-767 {
+    margin-bottom: 0;
+  }
+}
+
+.advantages__item:first-child,
+.advantages__item:nth-child(2) {
+  @include vp-767 {
+    min-height: 340px;
   }
 }
 
@@ -84,9 +99,9 @@
   }
 
   @include vp-767 {
-    width: 55px;
-    height: 55px;
-    margin-bottom: 5.8%;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 9px;
   }
 }
 
@@ -107,14 +122,13 @@
   }
 
   @include vp-767 {
-    display: block;
-    max-width: 92%;
-    font-size: 33.4px;
-    line-height: 44px;
-    letter-spacing: 1.1px;
-    margin-bottom: 5%;
+    font-size: 20px;
+    margin-bottom: 8px;
+    line-height: 31.13px;
   }
 }
+
+
 
 .advantages p {
   min-height: 120px;
@@ -131,9 +145,12 @@
   }
 
   @include vp-767 {
-    font-size: 24px;
-    // font-size: 174%;
-    line-height: 34.7px;
-    letter-spacing: 0.8px;
+    min-height: 140px;
+    height: auto;
+    // height: fit-content;
+    font-size: 14px;
+    // border: 2px solid red;
+    line-height: 19.9px; /* 18.9px */
+    // margin-bottom: 50px;
   }
 }
