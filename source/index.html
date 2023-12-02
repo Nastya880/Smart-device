@@ -32,15 +32,15 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container">
-            <a class="header__logo">
-              <picture>
-                <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-                <img src="img/svg/logo.svg" width="215" height="55" alt="Smart Device">
-              </picture>
-            </a>
+          <a class="header__logo">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
+              <img src="img/svg/logo.svg" width="215" height="55" alt="Smart Device">
+            </picture>
+          </a>
           <ul class="header__contacts-list">
             <li class="header__contacts-item">
-              <a class="header__contacts-item-link header__contacts-item-link--mail" href="mailto:info@sd.ru">
+              <a class="header__contacts-item-link header__contacts-item-link--mail" href="mailto:info@sd.ru" aria-label="info@sd.ru">
                 <svg width="20" height="20">
                   <use href="img/sprite.svg#email"></use>
                 </svg>
@@ -48,7 +48,7 @@
               </a>
             </li>
             <li class="header__contacts-item">
-              <a class="header__contacts-item-link header__contacts-item-link--phone" href="tel:+74950005252">
+              <a class="header__contacts-item-link header__contacts-item-link--phone" href="tel:+74950005252" aria-label="+74950005252">
                 <svg width="20" height="20">
                   <use href="img/sprite.svg#phone"></use>
                 </svg>
@@ -56,7 +56,7 @@
               </a>
             </li>
           </ul>
-          <a class="header__button button button--dark" href="#" data-open-modal="feedback-form" data-modal="open-modal">Заказать звонок</a>
+          <a class="header__button button button--dark" href="#" data-open-modal="feedback-form" data-modal="open-modal" tabindex="0">Заказать звонок</a>
         </div>
       </header>
       <main>
@@ -66,7 +66,7 @@
             <div class="intro__wrapper">
               <h2>Печатные платы</h2>
               <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <a class="intro__button button button--dark" href="#feedback">
+              <a class="intro__button button button--dark" href="#feedback" aria-label="Получить бесплатную консультацию">
                 <span class="intro__button-description">Получить бесплатную консультацию</span>
                 <span class="intro__button-description intro__button-description--mobile">Бесплатная консультация</span>
               </a>
@@ -120,7 +120,7 @@
                 <p class="about-company__more-info is-without-js" data-about-company__more-info>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
                 <p class="about-company__more-info is-without-js" data-about-company__more-info>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
             </div>
-            <button class="about-company__button button button--light" type="button" data-about-company-button>Подробнее</button>
+            <button class="about-company__button button button--light" type="button" aria-label="Кнопка подробнее" data-about-company-button>Подробнее</button>
           </div>
         </section>
         <section class="catalog">
@@ -129,20 +129,19 @@
               <span class="catalog__title">Smart Device предлагает следующие товары и&nbsp;услуги</span>
               <span class="catalog__title catalog__title--mobile">Товары и&nbsp;услуги Smart&nbsp;Device</span>
             </h2>
-
             <ul class="catalog__list">
               <li class="catalog__item">
-                <a class="catalog__item-link catalog__item-link--production" href="#">
+                <a class="catalog__item-link catalog__item-link--production" href="#" aria-label="Производство печатных плат">
                   <h3>Производство печатных&nbsp;плат</h3>
                 </a>
               </li>
               <li class="catalog__item">
-                <a class="catalog__item-link catalog__item-link--mounting" href="#">
+                <a class="catalog__item-link catalog__item-link--mounting" href="#" aria-label="Монтаж печатных плат">
                   <h3>Монтаж печатных плат</h3>
                 </a>
               </li>
               <li class="catalog__item">
-                <a class="catalog__item-link catalog__item-link--tools" href="#">
+                <a class="catalog__item-link catalog__item-link--tools" href="#" aria-label="Комплектующие для светотехники">
                   <h3>Комплектующие для&nbsp;светотехники</h3>
                 </a>
               </li>
@@ -170,7 +169,7 @@
                 <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
                 <textarea name="question" id="question" placeholder="Ваш вопрос" rows="10"></textarea>
                 <div class="feedback__form-submit-wrapper">
-                  <button class="feedback__form-button button button--dark" type="submit">Задать вопрос</button>
+                  <button class="feedback__form-button button button--dark" type="submit" aria-label="Кнопка задать вопрос">Задать вопрос</button>
                   <label for="agreement">
                     <input type="checkbox" name="agreement" id="agreement" checked required>
                     <span class="feedback__form-check-mark"></span>
@@ -192,7 +191,7 @@
             </a>
             <ul class="footer__social-list">
               <li class="footer__social-item">
-                <a class="footer__social-item-link" href="#">
+                <a class="footer__social-item-link" href="#" aria-label="Одноклассники">
                   <svg width="30" height="30">
                     <use href="img/sprite.svg#social-ok"></use>
                   </svg>
@@ -200,7 +199,7 @@
                 <span class="visually-hidden">Одноклассники</span>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-item-link" href="#">
+                <a class="footer__social-item-link" href="#" aria-label="Вконтакте">
                   <svg width="30" height="30">
                     <use href="img/sprite.svg#social-vk"></use>
                   </svg>
@@ -208,7 +207,7 @@
                 <span class="visually-hidden">Вконтакте</span>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-item-link" href="#">
+                <a class="footer__social-item-link" href="#" aria-label="Пинтерест">
                   <svg width="30" height="30">
                     <use href="img/sprite.svg#social-pinterest"></use>
                   </svg>
@@ -222,33 +221,33 @@
             <nav class="footer__menu-nav footer-nav">
               <div class="footer__menu-nav-container accordion-container is-opened" data-accordion-container>
                 <h3 class="footer-nav__title">Разделы сайта</h3>
-                <button class="accordion-button" type="button" data-accordion-button>
+                <button class="accordion-button" type="button" aria-label="Кнопка Скрыть раздел" data-accordion-button>
                   <span class="visually-hidden">Скрыть раздел</span>
                 </button>
                 <div class="footer__menu-nav-wrapper">
                   <ul class="footer__menu-list">
                     <li class="footer__menu-item footer__menu-item--company">
-                      <a class="footer__menu-item-link" href="#">О Компании</a>
+                      <a class="footer__menu-item-link" href="#" aria-label="О Компании">О Компании</a>
                     </li>
                     <li class="footer__menu-item">
-                      <a class="footer__menu-item-link" href="#">Продукты</a>
+                      <a class="footer__menu-item-link" href="#" aria-label="Продукты">Продукты</a>
                     </li>
                     <li class="footer__menu-item">
-                      <a class="footer__menu-item-link" href="#">Производство печатных плат</a>
+                      <a class="footer__menu-item-link" href="#" aria-label="Производство печатных плат">Производство печатных плат</a>
                     </li>
                     <li class="footer__menu-item">
-                      <a class="footer__menu-item-link" href="#">Монтаж печатных плат</a>
+                      <a class="footer__menu-item-link" href="#" aria-label="Монтаж печатных плат">Монтаж печатных плат</a>
                     </li>
                   </ul>
                   <ul class="footer__menu-list">
                     <li class="footer__menu-item">
-                      <a href="#" class="footer__menu-item-link" href="#">Комплектующие</a>
+                      <a href="#" class="footer__menu-item-link" href="#" aria-label="Комплектующие">Комплектующие</a>
                     </li>
                     <li class="footer__menu-item">
-                      <a href="#" class="footer__menu-item-link" href="#">Доставка</a>
+                      <a href="#" class="footer__menu-item-link" href="#" aria-label="Доставка">Доставка</a>
                     </li>
                     <li class="footer__menu-item">
-                      <a href="#" class="footer__menu-item-link" href="#">Контакты</a>
+                      <a href="#" class="footer__menu-item-link" href="#" aria-label="Контакты">Контакты</a>
                     </li>
                   </ul>
                 </div>
@@ -258,21 +257,21 @@
             <div class="footer__menu-contacts footer__contacts">
               <div class="footer__contacts-wrapper accordion-container is-opened" data-accordion-container>
                 <h3>Наш офис</h3>
-                <button class="accordion-button" type="button" data-accordion-button>
+                <button class="accordion-button" type="button" aria-label="Кнопка Скрыть раздел" data-accordion-button>
                   <span class="visually-hidden">Скрыть раздел</span>
                 </button>
                 <ul class="footer__contacts-list footer__menu-nav-wrapper">
                   <li class="footer__contacts-item">
-                    <address class="footer__contacts-item-link" href="#">г. Мытищи, Олимпийский проспект, д.10</address>
+                    <address class="footer__contacts-item-link" href="#" aria-label="г. Мытищи, Олимпийский проспект, д.10">г. Мытищи, Олимпийский проспект, д.10</address>
                   </li>
                   <li class="footer__contacts-item footer__contacts-item--tel">
-                    <a class="footer__contacts-item-link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+                    <a class="footer__contacts-item-link" href="tel:+74955894050" aria-label="+7 (495) 589-40-50">+7 (495) 589-40-50</a>
                   </li>
                   <li class="footer__contacts-item footer__contacts-item--tel">
-                    <a class="footer__contacts-item-link" href="tel:+79253895829">+7 (925) 389-58-29</a>
+                    <a class="footer__contacts-item-link" href="tel:+79253895829" aria-label="+7 (925) 389-58-29">+7 (925) 389-58-29</a>
                   </li>
                   <li class="footer__contacts-item footer__contacts-item--tel">
-                    <a class="footer__contacts-item-link" href="tel:+79253647813">+7 (925) 364-78-13</a>
+                    <a class="footer__contacts-item-link" href="tel:+79253647813" aria-label="+7 (925) 364-78-13">+7 (925) 364-78-13</a>
                   </li>
                 </ul>
               </div>
@@ -286,7 +285,7 @@
 </div>
 <!-- Модалки -->
 <div class="modal modal--preload is-closed" data-modal="feedback-form">
-  <div class="modal__wrapper">
+  <div class="modal__wrapper" tabindex="0">
     <div class="modal__content">
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы&nbsp;проконсультируем Вас бесплатно в&nbsp;удобное время</p>
@@ -306,19 +305,17 @@
             <input class="visually-hidden" type="checkbox" name="modal-agreement" id="agreement-modal" checked required>
             <label for="agreement-modal">Я согласен на&nbsp;обработку персональных данных</label>
           </div>
-          <button class="modal__submit-button button" type="submit">Отправить</button>
+          <button class="modal__submit-button button" type="submit" aria-label="Кнопка Отправить" >Отправить</button>
         </div>
       </form>
     </div>
-    <button class="modal__close-btn btn-reset" type="button" data-close-modal>
+    <button class="modal__close-btn btn-reset" type="button" aria-label="Кнопка закрыть" data-close-modal>
       <svg width="20" height="20" viewBox="0 0 20 20">
         <use xlink:href="./img/sprite.svg#icon-close"></use>
       </svg>
     </button>
   </div>
 </div>
-
-  <script src="./js/main.min.js" type="module"></script>
+<script src="./js/main.min.js" type="module"></script>
 </body>
-
 </html>
