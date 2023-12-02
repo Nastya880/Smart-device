@@ -259,30 +259,26 @@
               </div>
             </nav>
 
-
-
             <div class="footer__menu-contacts footer__contacts">
               <div class="footer__contacts-wrapper accordion-container is-opened" data-accordion-container>
                 <h3>Наш офис</h3>
                 <button class="accordion-button" type="button" data-accordion-button>
                   <span class="visually-hidden">Скрыть раздел</span>
                 </button>
-                <!-- <div class="footer__menu-nav-wrapper"> -->
-                  <ul class="footer-contacts__list footer__menu-nav-wrapper">
-                    <li class="footer-contacts__item">
-                      <address class="footer__contacts-item-link" href="#">г. Мытищи, Олимпийский проспект, д.10</address>
-                    </li>
-                    <li class="footer-contacts__item footer__contacts-item--tel">
-                      <a class="footer__contacts-item-link" href="tel:+74955894050">+7 (495) 589-40-50</a>
-                    </li>
-                    <li class="footer-contacts__item footer__contacts-item--tel">
-                      <a class="footer__contacts-item-link" href="tel:+79253895829">+7 (925) 389-58-29</a>
-                    </li>
-                    <li class="footer-contacts__item footer__contacts-item--tel">
-                      <a class="footer__contacts-item-link" href="tel:+79253647813">+7 (925) 364-78-13</a>
-                    </li>
-                  </ul>
-                <!-- </div> -->
+                <ul class="footer-contacts__list footer__menu-nav-wrapper">
+                  <li class="footer-contacts__item">
+                    <address class="footer__contacts-item-link" href="#">г. Мытищи, Олимпийский проспект, д.10</address>
+                  </li>
+                  <li class="footer-contacts__item footer__contacts-item--tel">
+                    <a class="footer__contacts-item-link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+                  </li>
+                  <li class="footer-contacts__item footer__contacts-item--tel">
+                    <a class="footer__contacts-item-link" href="tel:+79253895829">+7 (925) 389-58-29</a>
+                  </li>
+                  <li class="footer-contacts__item footer__contacts-item--tel">
+                    <a class="footer__contacts-item-link" href="tel:+79253647813">+7 (925) 364-78-13</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
@@ -292,41 +288,41 @@
   </div>
 </footer>
 </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback-form">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <h2>Закажите звонок</h2>
-          <p>Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное время</p>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <label class="visually-hidden" for="name-modal">Введите Ваше имя</label>
-            <input type="text" name="name" id="name-modal" placeholder="Имя" required data-name>
-            <div data-number-phone>
-              <label class="visually-hidden" for="phone-modal">Введите Ваш номер телефона</label>
-              <input type="tel" name="phone" id="phone-modal" placeholder="Телефон" required>
-            </div>
-            <label class="visually-hidden" for="question-modal">Введите Ваш вопрос</label>
-            <textarea name="question" id="question-modal" rows="8" placeholder="Ваш вопрос"></textarea>
-            <div class="modal__form-submit-wrapper">
-              <button class="modal__form-button button button--dark" type="submit">Отправить</button>
-              <label for="agreement-modal">
-                <input type="checkbox" name="agreement" id="agreement-modal" checked required>
-                <span class="modal__form-check-mark"></span>
-                <span>Я согласен на&nbsp;обработку персональных данных</span>
-              </label>
-            </div>
-          </form>
-          <button class="modal__close-btn btn-reset" type="button" data-close-modal>
-            <svg width="20" height="20" viewBox="0 0 20 20">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
+<!-- Модалки -->
+<div class="modal modal--preload" data-modal="feedback-form">
+  <div class="modal__wrapper">
+    <div class="modal__content">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы&nbsp;проконсультируем Вас бесплатно в&nbsp;удобное время</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <div class="modal__form-data">
+          <label class="visually-hidden" for="name-modal">Введите Ваше имя</label>
+          <input type="text" name="name" placeholder="Имя" id="name-modal" required data-name>
+          <div data-number-phone>
+            <label for="phone-modal" class="visually-hidden">Введите Ваш номер телефона</label>
+            <input type="tel" name="phone" placeholder="Телефон" id="phone-modal" required>
+          </div>
+          <label class="visually-hidden" for="question-modal">Введите Ваш вопрос</label>
+          <textarea name="question" rows="8" id="question-modal" placeholder="Ваш вопрос"></textarea>
         </div>
-      </div>
+        <div class="modal__form-submit-wrapper">
+          <div class="modal__form-submit-container">
+            <input class="visually-hidden" type="checkbox" name="modal-agreement" id="agreement-modal" checked required>
+            <label for="agreement-modal">Я согласен на&nbsp;обработку персональных данных</label>
+          </div>
+          <button class="modal__submit-button button" type="submit">Отправить</button>
+        </div>
+      </form>
     </div>
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+    <button class="modal__close-btn btn-reset" type="button" data-close-modal>
+      <svg width="20" height="20" viewBox="0 0 20 20">
+        <use xlink:href="./img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+
+  <script src="./js/main.min.js" type="module"></script>
+</body>
+
 </html>

@@ -25,21 +25,22 @@
   max-width: 1220px;
   margin: 0 auto;
   padding-top: 305px;
-  padding-bottom: 282px;
+  padding-bottom: 288px;
+  // margin-bottom: -40px;
 
   @include vp-1023 {
-    padding-top: 180px;
-    padding-bottom: 205px;
+    padding-top: 167px;
+    padding-bottom: 100px;
     max-width: 670px;
     max-height: fit-content;
-    min-height: 640px;
+    min-height: 627px;
   }
 
   @include vp-767 {
-    min-height: 560px;
+    min-height: 550px;
     width: 84.5%;
     margin-bottom: 0;
-    padding-top: 150px;
+    padding-top: 145px;
     padding-bottom: 190px;
   }
 }
@@ -112,6 +113,8 @@
   text-transform: uppercase;
   background-color: $color-deep-sky-blue;
   border: none;
+
+  max-width: 90%;
 
   @include vp-1023 {
     margin-left: 45px;
