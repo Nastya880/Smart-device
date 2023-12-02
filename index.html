@@ -120,7 +120,7 @@
                 <p class="about-company__more-info is-without-js" data-about-company__more-info>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
                 <p class="about-company__more-info is-without-js" data-about-company__more-info>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
             </div>
-            <button class="about-company__button button button--light" type="button" data-about-company-button>Подробнее</button>
+            <button class="about-company__button button button--light" type="button" aria-label="Кнопка подробнее" data-about-company-button>Подробнее</button>
           </div>
         </section>
         <section class="catalog">
@@ -170,7 +170,7 @@
                 <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
                 <textarea name="question" id="question" placeholder="Ваш вопрос" rows="10"></textarea>
                 <div class="feedback__form-submit-wrapper">
-                  <button class="feedback__form-button button button--dark" type="submit">Задать вопрос</button>
+                  <button class="feedback__form-button button button--dark" type="submit" aria-label="Кнопка задать вопрос">Задать вопрос</button>
                   <label for="agreement">
                     <input type="checkbox" name="agreement" id="agreement" checked required>
                     <span class="feedback__form-check-mark"></span>
@@ -222,7 +222,7 @@
             <nav class="footer__menu-nav footer-nav">
               <div class="footer__menu-nav-container accordion-container is-opened" data-accordion-container>
                 <h3 class="footer-nav__title">Разделы сайта</h3>
-                <button class="accordion-button" type="button" data-accordion-button>
+                <button class="accordion-button" type="button" aria-label="Кнопка Скрыть раздел" data-accordion-button>
                   <span class="visually-hidden">Скрыть раздел</span>
                 </button>
                 <div class="footer__menu-nav-wrapper">
@@ -258,7 +258,7 @@
             <div class="footer__menu-contacts footer__contacts">
               <div class="footer__contacts-wrapper accordion-container is-opened" data-accordion-container>
                 <h3>Наш офис</h3>
-                <button class="accordion-button" type="button" data-accordion-button>
+                <button class="accordion-button" type="button" aria-label="Кнопка Скрыть раздел" data-accordion-button>
                   <span class="visually-hidden">Скрыть раздел</span>
                 </button>
                 <ul class="footer__contacts-list footer__menu-nav-wrapper">
@@ -306,11 +306,11 @@
             <input class="visually-hidden" type="checkbox" name="modal-agreement" id="agreement-modal" checked required>
             <label for="agreement-modal">Я согласен на&nbsp;обработку персональных данных</label>
           </div>
-          <button class="modal__submit-button button" type="submit">Отправить</button>
+          <button class="modal__submit-button button" type="submit" aria-label="Кнопка Отправить" >Отправить</button>
         </div>
       </form>
     </div>
-    <button class="modal__close-btn btn-reset" type="button" data-close-modal>
+    <button class="modal__close-btn btn-reset" type="button" aria-label="Кнопка закрыть" data-close-modal>
       <svg width="20" height="20" viewBox="0 0 20 20">
         <use xlink:href="./img/sprite.svg#icon-close"></use>
       </svg>
