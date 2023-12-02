@@ -26,7 +26,7 @@
   margin: 0 auto;
   padding-top: 305px;
   padding-bottom: 288px;
-  // margin-bottom: -40px;
+  margin-bottom: -8px;
 
   @include vp-1023 {
     padding-top: 167px;
@@ -34,6 +34,7 @@
     max-width: 670px;
     max-height: fit-content;
     min-height: 627px;
+    margin-bottom: 12px;
   }
 
   @include vp-767 {
