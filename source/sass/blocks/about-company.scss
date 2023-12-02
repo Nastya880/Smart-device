@@ -8,7 +8,6 @@
   min-height: 320px;
   width: 90%;
   margin: 0 auto 98px;
-  // padding-top: -30px;
   padding-left: 250px;
   background-image: image-set(
     url("../img/mask-2022.webp") 1x,
@@ -123,12 +122,6 @@
   }
 
   @include vp-767 {
-    // min-width: 160px;
-    // font-size: 1.5em;
-    // max-width: 70vw;
-    // letter-spacing: 1.9px;
-    // margin-top: 0.3%;
-    // padding: 16px 70px 14px;
     min-width: 160px;
     margin-top: -19px;
     padding-top: 7px;

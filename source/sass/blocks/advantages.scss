@@ -106,7 +106,7 @@
 }
 
 .advantages h3 {
-  word-wrap:  break-word;
+  word-wrap: break-word;
   hyphens: auto;
   font-family: $ff-roboto;
   font-size: 24px;
@@ -118,7 +118,7 @@
 
   @include vp-1023 {
     margin-bottom: 6px;
-    line-height: 35.9px; /* 583.333% */
+    line-height: 35.9px;
   }
 
   @include vp-767 {
@@ -128,11 +128,8 @@
   }
 }
 
-
-
 .advantages p {
   min-height: 120px;
-  // hyphens: auto;
   color: $color-black-perl;
   font-family: $ff-ptmono;
   font-size: 16px;
@@ -141,16 +138,13 @@
   padding: 0;
 
   @include vp-1023 {
-    line-height: 22px ; /* 21.6px */
+    line-height: 22px;
   }
 
   @include vp-767 {
     min-height: 140px;
     height: auto;
-    // height: fit-content;
     font-size: 14px;
-    // border: 2px solid red;
-    line-height: 19.9px; /* 18.9px */
-    // margin-bottom: 50px;
+    line-height: 19.9px;
   }
 }

@@ -53,7 +53,6 @@
 }
 
 .modal p {
-  // max-width: 380px;
   color: $color-default-white;
   font-family: $ff-ptmono;
   font-size: 16px;
@@ -63,8 +62,6 @@
   margin: 0;
   margin-bottom: 40px;
 }
-
-
 
 .modal input {
   margin-bottom: 18px;
@@ -147,8 +144,6 @@
   background: $color-transparent;
   border: none;
   cursor: pointer;
-
-  // padding: 5px 7px;
   z-index: 1;
   width: 40px;
   height: 40px;

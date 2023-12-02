@@ -1,6 +1,5 @@
 .footer {
   background-color: $color-black-perl;
-  // min-width: 100%;
 }
 
 .footer__container {
@@ -29,7 +28,6 @@
 }
 
 .footer__social-wrapper {
-  // border: 2px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,12 +47,10 @@
 }
 
 .footer__logo {
-  // border: 2px solid red;
   margin-bottom: 26px;
   cursor: pointer;
 
   @include vp-1023 {
-    // min-width: 100%;
     margin-bottom: 2px;
   }
 }
@@ -71,7 +67,6 @@
   }
 
   @include vp-767 {
-    // min-width: 100%;
     flex-direction: column;
   }
 }
@@ -101,11 +96,6 @@
   }
 
   @include vp-767 {
-    // max-width: none;
-    // padding-top: 22px;
-    // padding-bottom: 14px;
-    // border-top: 1px solid rgba($color-alice-blue, 0.7);
-    // border-bottom: 1px solid rgba($color-alice-blue, 0.7);
     max-width: none;
     padding-top: 22px;
     padding-bottom: 14px;
@@ -113,8 +103,6 @@
     border-bottom: 1px solid rgba(248, 253, 255, 0.7);
   }
 }
-
-
 
 .footer h3 {
   color: $color-default-white;
