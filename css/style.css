@@ -1665,7 +1665,7 @@ form textarea:focus-visible {
   padding: 0;
 }
 
-.footer__menu-nav-wrapper:not(.footer-contacts__list) {
+.footer__menu-nav-wrapper:not(.footer__contacts-list) {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -2142,7 +2142,7 @@ form textarea:focus-visible {
     margin-bottom: 21.5px;
   }
 
-  .footer__menu-nav-wrapper:not(.footer-contacts__list) {
+  .footer__menu-nav-wrapper:not(.footer__contacts-list) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
