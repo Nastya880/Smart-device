@@ -6,13 +6,13 @@
   max-width: 1220px;
   width: 90%;
   margin: 0 auto;
-  padding: 67px 0 142px;
+  padding: 67px 0 141px;
 
   @include vp-1023 {
     width: 84%;
     min-width: 670px;
     padding-top: 56px;
-    padding-bottom: 75px;
+    padding-bottom: 74px;
   }
 
   @include vp-767 {
@@ -92,10 +92,11 @@
   &::after {
     content: "";
     position: absolute;
-    right: 1px;
-    bottom: 0;
-    width: 58.6px;
-    height: 58.6px;
+    right: 0.8px;
+    // left:0;
+    bottom: -0.8px;
+    width: 60px;
+    height: 60px;
     background-image: url("../img/svg/arrow.svg");
     background-position: center;
   }
@@ -106,6 +107,8 @@
     max-width: 100%;
 
     &::after {
+      right: 0;
+      bottom: 1px;
       width: 60px;
       height: 60px;
     }
@@ -115,6 +118,8 @@
     width: 270.5px;
 
     &::after {
+      bottom: 0;
+      right: 1px;
       width: 40px;
       height: 40px;
     }

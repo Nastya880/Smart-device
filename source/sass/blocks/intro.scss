@@ -26,7 +26,7 @@
   margin: 0 auto;
   padding-top: 305px;
   padding-bottom: 288px;
-  margin-bottom: -8px;
+  margin-bottom: -7px;
 
   @include vp-1023 {
     padding-top: 167px;
@@ -105,7 +105,7 @@
 
 .intro__button {
   display: inline-block;
-  padding: 16px 27px;
+  padding: 15px 27px 19px;
 
   color: $color-alice-blue;
   font-size: 18px;

@@ -109,15 +109,9 @@
 
 .header__button {
   border-color: $color-alice-blue;
-  margin-left: 4px;
-  margin-top: 4px;
-  color: $color-alice-blue;
-  text-align: center;
-  font-family: $ff-roboto;
-  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 5.5px;
   line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 0.7px;
   justify-self: start;
 
   @include vp-1023 {

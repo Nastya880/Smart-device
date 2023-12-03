@@ -7,7 +7,7 @@
   max-width: 1220px;
   min-height: 320px;
   width: 90%;
-  margin: 0 auto 98px;
+  margin: 0 auto 99px;
   padding-left: 250px;
   background-image: image-set(
     url("../img/mask-2022.webp") 1x,
@@ -22,17 +22,18 @@
   @include vp-1023 {
     min-width: 670px;
     width: 87%;
-    margin-bottom: 78px;
+    margin-bottom: 79px;
+    margin-top: -1.5px;
     padding-left: 175px;
-    background-position: -3px 5px;
+    background-position: -4px 4px;
   }
 
   @include vp-767 {
     min-width: 270px;
     width: 84%;
     padding: 0;
-    margin-bottom: 70px;
-    padding-top: 2px;
+    margin-bottom: 71px;
+    padding-top: 3px;
     background: none;
   }
 }
@@ -54,7 +55,6 @@
 .about-company h2 {
   margin: 0 0 -5px;
   padding: 0;
-  margin-bottom: -5px;
   color: $color-black-perl;
   font-family: $ff-roboto;
   font-size: 36px;
@@ -63,7 +63,7 @@
   line-height: 49.63px;
 
   @include vp-1023 {
-    margin-bottom: -3px;
+    margin-bottom: -4px;
     line-height: 50.63px;
   }
 
@@ -84,7 +84,7 @@
   line-height: 22px;
 
   @include vp-1023 {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   @include vp-767 {
@@ -118,7 +118,7 @@
   text-transform: uppercase;
 
   @include vp-1023 {
-    margin-top: -22px;
+    margin-top: -23px;
   }
 
   @include vp-767 {

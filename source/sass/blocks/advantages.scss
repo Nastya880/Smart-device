@@ -95,6 +95,7 @@
   padding: 0;
 
   @include vp-1023 {
+    margin-top: -2px;
     margin-bottom: 8px;
   }
 
@@ -117,7 +118,7 @@
   padding: 0;
 
   @include vp-1023 {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     line-height: 35.9px;
   }
 
