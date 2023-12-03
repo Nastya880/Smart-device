@@ -975,15 +975,9 @@ button,
 
 .header__button {
   border-color: #f2f5f6;
-  margin-left: 4px;
-  margin-top: 4px;
-  color: #f2f5f6;
-  text-align: center;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
+  margin-top: 5px;
+  margin-left: 5.5px;
   line-height: 16px;
-  font-weight: 700;
-  letter-spacing: 0.7px;
   -ms-grid-column-align: start;
   justify-self: start;
 }
@@ -1004,7 +998,7 @@ button,
   margin: 0 auto;
   padding-top: 305px;
   padding-bottom: 288px;
-  margin-bottom: -8px;
+  margin-bottom: -7px;
 }
 
 .intro__wrapper {
@@ -1037,7 +1031,7 @@ button,
 
 .intro__button {
   display: inline-block;
-  padding: 16px 27px;
+  padding: 15px 27px 19px;
   color: #f2f5f6;
   font-size: 18px;
   letter-spacing: 0.9px;
@@ -1139,7 +1133,7 @@ button,
   max-width: 1220px;
   min-height: 320px;
   width: 90%;
-  margin: 0 auto 98px;
+  margin: 0 auto 99px;
   padding-left: 250px;
   background-image: -webkit-image-set(url("../img/mask-2022.webp") 1x, url("../img/mask-2022@2x.webp") 2x, url("../img/mask-2022.jpg") 1x, url("../img/mask-2022@2x.jpg") 2x);
   background-image: image-set(url("../img/mask-2022.webp") 1x, url("../img/mask-2022@2x.webp") 2x, url("../img/mask-2022.jpg") 1x, url("../img/mask-2022@2x.jpg") 2x);
@@ -1155,7 +1149,6 @@ button,
 .about-company h2 {
   margin: 0 0 -5px;
   padding: 0;
-  margin-bottom: -5px;
   color: #041827;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
@@ -1210,7 +1203,7 @@ button,
   max-width: 1220px;
   width: 90%;
   margin: 0 auto;
-  padding: 67px 0 142px;
+  padding: 67px 0 141px;
 }
 
 .catalog h2 {
@@ -1254,10 +1247,10 @@ button,
 .catalog__item::after {
   content: "";
   position: absolute;
-  right: 1px;
-  bottom: 0;
-  width: 58.6px;
-  height: 58.6px;
+  right: 0.8px;
+  bottom: -0.8px;
+  width: 60px;
+  height: 60px;
   background-image: url("../img/svg/arrow.svg");
   background-position: center;
 }
@@ -1340,15 +1333,15 @@ button,
 
 .feedback__container {
   max-width: 1220px;
-  width: 90vw;
+  width: 90%;
   margin: 0 auto;
-  padding-top: 163px;
-  padding-bottom: 248px;
+  padding-top: 166px;
+  padding-bottom: 249px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 35px;
+  gap: 37px;
 }
 
 .feedback picture {
@@ -1364,7 +1357,7 @@ button,
 }
 
 .feedback h2 {
-  margin: 0 0 10px;
+  margin: 0 0 10px -3.6px;
   padding: 0;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 36px;
@@ -1374,7 +1367,7 @@ button,
 }
 
 .feedback p {
-  margin: 0 0 35px;
+  margin: 0 0 36px;
   padding: 0;
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
@@ -1460,7 +1453,7 @@ form input:focus-visible {
 
 form textarea {
   max-height: 155px;
-  margin-bottom: 38px;
+  margin-bottom: 36.2px;
   padding: 23px 16px 13px 13px;
   background-color: rgba(4, 24, 39, 0.15);
   border-radius: 3px;
@@ -1525,7 +1518,7 @@ form textarea:focus-visible {
 .feedback__form-button {
   width: 100%;
   margin: 0;
-  padding: 12px 25px;
+  padding: 16px 25px 9px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -1612,7 +1605,7 @@ form textarea:focus-visible {
   justify-content: space-between;
   max-width: 1220px;
   width: 90vw;
-  margin: 54px auto 55px auto;
+  margin: 50px auto 50px auto;
 }
 
 .footer__social-wrapper {
@@ -1925,11 +1918,12 @@ form textarea:focus-visible {
   }
 
   .advantages svg {
+    margin-top: -2px;
     margin-bottom: 8px;
   }
 
   .advantages h3 {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     line-height: 35.9px;
   }
 
@@ -1940,29 +1934,30 @@ form textarea:focus-visible {
   .about-company__container {
     min-width: 670px;
     width: 87%;
-    margin-bottom: 78px;
+    margin-bottom: 79px;
+    margin-top: -1.5px;
     padding-left: 175px;
-    background-position: -3px 5px;
+    background-position: -4px 4px;
   }
 
   .about-company h2 {
-    margin-bottom: -3px;
+    margin-bottom: -4px;
     line-height: 50.63px;
   }
 
   .about-company p {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
   }
 
   .about-company__button {
-    margin-top: -22px;
+    margin-top: -23px;
   }
 
   .catalog__container {
     width: 84%;
     min-width: 670px;
     padding-top: 56px;
-    padding-bottom: 75px;
+    padding-bottom: 74px;
   }
 
   .catalog h2 {
@@ -1994,6 +1989,8 @@ form textarea:focus-visible {
   }
 
   .catalog__item::after {
+    right: 0;
+    bottom: 1px;
     width: 60px;
     height: 60px;
   }
@@ -2025,7 +2022,7 @@ form textarea:focus-visible {
   }
 
   .feedback {
-    min-height: 579px;
+    min-height: 580px;
   }
 
   .feedback::before {
@@ -2035,10 +2032,9 @@ form textarea:focus-visible {
 
   .feedback__container {
     display: block;
-    width: 87vw;
+    width: 87%;
     max-width: 670px;
     padding-bottom: 0;
-    margin-bottom: 0;
     padding-top: 45px;
   }
 
@@ -2054,7 +2050,7 @@ form textarea:focus-visible {
   }
 
   .feedback h2 {
-    margin-bottom: 6px;
+    margin: 1px 0 6px 0;
   }
 
   .feedback p {
@@ -2105,8 +2101,6 @@ form textarea:focus-visible {
     flex-direction: column;
     min-width: 675px;
     width: 62%;
-    margin-bottom: 65px;
-    margin-top: 50px;
   }
 
   .footer__social-wrapper {
@@ -2122,7 +2116,8 @@ form textarea:focus-visible {
   }
 
   .footer__logo {
-    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-bottom: 0;
   }
 
   .footer__menu {
@@ -2132,6 +2127,7 @@ form textarea:focus-visible {
 
   .footer__menu-nav {
     max-width: 220px;
+    margin-left: 2.5px;
   }
 
   .footer__contacts {
@@ -2139,7 +2135,8 @@ form textarea:focus-visible {
   }
 
   .footer h3 {
-    margin-bottom: 21.5px;
+    margin-bottom: 19px;
+    line-height: 21.6px;
   }
 
   .footer__menu-nav-wrapper:not(.footer__contacts-list) {
@@ -2159,12 +2156,13 @@ form textarea:focus-visible {
 
   .footer__contacts-wrapper {
     padding: 0;
+    margin-left: -2px;
   }
 
   .footer__social-list {
     padding: 0;
-    margin-right: -2px;
-    margin-top: -7px;
+    margin-right: -6px;
+    margin-top: -12px;
   }
 }
 
@@ -2289,8 +2287,8 @@ form textarea:focus-visible {
     min-width: 270px;
     width: 84%;
     padding: 0;
-    margin-bottom: 70px;
-    padding-top: 2px;
+    margin-bottom: 71px;
+    padding-top: 3px;
     background: none;
   }
 
@@ -2351,6 +2349,8 @@ form textarea:focus-visible {
   }
 
   .catalog__item::after {
+    bottom: 0;
+    right: 1px;
     width: 40px;
     height: 40px;
   }
@@ -2384,7 +2384,7 @@ form textarea:focus-visible {
     width: 84%;
     min-height: 750px;
     min-width: 270px;
-    padding-top: 47px;
+    padding-top: 46px;
     padding-bottom: 85px;
   }
 
@@ -2485,6 +2485,10 @@ form textarea:focus-visible {
     margin-bottom: 25px;
   }
 
+  .footer__logo {
+    margin-left: -5px;
+  }
+
   .footer__menu {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2509,7 +2513,7 @@ form textarea:focus-visible {
   }
 
   .footer h3 {
-    margin-bottom: 0;
+    margin-bottom: -5px;
   }
 
   .footer__menu-item--company {
@@ -2548,7 +2552,7 @@ form textarea:focus-visible {
   }
 
   .footer__social-list {
-    margin: 8px 0 4px -5px;
+    margin: 11px 0 3px -5px;
   }
 
   .footer__social-item-link svg {
