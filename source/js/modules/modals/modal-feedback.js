@@ -15,6 +15,13 @@ const showModalFeedback = () => {
     }
   });
 
+  document.addEventListener('click', function (e) {
+    const target = e.target;
+    if (modal.contains(target) && !target.closest('.modal__wrapper')) {
+      closeModal();
+    }
+  });
+
   const openModal = () => {
     modal.classList.remove('is-closed');
   };
