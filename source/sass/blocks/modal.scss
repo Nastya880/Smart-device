@@ -16,9 +16,12 @@
   &__wrapper {
     position: relative;
     max-width: 500px;
+    width: 500px;
+    height: 610px;
     background-color: $color-deep-sky-blue-bg;
     margin: auto;
-    padding: 37px 40px 42px;
+    padding: 40px;
+    padding-top: 37px;
     box-sizing: border-box;
     border-radius: 3px;
   }
@@ -47,12 +50,13 @@
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  line-height: 42.19px;
-  margin: 0;
-  margin-bottom: 5px;
+  line-height: 140.625%;
+  margin: 0 0 5px 0;
 }
 
 .modal p {
+  display: block;
+  width: 380px;
   color: $color-default-white;
   font-family: $ff-ptmono;
   font-size: 16px;
@@ -60,26 +64,33 @@
   font-weight: 400;
   line-height: 21.5px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .modal input {
-  margin-bottom: 18px;
-  padding: 15px 0 15px 15px;
+  margin-bottom: 19.7px;
+  padding: 14px 0 15px 15px;
   background-color: rgba($color-black-perl, 0.15);
   border: none;
   border-radius: 3px;
   font-family: $ff-ptmono;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.38;
+  line-height: 134.4%;
   width: 100%;
   color: $color-default-white;
 }
 
 .modal textarea {
-  margin-bottom: 20px;
-  padding: 25px 0 3px 15px;
+  margin-top: 1px;
+  margin-bottom: 18px;
+  padding-top: 23px;
+  padding-left: 15px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 134.4%;
+
   background-color: rgba($color-black-perl, 0.15);
   border: none;
   border-radius: 3px;
@@ -100,13 +111,13 @@
 
 .modal__form-submit-container label {
   position: relative;
+  color: $color-default-white;
   font-family: $ff-ptmono;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  opacity: 0.8;
-  padding-left: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 34px;
   margin-right: 5px;
   max-width: 260px;
   cursor: pointer;
@@ -115,7 +126,7 @@
     position: absolute;
     content: "";
     left: 9px;
-    top: -1px;
+    top: 0;
     width: 15px;
     height: 15px;
     background-color: transparent;
@@ -129,18 +140,23 @@
   color: $color-default-white;
   border: none;
   width: 100%;
-  min-height: 45px;
+  height: 45px;
+  line-height: 1.98;
+  text-align: center;
+  font-family: $ff-roboto;
   font-size: 16px;
-  line-height: 1.18;
-  padding-top: 7px;
-  margin-bottom: 19px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
   order: -1;
+  margin-bottom: 15px;
 }
 
 .modal__close-btn {
   position: absolute;
-  top: 24px;
-  right: 19px;
+  top: 17px;
+  right: 15px;
   background: $color-transparent;
   border: none;
   cursor: pointer;
