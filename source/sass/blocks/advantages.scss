@@ -119,7 +119,7 @@
 
   @include vp-1023 {
     margin-bottom: 10px;
-    line-height: 140.625%; /* 33.75px */
+    line-height: 140.63%;
   }
 
   @include vp-767 {
@@ -152,12 +152,6 @@
     margin-bottom: 8px;
   }
 }
-// .advantages__item--detective p,
-// .advantages__item--tag p {
-//   @include vp-1023 {
-//     margin-top: -2px;
-//   }
-// }
 
 .advantages p {
   min-height: 120px;
@@ -169,8 +163,7 @@
   padding: 0;
 
   @include vp-1023 {
-    // line-height: 22px;
-    line-height: 135%; /* 21.6px */
+    line-height: 135%;
   }
 
   @include vp-767 {
