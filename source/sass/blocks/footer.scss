@@ -118,15 +118,24 @@
   line-height: 16px;
   letter-spacing: 0.75px;
   text-transform: uppercase;
-  margin: 0 0 24px 0;
+  margin: 0 0 21px 0;
   padding: 0;
 
   @include vp-1023 {
-    margin-bottom: 19px;
+    margin-bottom: 18px;
     line-height: 21.6px;
   }
 
   @include vp-767 {
     margin-bottom: -5px;
+  }
+}
+
+.footer__menu-contacts h3 {
+  margin-bottom: 23px;
+
+  @include vp-1023 {
+    margin-bottom: 20px;
+    line-height: 21.6px;
   }
 }

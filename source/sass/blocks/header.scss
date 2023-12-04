@@ -49,6 +49,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @include vp-1439 {
+    width: 80%;
+    justify-content: space-evenly;
+  }
+
   @include vp-1023 {
     margin: 0 20px 0 10px;
     justify-content: space-between;

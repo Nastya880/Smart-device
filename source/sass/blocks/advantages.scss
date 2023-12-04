@@ -96,7 +96,7 @@
 
   @include vp-1023 {
     margin-top: -2px;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
 
   @include vp-767 {
@@ -118,8 +118,9 @@
   padding: 0;
 
   @include vp-1023 {
-    margin-bottom: 8px;
-    line-height: 35.9px;
+    margin-bottom: 10px;
+    // line-height: 35.9px;
+    line-height: 140.625%; /* 33.75px */
   }
 
   @include vp-767 {
@@ -128,6 +129,26 @@
     line-height: 31.13px;
   }
 }
+
+.advantages__item--detective h3 {
+  @include vp-1023 {
+    margin-top: -2px;
+    margin-bottom: 9px;
+  }
+}
+
+.advantages__item--tag h3 {
+  @include vp-1023 {
+    margin-top: -4px;
+    margin-bottom: 7px;
+  }
+}
+// .advantages__item--detective p,
+// .advantages__item--tag p {
+//   @include vp-1023 {
+//     margin-top: -2px;
+//   }
+// }
 
 .advantages p {
   min-height: 120px;
@@ -139,7 +160,8 @@
   padding: 0;
 
   @include vp-1023 {
-    line-height: 22px;
+    // line-height: 22px;
+    line-height: 135%; /* 21.6px */
   }
 
   @include vp-767 {
