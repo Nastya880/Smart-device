@@ -7,9 +7,10 @@
   justify-content: space-between;
   max-width: 1220px;
   width: 90vw;
-  margin: 50px auto 50px auto;
+  margin: 50px auto 47px auto;
 
   @include vp-1023 {
+    margin-bottom: 56px;
     flex-direction: column;
     min-width: 675px;
     width: 62%;
@@ -136,6 +137,11 @@
 
   @include vp-1023 {
     margin-bottom: 20px;
+    line-height: 21.6px;
+  }
+
+  @include vp-767 {
+    margin-bottom: -5px;
     line-height: 21.6px;
   }
 }

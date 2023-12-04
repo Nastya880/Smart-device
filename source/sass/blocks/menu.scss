@@ -7,20 +7,38 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    // margin-bottom: 100px;
+
   }
 }
+
+// .footer__menu-list--part-two {
+//   @include vp-1023 {
+//     border: 2px solid red;
+//     margin-top: 30px;
+//   }
+// }
 
 .footer__menu-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 6px;
+
+  @include vp-767 {
+    margin-bottom: -4px;
+  }
 }
 
 .footer__menu-item {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @include vp-1023 {
+    margin-bottom: 6px;
   }
 }
 
@@ -46,5 +64,14 @@
   &:focus,
   &:active {
     color: $color-deep-sky-blue;
+  }
+}
+
+.footer__menu-item--production {
+  margin-bottom: 2px;
+
+  @include vp-767 {
+    // font-size: 14px;
+    margin-bottom: 6px;
   }
 }

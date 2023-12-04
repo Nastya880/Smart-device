@@ -48,14 +48,22 @@
   }
 }
 
-address {
-  margin-bottom: 8.5px;
-}
+// .footer__contacts-item address {
+//   margin-bottom: 8px;
+// }
+// address {
+//   margin-bottom: 8.5px;
+// }
 
 .footer__contacts-item--tel {
   line-height: 156.25%;
+  margin-bottom: 7px;
+  margin-top: 7px;
+
   @include vp-767 {
+    // margin-top: auto;
     margin-bottom: -11px;
+    margin-top: 17px;
   }
 }
 
