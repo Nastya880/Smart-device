@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Компания Smart Device - умные технологии. Печатные платы: производство и монтаж, поставка комплектующих, блоков и модулей">
-    <title>Smart Device</title>
+    <meta name="description" content="Описание проекта">
+    <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
@@ -17,305 +17,458 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <link rel="preload" href="fonts/PTMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__container">
-          <a class="header__logo" href="#">
-            <picture>
-              <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
-              <img src="img/svg/logo.svg" width="215" height="55" alt="Smart Device">
-            </picture>
-          </a>
-          <ul class="header__contacts-list">
-            <li class="header__contacts-item">
-              <a class="header__contacts-item-link header__contacts-item-link--mail" href="mailto:info@sd.ru" aria-label="info@sd.ru">
-                <svg width="20" height="20">
-                  <use href="img/sprite.svg#email"></use>
-                </svg>
-                <span>info@sd.ru</span>
-              </a>
-            </li>
-            <li class="header__contacts-item">
-              <a class="header__contacts-item-link header__contacts-item-link--phone" href="tel:+74950005252" aria-label="+74950005252">
-                <svg width="20" height="20">
-                  <use href="img/sprite.svg#phone"></use>
-                </svg>
-                <span>+7 (495) 000 52&nbsp;52</span>
-              </a>
-            </li>
-          </ul>
-          <a class="header__button button button--dark" href="#" data-open-modal="feedback-form" data-modal="open-modal" tabindex="0">Заказать звонок</a>
+
+      <div class="wrapper__header">
+        <picture>
+          <source media="(max-width: 767px)" type="image/jpg" srcset="img/intro-bg-mobile.jpg 1x, img/intro-bg-mobile@2x.jpg 2x">
+          <source media="(max-width: 767px)" type="image/webp" srcset="img/intro-bg-mobile.jpg 1x, img/intro-bg-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" type="image/jpg" srcset="img/intro-bg-tablet.jpg 1x, img/intro-bg-tablet@2x.jpg 2x">
+          <source media="(max-width: 1023px)" type="image/webp" srcset="img/intro-bg-tablet.webp 1x, img/intro-bg-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/intro-bg.webp 1x, img/intro-bg@2x.webp 2x">
+          <img src="img/intro-bg@2x.jpg" width="1366" height="650" alt="пейзаж Антарктики">
+        </picture>
+        <div class="container">
+          <header class="header" data-header>
+            <a class="header__logo logo" href="#" aria-label="Круизы в Антарктику">
+              <svg width="70" height="38" data-close-menu>
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+            <button class="header__button-burger" type="button" aria-label="Закрыть-открыть меню" data-burger></button>
+            <nav class="header__menu" data-menu>
+              <ul class="header__menu-list menu-list">
+                <li class="header__menu-item menu-item">
+                  <a class="header__menu-item-link menu-item-link" href="#advantages" aria-label="Преимущества" data-menu-link data-menu-href>Преимущества</a>
+                </li>
+                <li class="header__menu-item menu-item">
+                  <a class="header__menu-item-link menu-item-link" href="#" aria-label="Направления" data-menu-link>Направления</a>
+                </li>
+                <li class="header__menu-item menu-item">
+                  <a class="header__menu-item-link menu-item-link" href="#catalog" aria-label="Ближайшие круизы" data-menu-link data-menu-href>Ближайшие круизы</a>
+                </li>
+                <li class="header__menu-item menu-item">
+                  <a class="header__menu-item-link menu-item-link"  href="#contacts" aria-label="Контакты" data-menu-link data-menu-href>Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <section class="intro">
+            <h1>Круизы в&nbsp;Антарктику</h1>
+            <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
+          </section>
         </div>
-      </header>
+      </div>
+
       <main>
-        <h1 class="visually-hidden">Smart Device</h1>
-        <section class="intro">
-          <div class="intro__container">
-            <div class="intro__wrapper">
-              <h2>Печатные платы</h2>
-              <p>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</p>
-              <a class="intro__button button button--dark" href="#feedback" aria-label="Получить бесплатную консультацию">
-                <span class="intro__button-description">Получить бесплатную консультацию</span>
-                <span class="intro__button-description intro__button-description--mobile">Бесплатная консультация</span>
-              </a>
+        <section class="description">
+          <div class="description__container container">
+            <div class="description__wrapper">
+              <h2>Путешествие на&nbsp;край Земли</h2>
+              <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
             </div>
+            <picture>
+              <source type="image/webp" srcset="img/penguin.webp 1x, img/penguin@2x.webp 2x">
+              <img src="img/penguin@2x.jpg" width="560" height="301" alt="пингвины">
+            </picture>
           </div>
         </section>
 
-        <section class="advantages">
-          <div class="advantages__container">
-            <h2 class="visually-hidden">Преимущества компании Smart Device</h2>
+        <section class="advantages" id="advantages">
+          <picture>
+            <source type="image/webp" srcset="img/advantages-bg.webp 1x, img/advantages-bg@2x.webp 2x">
+            <img src="img/advantages-bg@2x.jpg" width="1366" height="562" alt="преимущества круиза в Антарктику">
+          </picture>
+          <div class="advantages__container container">
+            <h2>Преимущества</h2>
             <ul class="advantages__list">
-              <li class="advantages__item">
-                <svg width="35" height="35">
-                  <use xlink:href="img/sprite.svg#stopwatch"></use>
+              <li class="advantages__item advantages__item--liner">
+                <svg width="27" height="32">
+                  <use href="img/sprite.svg#liner"></use>
                 </svg>
-                <h3>Оперативные сроки</h3>
-                <p>Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и&nbsp;доставлять заказы плат и&nbsp;комплектующих в&nbsp;самые короткие сроки.</p>
+                <h3>Небольшой круизный&nbsp;лайнер</h3>
+                <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
               </li>
-              <li class="advantages__item">
-                <svg width="35" height="35">
-                  <use xlink:href="img/sprite.svg#hired"></use>
+              <li class="advantages__item advantages__item--all-inclusive">
+                <svg width="38" height="32">
+                  <use href="img/sprite.svg#all-inclusive"></use>
                 </svg>
-                <h3>Крупные поставщики</h3>
-                <p>Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с&nbsp;такими компаниями обеспечивает хорошее качество нашей продукции.</p>
+                <h3>Система все&nbsp;включено</h3>
+                <p>Все наши круизы работают по системе &quot;Все Включено&quot;. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.</p>
               </li>
-              <li class="advantages__item advantages__item--detective">
-                <svg width="35" height="35">
-                  <use xlink:href="img/sprite.svg#detective"></use>
+              <li class="advantages__item advantages__item--excursion-tours">
+                <svg width="44" height="32">
+                  <use href="img/sprite.svg#excursion-tours"></use>
                 </svg>
-                <h3>Полная конфиденциальность</h3>
-                <p>По&nbsp;желанию клиента мы обеспечиваем полную конфиденциальность.</p>
-              </li>
-              <li class="advantages__item advantages__item--tag">
-                <svg width="35" height="35">
-                  <use xlink:href="img/sprite.svg#tag"></use>
-                </svg>
-                <h3>Персонализация стоимости</h3>
-                <p>Мы&nbsp;подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту&nbsp;цену, которая Вас устраивает.</p>
+                <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+                <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках&nbsp;типа Zodiac c опытными экскурсоводами.</p>
               </li>
             </ul>
           </div>
         </section>
-        <section class="about-company">
-          <div class="about-company__container">
-            <h2>О&nbsp;компании</h2>
-            <div class="about-company__content">
-                <p>Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с&nbsp;1997&nbsp;года. Выполняем срочные заказы и&nbsp;пилотные образцы до&nbsp;10&nbsp;дней.</p>
-                <p>Наши поставщики&nbsp;&mdash; мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
-                  <span>Печатные платы и&nbsp;комплектующие Service Devices применяются на&nbsp;предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
-                </p>
-                <p class="about-company__more-info is-without-js" data-about-company__more-info>Smart Device&nbsp;&mdash; это команда профессионалов. Через нас прошло более 1&nbsp;000&nbsp;000&nbsp;клиентов, 70% из&nbsp;которых продолжают сотрудничество по&nbsp;сей день. На&nbsp;данный момент насчитывается более 14&nbsp;офисов по&nbsp;всей стране и&nbsp;20&nbsp;городов присутствия.</p>
-                <p class="about-company__more-info is-without-js" data-about-company__more-info>Мы&nbsp;стремимся к&nbsp;постоянному развитию и&nbsp;повышению уровня качества продукции, производимой внутри компании. Использование инновационных технологий помогает экономить деньги и&nbsp;время наших клиентов</p>
-            </div>
-            <button class="about-company__button button button--light" type="button" aria-label="Кнопка подробнее" data-about-company-button>Подробнее</button>
-          </div>
-        </section>
-        <section class="catalog">
-          <div class="catalog__container">
-            <h2>
-              <span class="catalog__title">Smart Device предлагает следующие товары и&nbsp;услуги</span>
-              <span class="catalog__title catalog__title--mobile">Товары и&nbsp;услуги Smart&nbsp;Device</span>
-            </h2>
+
+        <section class="catalog" id="catalog">
+          <div class="catalog__container container">
+            <h2>Ближайшие круизы</h2>
             <ul class="catalog__list">
               <li class="catalog__item">
-                <a class="catalog__item-link catalog__item-link--production" href="#" aria-label="Производство печатных плат">
-                  <h3>Производство печатных&nbsp;плат</h3>
-                </a>
+                <picture>
+                  <source type="image/webp" srcset="img/astoria.webp 1x, img/astoria@2x.webp 2x">
+                  <img src="img/astoria@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Астория'">
+                </picture>
+                <h3>Круиз &quot;Астория&quot;</h3>
+                <div class="catalog__info">
+                  <h4>Круиз &quot;Астория&quot;</h4>
+                  <ul class="catalog__info-list">
+                    <li class="catalog__info-item catalog__info-item--route">
+                      <h5>Маршрут</h5>
+                      <p>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Порт отправления</h5>
+                      <p>Ушуайя</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Продолжительность</h5>
+                      <p>11 дней</p>
+                    </li>
+                    <li class="catalog__info-item catalog__info-item--price">
+                      <h5>Цена</h5>
+                      <p>от&nbsp;11500&nbsp;$</p>
+                    </li>
+                  </ul>
+                  <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
+                </div>
               </li>
               <li class="catalog__item">
-                <a class="catalog__item-link catalog__item-link--mounting" href="#" aria-label="Монтаж печатных плат">
-                  <h3>Монтаж печатных плат</h3>
-                </a>
+                <picture>
+                  <source type="image/webp" srcset="img/astoria.webp 1x, img/astoria@2x.webp 2x">
+                  <img src="img/astoria@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Элайн'">
+                </picture>
+                <h3>Круиз &quot;Элайн&quot;</h3>
+                <div class="catalog__info">
+                  <h4>Круиз &quot;Элайн&quot;</h4>
+                  <ul class="catalog__info-list">
+                    <li class="catalog__info-item catalog__info-item--route">
+                      <h5>Маршрут</h5>
+                      <p>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Порт отправления</h5>
+                      <p>Буэнос-Айрес</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Продолжительность</h5>
+                      <p>20 дней</p>
+                    </li>
+                    <li class="catalog__info-item catalog__info-item--price">
+                      <h5>Цена</h5>
+                      <p>от&nbsp;14500&nbsp;$</p>
+                    </li>
+                  </ul>
+                  <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
+                </div>
               </li>
               <li class="catalog__item">
-                <a class="catalog__item-link catalog__item-link--tools" href="#" aria-label="Комплектующие для светотехники">
-                  <h3>Комплектующие для&nbsp;светотехники</h3>
-                </a>
+                <picture>
+                  <source type="image/webp" srcset="img/atlantis.webp 1x, img/atlantis@2x.webp 2x">
+                  <img src="img/atlantis@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Атлантис'">
+                </picture>
+                <h3>Круиз &quot;Атлантис&quot;</h3>
+                <div class="catalog__info">
+                  <h4>Круиз &quot;Атлантис&quot;</h4>
+                  <ul class="catalog__info-list">
+                    <li class="catalog__info-item catalog__info-item--route">
+                      <h5>Маршрут</h5>
+                      <p>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Антарктида</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Порт отправления</h5>
+                      <p>Ушуайя</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Продолжительность</h5>
+                      <p>15 дней</p>
+                    </li>
+                    <li class="catalog__info-item catalog__info-item--price">
+                      <h5>Цена</h5>
+                      <p>от&nbsp;14500&nbsp;$</p>
+                    </li>
+                  </ul>
+                  <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source type="image/webp" srcset="img/odissey.webp 1x, img/odissey@2x.webp 2x">
+                  <img src="img/odissey@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Одиссей'">
+                </picture>
+                <h3>Круиз &quot;Одиссей&quot;</h3>
+                <div class="catalog__info catalog__info--odissey">
+                  <h4>Круиз &quot;Одиссей&quot;</h4>
+                  <ul class="catalog__info-list">
+                    <li class="catalog__info-item catalog__info-item--route">
+                      <h5>Маршрут</h5>
+                      <p>Чили&nbsp;&mdash; Антарктида</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Порт отправления</h5>
+                      <p>Пунта-Аренас</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Продолжительность</h5>
+                      <p>13 дней</p>
+                    </li>
+                    <li class="catalog__info-item catalog__info-item--price">
+                      <h5>Цена</h5>
+                      <p>от&nbsp;9700&nbsp;$</p>
+                    </li>
+                  </ul>
+                  <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source type="image/webp" srcset="img/olympia.webp 1x, img/olympia@2x.webp 2x">
+                  <img src="img/olympia@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Олимпия'">
+                </picture>
+                <h3>Круиз &quot;Олимпия&quot;</h3>
+                <div class="catalog__info catalog__info--olympia">
+                  <h4>Круиз &quot;Олимпия&quot;</h4>
+                  <ul class="catalog__info-list">
+                    <li class="catalog__info-item catalog__info-item--route">
+                      <h5>Маршрут</h5>
+                      <p>Аргентина&nbsp;&mdash; Фолклендские острова&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Порт отправления</h5>
+                      <p>Ушуайя</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Продолжительность</h5>
+                      <p>21 дней</p>
+                    </li>
+                    <li class="catalog__info-item catalog__info-item--price">
+                      <h5>Цена</h5>
+                      <p>от&nbsp;18600&nbsp;$</p>
+                    </li>
+                  </ul>
+                  <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source type="image/webp" srcset="img/avrora.webp 1x, img/avrora@2x.webp 2x">
+                  <img src="img/avrora@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Аврора'">
+                </picture>
+                <h3>Круиз &quot;Аврора&quot;</h3>
+                <div class="catalog__info">
+                  <h4>Круиз &quot;Аврора&quot;</h4>
+                  <ul class="catalog__info-list">
+                    <li class="catalog__info-item catalog__info-item--route">
+                      <h5>Маршрут</h5>
+                      <p>Аргентина&nbsp;&mdash; Антарктида&nbsp;&mdash; Чили</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Порт отправления</h5>
+                      <p>Ушуайя</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Продолжительность</h5>
+                      <p>14 дней</p>
+                    </li>
+                    <li class="catalog__info-item catalog__info-item--price">
+                      <h5>Цена</h5>
+                      <p>от&nbsp;11700&nbsp;$</p>
+                    </li>
+                  </ul>
+                  <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source type="image/webp" srcset="img/leonor.webp 1x, img/leonor@2x.webp 2x">
+                  <img src="img/leonor@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Леонор'">
+                </picture>
+                <h3>Круиз &quot;Леонор&quot;</h3>
+                <div class="catalog__info">
+                  <h4>Круиз &quot;Леонор&quot;</h4>
+                  <ul class="catalog__info-list">
+                    <li class="catalog__info-item catalog__info-item--route">
+                      <h5>Маршрут</h5>
+                      <p>Чили&nbsp;&mdash; Южная Георгия&nbsp;&mdash; Антарктида&nbsp;&mdash; Аргентина</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Порт отправления</h5>
+                      <p>Пунта-Аренас</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Продолжительность</h5>
+                      <p>17 дней</p>
+                    </li>
+                    <li class="catalog__info-item catalog__info-item--price">
+                      <h5>Цена</h5>
+                      <p>от&nbsp;12500&nbsp;$</p>
+                    </li>
+                  </ul>
+                  <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
+                </div>
+              </li>
+              <li class="catalog__item">
+                <picture>
+                  <source type="image/webp" srcset="img/astoria.webp 1x, img/astoria@2x.webp 2x">
+                  <img src="img/astoria@2x.jpg" width="260" height="386" alt="пейзаж круиза 'Минион - 1'">
+                </picture>
+                <h3>Круиз &quot;Минион&nbsp;&mdash; 1&quot;</h3>
+                <div class="catalog__info catalog__info--minion">
+                  <h4>Круиз &quot;Минион&nbsp;&mdash; 1&quot;</h4>
+                  <ul class="catalog__info-list">
+                    <li class="catalog__info-item catalog__info-item--route">
+                      <h5>Маршрут</h5>
+                      <p>Аргентина&nbsp;&mdash; Антарктида</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Порт отправления</h5>
+                      <p>Ушуайя</p>
+                    </li>
+                    <li class="catalog__info-item">
+                      <h5>Продолжительность</h5>
+                      <p>11 дней</p>
+                    </li>
+                    <li class="catalog__info-item catalog__info-item--price">
+                      <h5>Цена</h5>
+                      <p>от&nbsp;12300&nbsp;$</p>
+                    </li>
+                  </ul>
+                  <a class="catalog__info-button" href="#" aria-label="Забронировать">Забронировать</a>
+                </div>
               </li>
             </ul>
           </div>
         </section>
-        <section class="feedback" id="feedback">
-          <div class="feedback__container">
-            <picture>
-              <source type="image/webp" srcset="img/paper_airplane.webp 1x, img/paper_airplane@2x.webp 2x">
-              <img src="img/paper_airplane@2x.png" width="510" height="285" alt="Декоративное изображение мессенджера - самолёт">
-            </picture>
-            <div class="feedback__form">
-              <h2>Остались вопросы? Задайте их&nbsp;нам!</h2>
-              <p>Мы&nbsp;проконсультируем Вас бесплатно</p>
+
+        <section class="reservation">
+          <picture>
+            <source type="image/webp" srcset="img/reservation-bg.webp 1x, img/reservation-bg@2x.webp 2x">
+            <img src="img/reservation-bg@2x.jpg" width="1366" height="555" alt="пейзаж - облака">
+          </picture>
+          <div class="reservation__container container">
+            <div class="reservation__description">
+              <h2>Раннее бронирование</h2>
+              <p>Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
+            </div>
+            <div class="reservation__form">
+              <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
               <form action="https://echo.htmlacademy.ru" method="post">
-                <div class="feedback__form-required-data">
-                  <label class="visually-hidden" for="name">Введите Ваше имя</label>
-                  <input type="text" name="name" id="name" placeholder="Имя" required>
-                  <div data-number-phone>
-                    <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
-                    <input type="tel" name="phone" id="phone" placeholder="Телефон" required>
-                  </div>
-                </div>
-                <label class="visually-hidden" for="question">Введите Ваш вопрос</label>
-                <textarea name="question" id="question" placeholder="Ваш вопрос" rows="10"></textarea>
-                <div class="feedback__form-submit-wrapper">
-                  <button class="feedback__form-button button button--dark" type="submit" aria-label="Кнопка задать вопрос">Задать вопрос</button>
-                  <label for="agreement">
-                    <input type="checkbox" name="agreement" id="agreement" checked required>
-                    <span class="feedback__form-check-mark"></span>
-                    <span>Я согласен на&nbsp;обработку персональных данных</span>
+                <label class="visually-hidden" for="name">Введите Ваше имя</label>
+                <input type="text" name="name" id="name" placeholder="Имя" pattern="(^[a-zA-Z]+$)|(^[А-Яа-яЁё\s]+$)" required>
+                <label class="visually-hidden" for="phone">Введите Ваш Телефон</label>
+                <input type="tel" name="phone" id="phone" placeholder="Телефон" pattern="(8)[0-9]{10}" required>
+                <label class="visually-hidden" for="email">Введите Ваш email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <div class="reservation__form-agreement">
+                  <label>
+                    <input class="visually-hidden" type="checkbox" name="agreement" required checked>
+                    <span class="reservation__form-agreement-check-mark"></span>
+                    <span class="reservation__form-agreement-description">Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных</span>
                   </label>
                 </div>
+                <button class="reservation__form-button" type="submit">Оставить заявку</button>
               </form>
             </div>
           </div>
         </section>
-      </main>
 
+        <section class="contacts" id="contacts">
+          <div class="contacts__container container">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1J2v1i1yB2lsFcQsFxG3SdmelNqxuNu0&ehbc=2E312F&noprof=1" width="560" height="306" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="contacts__description">
+              <h2>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</h2>
+              <ul class="contacts__list">
+                <li class="contacts__item contacts__item--address">
+                  <svg width="18" height="22">
+                    <use xlink:href="img/sprite.svg#label"></use>
+                  </svg>
+                  <address>г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</address>
+                </li>
+                <li class="contacts__item contacts__item--phone">
+                  <svg width="19" height="19">
+                    <use xlink:href="img/sprite.svg#phone"></use>
+                  </svg>
+                  <p>8-800-200-00-00</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
       <footer class="footer">
-        <h2 class="visually-hidden">Меню, адрес и контакты</h2>
-        <div class="footer__container">
-          <div class="footer__social-wrapper">
-            <a class="footer__logo" href="#">
-              <img src="img/svg/logo.svg" width="215" height="55" alt="Smart Device">
+        <div class="footer__container container">
+          <div class="footer__menu-wrapper">
+            <a class="footer__logo logo" href="#" aria-label="Круизы в Антарктику">
+              <svg width="70" height="38">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
             </a>
+            <nav class="footer__menu">
+              <ul class="footer__menu-list menu-list">
+                <li class="footer__menu-item menu-item">
+                  <a class="footer__menu-item-link menu-item-link" href="#advantages" aria-label="Преимущества" data-menu-href>Преимущества</a>
+                </li>
+                <li class="footer__menu-item menu-item">
+                  <a class="footer__menu-item-link menu-item-link" href="#" aria-label="Направления" data-menu-href>Направления</a>
+                </li>
+                <li class="footer__menu-item menu-item">
+                  <a class="footer__menu-item-link menu-item-link" href="#catalog" aria-label="Ближайшие круизы" data-menu-href>Ближайшие круизы</a>
+                </li>
+                <li class="footer__menu-item menu-item">
+                  <a class="footer__menu-item-link menu-item-link" href="#contacts" aria-label="Контакты" data-menu-href>Контакты</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__social">
             <ul class="footer__social-list">
               <li class="footer__social-item">
-                <a class="footer__social-item-link" href="#" aria-label="Одноклассники">
-                  <svg width="30" height="30">
-                    <use href="img/sprite.svg#social-ok"></use>
+                <a class="footer__social-item-link footer__social-item-link--ok" href="#" aria-label="Одноклассники">
+                  <svg width="12" height="20">
+                    <use xlink:href="img/sprite.svg#ok"></use>
                   </svg>
                 </a>
-                <span class="visually-hidden">Одноклассники</span>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-item-link" href="#" aria-label="Вконтакте">
-                  <svg width="30" height="30">
-                    <use href="img/sprite.svg#social-vk"></use>
+                <a class="footer__social-item-link" href="#" aria-label="Дзен">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#dzen"></use>
                   </svg>
                 </a>
-                <span class="visually-hidden">Вконтакте</span>
               </li>
               <li class="footer__social-item">
-                <a class="footer__social-item-link" href="#" aria-label="Пинтерест">
-                  <svg width="30" height="30">
-                    <use href="img/sprite.svg#social-pinterest"></use>
+                <a class="footer__social-item-link" href="#" aria-label="Реддит">
+                  <svg width="20" height="20">
+                    <use xlink:href="img/sprite.svg#reddit"></use>
                   </svg>
                 </a>
-                <span class="visually-hidden">Пинтерест</span>
               </li>
             </ul>
-          </div>
-
-          <div class="footer__menu">
-            <nav class="footer__menu-nav footer-nav">
-              <div class="footer__menu-nav-container accordion-container is-opened" data-accordion-container>
-                <h3>Разделы сайта</h3>
-                <button class="accordion-button" type="button" aria-label="Кнопка Скрыть раздел" data-accordion-button>
-                  <span class="visually-hidden">Скрыть раздел</span>
-                </button>
-                <div class="footer__menu-nav-wrapper">
-                  <ul class="footer__menu-list">
-                    <li class="footer__menu-item footer__menu-item--company">
-                      <a class="footer__menu-item-link" href="#" aria-label="О Компании">О Компании</a>
-                    </li>
-                    <li class="footer__menu-item">
-                      <a class="footer__menu-item-link" href="#" aria-label="Продукты">Продукты</a>
-                    </li>
-                    <li class="footer__menu-item footer__menu-item--production">
-                      <a class="footer__menu-item-link" href="#" aria-label="Производство печатных плат">Производство печатных плат</a>
-                    </li>
-                    <li class="footer__menu-item">
-                      <a class="footer__menu-item-link" href="#" aria-label="Монтаж печатных плат">Монтаж печатных плат</a>
-                    </li>
-                  </ul>
-                  <ul class="footer__menu-list">
-                    <li class="footer__menu-item">
-                      <a href="#" class="footer__menu-item-link" href="#" aria-label="Комплектующие">Комплектующие</a>
-                    </li>
-                    <li class="footer__menu-item">
-                      <a href="#" class="footer__menu-item-link" href="#" aria-label="Доставка">Доставка</a>
-                    </li>
-                    <li class="footer__menu-item">
-                      <a href="#" class="footer__menu-item-link" href="#" aria-label="Контакты">Контакты</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-
-            <div class="footer__menu-contacts footer__contacts">
-              <div class="footer__contacts-wrapper accordion-container is-opened" data-accordion-container>
-                <h3>Наш офис</h3>
-                <button class="accordion-button" type="button" aria-label="Кнопка Скрыть раздел" data-accordion-button>
-                  <span class="visually-hidden">Скрыть раздел</span>
-                </button>
-                <ul class="footer__contacts-list footer__menu-nav-wrapper">
-                  <li class="footer__contacts-item">
-                    <address class="footer__contacts-item-link" href="#" aria-label="г. Мытищи, Олимпийский проспект, д.10">г. Мытищи, Олимпийский проспект, д.10</address>
-                  </li>
-                  <li class="footer__contacts-item footer__contacts-item--tel">
-                    <a class="footer__contacts-item-link" href="tel:+74955894050" aria-label="+7 (495) 589-40-50">+7 (495) 589-40-50</a>
-                  </li>
-                  <li class="footer__contacts-item footer__contacts-item--tel">
-                    <a class="footer__contacts-item-link" href="tel:+79253895829" aria-label="+7 (925) 389-58-29">+7 (925) 389-58-29</a>
-                  </li>
-                  <li class="footer__contacts-item footer__contacts-item--tel">
-                    <a class="footer__contacts-item-link" href="tel:+79253647813" aria-label="+7 (925) 364-78-13">+7 (925) 364-78-13</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </div>
         </div>
       </footer>
     </div>
-  </div>
-</footer>
-</div>
-<!-- Модалки -->
-<div class="modal modal--preload is-closed" data-modal="feedback-form">
-  <div class="modal__wrapper" tabindex="0" data-overlay>
-    <div class="modal__content">
-      <h2>Закажите звонок</h2>
-      <p>Оставьте контакты, мы&nbsp;проконсультируем Вас бесплатно в&nbsp;удобное время</p>
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <div class="modal__form-data">
-          <label class="visually-hidden" for="name-modal">Введите Ваше имя</label>
-          <input type="text" name="name" placeholder="Имя" id="name-modal" required data-name>
-          <div data-number-phone>
-            <label for="phone-modal" class="visually-hidden">Введите Ваш номер телефона</label>
-            <input type="tel" name="phone" placeholder="Телефон" id="phone-modal" required>
-          </div>
-          <label class="visually-hidden" for="question-modal">Введите Ваш вопрос</label>
-          <textarea name="question" rows="8" id="question-modal" placeholder="Ваш вопрос"></textarea>
-        </div>
-        <div class="modal__form-submit-wrapper">
-          <div class="modal__form-submit-container">
-            <input class="visually-hidden" type="checkbox" name="modal-agreement" id="agreement-modal" checked required>
-            <label for="agreement-modal">Я согласен на&nbsp;обработку персональных данных</label>
-          </div>
-          <button class="modal__submit-button button" type="submit" aria-label="Кнопка Отправить" >Отправить</button>
-        </div>
-      </form>
-    </div>
-    <button class="modal__close-btn btn-reset" type="button" aria-label="Кнопка закрыть" data-close-modal>
-      <svg width="20" height="20" viewBox="0 0 20 20">
-        <use xlink:href="./img/sprite.svg#icon-close"></use>
-      </svg>
-    </button>
-  </div>
-</div>
-<script src="./js/main.min.js" type="module"></script>
-</body>
+
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
